@@ -1,1 +1,3 @@
-# BiA-Biblioteca_Interconectada_Autonoma
+# BiA-Biblioteca Interconectada Autônoma
+
+Este projeto é parte da avaliação da mat
