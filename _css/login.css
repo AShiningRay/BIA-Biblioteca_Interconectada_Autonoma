@@ -5,6 +5,8 @@ body,
 			height: 100%;
 			background: #ffffff !important;
 		}
+        
+        /* Altera o fundo do card principal*/
 		.user_card {
 			height: 400px;
 			width: 350px;
@@ -22,6 +24,8 @@ body,
 			border-radius: 5px;
 
 		}
+
+        /*Configurações da Logo - PS: Alterações aqui afetam o aspecto de exibição*/
 		.brand_logo_container {
 			position: absolute;
 			height: 170px;
@@ -32,6 +36,8 @@ body,
 			padding: 10px;
 			text-align: center;
 		}
+
+        /*Configurações da Logo - PS: Alterações aqui afetam o aspecto de exibição*/
 		.brand_logo {
 			height: 150px;
 			width: 150px;
@@ -46,6 +52,8 @@ body,
 			background: #000000 !important;
 			color: white !important;
 		}
+
+        /*Configurações ainda necessárias para se ter alterações visíveis*/
 		.login_btn:focus {
 			box-shadow: none !important;
 			outline: 0px !important;
@@ -64,10 +72,8 @@ body,
 			box-shadow: none !important;
 			outline: 0px !important;
 		}
-		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-			background-color: #c0392b !important;
-		}
 
-        .ml-2{
-            color: white.
-        }
+        /*Altera a cor da checkbox do remember-me*/
+		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+			background-color: #383636 !important;
+		}
