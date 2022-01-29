@@ -7,11 +7,6 @@
     color: white;
 }
 
-.navbar-brand {
-    width:2.25em;
-    height:2.25em;
-}
-
 .col-fluid.info {
     border-style: solid !important;
     border-radius: 5px !important;
