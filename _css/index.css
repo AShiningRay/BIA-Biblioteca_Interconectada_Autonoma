@@ -1,5 +1,10 @@
-.nav-item a:hover{
-    background-color: rgb(230, 34, 0) !important;
+.nav-item a:hover {
+    background-color: #f76230 !important;
+}
+
+.btn-hover:hover{
+    background-color: #f76230;
+    color: white;
 }
 
 .col-fluid.info {
@@ -24,3 +29,5 @@
 .nav-link{
     font-weight: bold;
 }
+
+.bg-dark{background-color:#297a7d!important}

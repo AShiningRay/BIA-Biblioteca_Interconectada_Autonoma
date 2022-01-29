@@ -1,71 +1,154 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="Basic page">
-		<meta name="keywords" content="to be added">
-	
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<link rel="stylesheet" href="./_css/index.css">
-		
-		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-	</head>
-	
-	<body>
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-				<div class="container-fluid">
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-						data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-						<a class="navbar-brand" href="#"> <img src="./_images/logo_bia.png" style="width:2.25em;height:2.25em;" alt="BIA - Biblioteca Integrada Autônoma"> </a>
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link active btn-lg px-5" aria-current="page" href="#">INÍCIO</a>
-							</li>
-							<li class="nav-item"> 
-								<a class="nav-link active btn-lg px-5" href="#">MAIS INFORMAÇÕES</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active btn-lg px-5" href="#" tabindex="-1" aria-disabled="true">COMO USAR</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active btn-lg px-5" href="#" tabindex="-1" aria-disabled="true">CONTATO</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active btn-lg px-5" href="#" tabindex="-1" aria-disabled="true">SOBRE</a>
-							</li>
-						</ul>
-						<form class="d-flex">
-							<button class="btn btn-outline-success" type="submit">Buscar livros⠀<i class="fas fa-search"></i></button>
-						</form>
-					</div>
-				</div>
-			</nav>
-			<br>
-			<br>
-			<br>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Basic page">
+	<meta name="keywords" content="to be added">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="./_css/index.css">
+	<link rel="stylesheet" href="./_css/login.css">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-fluid info" id="maincol1">
-						One of three columns
-					</div>
-					<div class="col-fluid info" id="maincol2">
-						One of three columns
-					</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<a class="navbar-brand" href="#"> <img src="./_images/logo_bia.png"
+							style="width:2.25em;height:2.25em;" alt="BIA - Biblioteca Integrada Autônoma"> </a>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active btn-lg px-4" aria-current="page" href="#">INÍCIO</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active btn-lg px-5" href="#">MAIS INFORMAÇÕES</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active btn-lg px-5" href="#" tabindex="-1" aria-disabled="true">COMO
+								USAR</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active btn-lg px-5" href="#" tabindex="-1"
+								aria-disabled="true">CONTATO</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active btn-lg px-5" href="#" tabindex="-1" aria-disabled="true">SOBRE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active btn-lg px-4" tabindex="-1" aria-disabled="true"> <button
+									type="button" class="btn btn-light" data-bs-toggle="modal"
+									data-bs-target="#staticBackdrop">
+									<i class="fas fa-user"></i>
+								</button></a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<button class="btn btn-light btn-hover" type="submit">Buscar livros⠀<i
+								class="fas fa-search"></i></button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<br>
+		<br>
+		<br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-fluid info" id="maincol1">
+					One of three columns
+				</div>
+				<div class="col-fluid info" id="maincol2">
+					One of three columns
 				</div>
 			</div>
 		</div>
-	
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"></script>
-	</body>
+	</div>
+
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">FAÇA SEU LOGIN</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="d-flex justify-content-center h-100">
+							<div class="user_card">
+								<div class="d-flex justify-content-center">
+									<div class="brand_logo_container">
+										<img src="./_images/logo_bia.png" class="brand_logo" alt="Logo">
+									</div>
+								</div>
+								<div class="d-flex justify-content-center form_container">
+									<form>
+										<div class="input-group mb-3">
+											<div class="input-group-append">
+												<span class="input-group-text"><i class="fas fa-user"></i></span>
+											</div>
+											<input type="text" name="" class="form-control input_user" value=""
+												placeholder="Usuário">
+										</div>
+										<div class="input-group mb-2">
+											<div class="input-group-append">
+												<span class="input-group-text"><i class="fas fa-key"></i></span>
+											</div>
+											<input type="password" name="" class="form-control input_pass" value=""
+												placeholder="Senha">
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input"
+													id="customControlInline">
+												<label class="custom-control-label"
+													for="customControlInline">Lembrar-me</label>
+											</div>
+										</div>
+										<div class="d-flex justify-content-center mt-3 login_container">
+											<button type="button" name="button" class="btn login_btn">Login</button>
+										</div>
+									</form>
+								</div>
+
+								<div class="mt-4">
+									<div class="d-flex justify-content-center links">
+										Não tem uma conta ? <a href="#" class="ml-2">Cadastre-se</a>
+									</div>
+									<div class="d-flex justify-content-center links">
+										<a href="#">Esqueceu a senha?</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">FECHAR</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
 
 </html>
