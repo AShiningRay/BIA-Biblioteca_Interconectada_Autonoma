@@ -16,3 +16,11 @@
 #maincol2 {
     width: 35% !important;
 }
+
+.navbar{
+    top: 30px;
+}
+
+.nav-link{
+    font-weight: bold;
+}
