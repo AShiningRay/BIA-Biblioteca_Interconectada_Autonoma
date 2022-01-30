@@ -36,7 +36,7 @@ botoes.*/
 }
 
 /*Coluna principal, a ser desenvolvida*/
-.col-fluid.info {
+#mainpageinfo {
     border-style: solid !important;
     border-radius: 5px !important;
     border-width: 3px !important;
@@ -47,10 +47,12 @@ botoes.*/
 
 #maincol1 {
     width: 65% !important;
+    background-color: lightgray;
 }
 
 #maincol2 {
     width: 35% !important;
+    background-color: lightslategray;
 }
 
 .navbar{
