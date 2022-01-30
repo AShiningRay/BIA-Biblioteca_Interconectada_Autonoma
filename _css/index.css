@@ -3,6 +3,46 @@
     animation-duration: 5s;
 }
 
+/*Coluna principal, a ser desenvolvida*/
+#mainpageinfo {
+    border-style: solid !important;
+    border-radius: 5px !important;
+    border-width: 3px !important;
+    border-color: #ef2f54 !important;
+    height: 50vh;
+    margin: auto;
+}
+
+/*Propriedades do carrossel de imagens Slick*/
+.slick-prev:before,
+.slick-next:before {
+    color: #fc831a;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .1;
+    transform: scale(0.91);
+}
+
+.slick-active {
+    opacity: 0.2;
+    transform: scale(0.95);
+    width: 100%;
+}
+
+.slick-current {
+    opacity: 1;
+    transform: scale(1);
+    height: 100%;
+}
+
+.center.slider {
+    border: solid blue 2px;
+    margin-bottom: 1.5em;
+}
+
+/*TODO: Verificar o que pode ser movido para arquivos css da navbar e footer abaixo*/
 .nav-item a:hover {
     background-color: #297a7d !important;
 }
@@ -38,16 +78,6 @@ botoes.*/
 {
     border-width: 0px 2px !important;
     border: solid #297a7d;
-}
-
-/*Coluna principal, a ser desenvolvida*/
-#mainpageinfo {
-    border-style: solid !important;
-    border-radius: 5px !important;
-    border-width: 3px !important;
-    border-color: #ef2f54 !important;
-    height: 50vh;
-    margin-bottom: 1em;
 }
 
 #maincol1 {
