@@ -14,8 +14,20 @@
 
 .btn-lg {
     font-size: 1em !important;
+    
 }
 
+/*Usado para delimitar os botoes da navbar, ver o html para entender a disposicao dos
+botoes.*/
+.nav-item.left, 
+.nav-item.center,
+.nav-item.right
+{
+    border-width: 0px 2px !important;
+    border-style: solid;
+}
+
+/*Coluna principal, a ser desenvolvida*/
 .col-fluid.info {
     border-style: solid !important;
     border-radius: 5px !important;
