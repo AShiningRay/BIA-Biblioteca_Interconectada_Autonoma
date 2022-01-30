@@ -25,7 +25,7 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="mainpage">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
 				<div class="container-fluid">
@@ -58,7 +58,7 @@
 							</li>
 							<li class="nav-item">
 								<a class="nav-link active btn-lg px-4" tabindex="-1" aria-disabled="true"> <button
-										type="button" class="btn btn-light" data-bs-toggle="modal"
+										type="button" class="btn btn-light" id="loginbutton" data-bs-toggle="modal"
 										data-bs-target="#staticBackdrop">
 										<i class="fas fa-user"></i>
 									</button></a>
@@ -84,56 +84,65 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+			<div class="mt-2 pt-2 pb-2 footer">
+				<div class="container">
+					<div class="row" id="footer_data">
+						<div class="col-lg-3 col-xs-12">
+							<h2>Instituição</h2>
+							<img class="footer_logo" src="./_images/UFCAT_Logo.png"
+								alt="UFCAT - Universidade Federal de Catalão.">
+						</div>
+						<div class="col-lg-2 col-xs-12 ufcat_links">
+							<h4 class="mt-lg-0 mt-sm-2">Links</h4>
+							<ul class="m-0 p-0">
+								<li>- <a href="#">Página principal</a></li>
+								<li>- <a href="#">SIGAA</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-xs-12 local">
+							<h4 class="mt-lg-0 mt-sm-4">Local</h4>
+							<p>St. Universitario, Catalão - GO, 75705-220</p>
+							<p class="mb-0"><i class="fa fa-phone mr-3"></i>(64) 3441-5300</p>
+							<p><i class="fa fa-envelope-o mr-3"></i>https://www.catalao.ufg.br/</p>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col copyright">
+							<p class=""><small class="texto_copyright">© 2021. Todos os direitos reservados.</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
 			aria-labelledby="staticBackdropLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="staticBackdropLabel">FAÇA SEU LOGIN</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body" id="modal_body"></div>
 				</div>
 			</div>
 		</div>
 
-		<script>
-			$("#modal_body").load("./_html/login.html");
-		</script>
+	<script>
+		$("#modal_body").load("./_html/login.html");
 
+		// Button press skeleton functions
+		$("#loginbutton").click(function () {
+			$(".mainpage").css("filter", "blur(5px)");
+			console.log("blurred");
+		});
+		$(document).on('click', '#closelogwindow', function () {
+			$(".mainpage").css("filter", "blur(0px)");
+			console.log("removed blur");
+		});
+	</script>
 
-		<div class="mt-2 pt-2 pb-2 footer">
-			<div class="container">
-				<div class="row" id="footer_data">
-					<div class="col-lg-3 col-xs-12">
-						<h2>Instituição</h2>
-						<img class="footer_logo" src="./_images/UFCAT_Logo.png"
-							alt="UFCAT - Universidade Federal de Catalão.">
-					</div>
-					<div class="col-lg-2 col-xs-12 ufcat_links">
-						<h4 class="mt-lg-0 mt-sm-2">Links</h4>
-						<ul class="m-0 p-0">
-							<li>- <a href="#">Página principal</a></li>
-							<li>- <a href="#">SIGAA</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-xs-12 local">
-						<h4 class="mt-lg-0 mt-sm-4">Local</h4>
-						<p>St. Universitario, Catalão - GO, 75705-220</p>
-						<p class="mb-0"><i class="fa fa-phone mr-3"></i>(64) 3441-5300</p>
-						<p><i class="fa fa-envelope-o mr-3"></i>https://www.catalao.ufg.br/</p>
-					</div>
-				</div>
-				<div class="row mt-5">
-					<div class="col copyright">
-						<p class=""><small class="texto_copyright">© 2021. Todos os direitos reservados.</small></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 </body>
 
 </html>
