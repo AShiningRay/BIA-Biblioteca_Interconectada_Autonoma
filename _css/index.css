@@ -4,7 +4,12 @@
 }
 
 .nav-item a:hover {
-    background-color: #ef2f54 !important;
+    background-color: #297a7d !important;
+}
+
+.btn-light:hover {
+    background-color: #297a7d !important;
+    color: white;
 }
 
 .nav-item a:active {
@@ -12,7 +17,7 @@
 }
 
 .btn-hover:hover{
-    background-color: #ef2f54 !important;
+    background-color: #297a7d !important;
     color: white;
 }
 
