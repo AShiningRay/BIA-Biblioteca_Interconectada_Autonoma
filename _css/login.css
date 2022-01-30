@@ -58,10 +58,11 @@
 		border: 0 !important;
 		border-radius: 0.25rem 0 0 0.25rem !important;
 	}
-	.input_user,
-	.input_pass:focus {
+
+	.form-control.input_user,
+	.form-control.input_pass {
 		box-shadow: none !important;
-		outline: 0px !important;
+		padding: 0% !important; /* Faz as barras de texto terem a mesma altura dos icones*/
 	}
 
 	/*Altera a cor da checkbox do remember-me*/
