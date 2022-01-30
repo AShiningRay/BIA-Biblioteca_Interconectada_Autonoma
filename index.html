@@ -30,48 +30,7 @@
 	<div class="mainpage">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" id="mainnavbar">
-				<div class="container-fluid">
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-						data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-						<a class="navbar-brand" href="#"> <img src="./_images/logo_bia.png"
-								style="width:2.25em;height:2.25em;" alt="BIA - Biblioteca Integrada Autônoma"> </a>
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item left">
-								<a class="nav-link active btn-lg" aria-current="page" href="#">INÍCIO</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active btn-lg" href="#">MAIS INFORMAÇÕES</a>
-							</li>
-							<li class="nav-item center">
-								<a class="nav-link active btn-lg" href="#" tabindex="-1" aria-disabled="true">COMO
-									USAR</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active btn-lg" href="#" tabindex="-1"
-									aria-disabled="true">CONTATO</a>
-							</li>
-							<li class="nav-item right">
-								<a class="nav-link active btn-lg" href="#" tabindex="-1"
-									aria-disabled="true">SOBRE</a>
-							</li>
-						</ul>
-						<form class="d-flex">
-								<a class="nav-link active btn-lg px-4" tabindex="-1" aria-disabled="true"> <button
-										type="button" class="btn btn-light" id="loginbutton" data-bs-toggle="modal"
-										data-bs-target="#staticBackdrop">
-										<i class="fas fa-user"></i>
-									</button></a>
-
-							<button class="btn btn-light btn-hover" type="submit">Buscar livros⠀<i
-									class="fas fa-search"></i></button>
-						</form>
-					</div>
-				</div>
-			</nav>
+            </nav>
 			<br>
 			<br>
 			<br>
@@ -85,36 +44,8 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="mt-2 pt-2 pb-2 footer">
-				<div class="container">
-					<div class="row" id="footer_data">
-						<div class="col-lg-3 col-xs-12">
-							<h2>Instituição</h2>
-							<img class="footer_logo" src="./_images/UFCAT_Logo.png"
-								alt="UFCAT - Universidade Federal de Catalão.">
-						</div>
-						<div class="col-lg-2 col-xs-12 ufcat_links">
-							<h4 class="mt-lg-0 mt-sm-2">Links</h4>
-							<ul class="m-0 p-0" id="footer_links">
-								<li>- <a href="#">Página principal</a></li>
-								<li>- <a href="#">SIGAA</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-3 col-xs-12 local">
-							<h4 class="mt-lg-0 mt-sm-4">Local</h4>
-							<p>St. Universitario, Catalão - GO, 75705-220</p>
-							<p class="mb-0"><i class="fa fa-phone mr-3"></i>(64) 3441-5300</p>
-							<p><i class="fa fa-envelope-o mr-3"></i>https://www.catalao.ufg.br/</p>
-						</div>
-					</div>
-					<div class="row mt-5">
-						<div class="col copyright">
-							<p class=""><small class="texto_copyright">© 2021. Todos os direitos reservados.</small></p>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div class="mt-2 pt-2 pb-2 footer" id="mainfooter">
+            </div>
 		</div>
 	</div>
 
@@ -132,6 +63,8 @@
 
 	<script>
 		$("#modal_body").load("./_html/login.html");
+		$("#mainnavbar").load("./_html/navbar.html");
+        $("#mainfooter").load("./_html/footer.html");
 
 		// Button press skeleton functions
 		$("#loginbutton").click(function () {
