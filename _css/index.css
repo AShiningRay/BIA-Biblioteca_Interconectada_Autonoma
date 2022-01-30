@@ -1,3 +1,8 @@
+.mainpage {
+    filter: blur(0px); /*Used to blur the background when the login window appears*/
+    animation-duration: 5s;
+}
+
 .nav-item a:hover {
     background-color: #f76230 !important;
 }
@@ -56,3 +61,9 @@
 }
 
 .bg-dark{background-color:#297a7d!important}
+
+.modal-header {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4em;
+}
