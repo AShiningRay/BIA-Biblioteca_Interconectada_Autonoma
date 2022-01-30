@@ -12,6 +12,10 @@
     color: white;
 }
 
+.btn-lg {
+    font-size: 1em !important;
+}
+
 .col-fluid.info {
     border-style: solid !important;
     border-radius: 5px !important;
