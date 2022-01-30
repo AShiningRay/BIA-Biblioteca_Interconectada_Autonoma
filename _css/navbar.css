@@ -1,0 +1,44 @@
+/*TODO: Verificar o que pode ser movido para arquivos css da navbar e footer abaixo*/
+.nav-item a:hover {
+    background-color: #297a7d !important;
+}
+
+.btn-light:hover {
+    background-color: #297a7d !important;
+    color: white;
+}
+
+.nav-item a:active {
+    background-color: rgb(220, 35, 15) !important;
+}
+
+.btn-hover:hover{
+    background-color: #297a7d !important;
+    color: white;
+}
+
+.btn-hover:active {
+    background-color: rgb(220, 35, 15) !important;
+}
+
+.btn-lg {
+    font-size: 1em !important;
+}
+
+/*Usado para delimitar os botoes da navbar, ver o html para entender a disposicao dos
+botoes.*/
+.nav-item.left, 
+.nav-item.center,
+.nav-item.right
+{
+    border-width: 0px 2px !important;
+    border: solid #297a7d;
+}
+
+.navbar{
+    top: 30px !important;
+}
+
+.nav-link{
+    font-weight: bold;
+}

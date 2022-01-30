@@ -1,0 +1,36 @@
+.mt-2.pt-2.pb-2.footer {
+    width: 100% !important;
+    text-align: center;
+    
+    background-color: lightgray !important;
+    margin-bottom: 0px;
+}
+
+#footer_links {
+    text-align: left;
+}
+
+#footer_data {
+    justify-content: center;
+    align-content: center !important;
+}
+
+.footer_logo {
+    align-content: center;
+    width: 10em;
+}
+
+.texto_copyright {
+    align-content: center;
+    text-align: center;
+}
+
+.bg-dark {
+    background-color: #fc831a !important;
+}
+
+.modal-header {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4em;
+}
