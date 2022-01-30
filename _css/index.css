@@ -4,17 +4,25 @@
 }
 
 .nav-item a:hover {
-    background-color: #f76230 !important;
+    background-color: #ef2f54 !important;
+}
+
+.nav-item a:active {
+    background-color: rgb(220, 35, 15) !important;
 }
 
 .btn-hover:hover{
-    background-color: #f76230;
+    background-color: #ef2f54 !important;
     color: white;
 }
 
+.btn-hover:active {
+    background-color: rgb(220, 35, 15) !important;
+}
+
+
 .btn-lg {
     font-size: 1em !important;
-    
 }
 
 /*Usado para delimitar os botoes da navbar, ver o html para entender a disposicao dos
@@ -24,7 +32,7 @@ botoes.*/
 .nav-item.right
 {
     border-width: 0px 2px !important;
-    border-style: solid;
+    border: solid #297a7d;
 }
 
 /*Coluna principal, a ser desenvolvida*/
@@ -32,7 +40,7 @@ botoes.*/
     border-style: solid !important;
     border-radius: 5px !important;
     border-width: 3px !important;
-    border-color: blue !important;
+    border-color: #ef2f54 !important;
     height: 50vh;
     margin-bottom: 1em;
 }
@@ -76,7 +84,9 @@ botoes.*/
     text-align: center;
 }
 
-.bg-dark{background-color:#297a7d!important}
+.bg-dark {
+    background-color: #fc831a !important;
+}
 
 .modal-header {
     justify-content: center;
