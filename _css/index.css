@@ -71,6 +71,10 @@ botoes.*/
     margin-bottom: 0px;
 }
 
+#footer_links {
+    text-align: left;
+}
+
 #footer_data {
     justify-content: center;
     align-content: center !important;
