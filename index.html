@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="./_css/index.css">
 	<link rel="stylesheet" type="text/css" href="./_css/login.css">
 	<link rel="stylesheet" type="text/css" href="./_css/footer.css">
-    <link rel="stylesheet" type="text/css" href="./_css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="./_css/navbar.css">
 
 	<!-- Scripts para adição de funcionalidade ao site -->
 	<script src="./_frameworks//jquery/jquery-3.6.0.min.js"></script>
@@ -26,7 +26,7 @@
 	<div class="mainpage">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" id="mainnavbar">
-            </nav>
+			</nav>
 			<br>
 			<br>
 			<br>
@@ -107,12 +107,12 @@
 				</section>
 			</div>
 			<footer class="bg-primary text-center text-lg-start" id="mainfooter">
-            </footer>
+			</footer>
 		</div>
 	</div>
 
 	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -124,27 +124,33 @@
 	</div>
 
 	<script>
-			// TODO: Passar estas linhas de código para um arquivo separado
-			$("#modal_body").load("./_html/login.html");
-			$("#mainnavbar").load("./_html/navbar.html");
-			$("#mainfooter").load("./_html/footer.html");
+		// TODO: Passar estas linhas de código para um arquivo separado
+		$("#modal_body").load("./_html/login.html");
+		$("#mainnavbar").load("./_html/navbar.html");
+		$("#mainfooter").load("./_html/footer.html");
 
-			function load_logo(){
-				$("#bia_logo_nav").attr('src', './_images/logo_bia.png');
-			}
+		$(document).ready(function () {
+			document.getElementById("bia_logo_nav").src = "./_images/logo_bia.png";
+			document.getElementById("bia_logo_login").src = "./_images/logo_bia.png";
+			document.getElementById("logo_ufcat").src = "./_images/UFCAT_Logo.png";
+		});
 
-			// Button press skeleton functions
-			$(document).on('click', '#loginbutton', function () {
-				$(".mainpage").css("filter", "blur(5px)");
-				console.log("blurred");
-			});
-			$(document).on('click', '#closelogwindow', function () {
-				$(".mainpage").css("filter", "blur(0px)");
-				console.log("removed blur");
-			});
+		function load_logo() {
+			$("bia_logo_nav").attr('src', './_images/logo_bia.png');
+		}
 
-			// Code for the central slider
-			$(".center").slick({
+		// Button press skeleton functions
+		$(document).on('click', '#loginbutton', function () {
+			$(".mainpage").css("filter", "blur(5px)");
+			console.log("blurred");
+		});
+		$(document).on('click', '#closelogwindow', function () {
+			$(".mainpage").css("filter", "blur(0px)");
+			console.log("removed blur");
+		});
+
+		// Code for the central slider
+		$(".center").slick({
 			//dots: true, // Not really needed as of yet
 			infinite: true,
 			centerMode: true,
@@ -154,7 +160,7 @@
 			speed: 400,
 			autoplay: true, // Used to test the scrolling by code
 			autoplaySpeed: 500 // in msecs
-			});
+		});
 	</script>
 
 </body>
