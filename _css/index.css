@@ -11,6 +11,8 @@
     border-color: #ef2f54 !important;
     height: 50vh;
     margin: auto;
+    column-gap: 0px;
+    display:flex !important;
 }
 
 /*Propriedades do carrossel de imagens Slick*/
@@ -43,11 +45,13 @@
 }
 
 #maincol1 {
+    height: 100%;
     width: 65% !important;
     background-color: lightgray;
 }
 
 #maincol2 {
+    height: 100%;
     width: 35% !important;
     background-color: lightslategray;
 }
