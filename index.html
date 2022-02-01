@@ -77,23 +77,29 @@
 
 	<script>
 		// TODO: Passar estas linhas de código para um arquivo separado
-		$("#modal_body").load("./_html/login.html");
-		$("#mainnavbar").load("./_html/navbar.html");
-		$("#mainfooter").load("./_html/footer.html");
 
-		// Carrega as imagens segundo a localização da página principal
-		$(document).ready(function () {
-			// Navbar
+		// Formulario de Login
+		$("#modal_body").load("./_html/login.html", function(){
+			document.getElementById("logo_user").src = "./_images/icons/user.svg";
+			document.getElementById("logo_passkey").src = "./_images/icons/passkey.svg";
+		});
+
+		// Navbar
+		$("#mainnavbar").load("./_html/navbar.html", function(){
 			document.getElementById("bia_logo_nav").src = "./_images/logo_bia.png";
 			document.getElementById("bia_logo_login").src = "./_images/logo_bia.png";
 			document.getElementById("logo_navbar_login").src = "./_images/icons/user.svg";
 			document.getElementById("logo_search").src = "./_images/icons/search.svg";
-
-			// Formulario de Login
-			document.getElementById("logo_user").src = "./_images/icons/user.svg";
-			document.getElementById("logo_passkey").src = "./_images/icons/passkey.svg";
-
-			// Footer
+			//Links navbar
+			document.getElementById("nav_ajuda").href = "./_html/ajuda.html";
+			document.getElementById("nav_contato").href = "./_html/contato.html";
+			document.getElementById("nav_maisinfo").href = "./_html/maisinfo.html";
+			document.getElementById("nav_sobre").href = "./_html/sobre.html";
+			document.getElementById("nav_inicio").href = "./index.html";
+		});
+		
+		//Footer
+		$("#mainfooter").load("./_html/footer.html", function(){
 			document.getElementById("logo_ufcat").src = "./_images/UFCAT_Logo.png";
 			document.getElementById("logo_maps").src = "./_images/icons/maps.svg";
 			document.getElementById("logo_facebook").src = "./_images/icons/social_media/facebook.svg";
@@ -101,15 +107,8 @@
 			document.getElementById("logo_google").src = "./_images/icons/social_media/google.svg";
 			document.getElementById("logo_linkedin").src = "./_images/icons/social_media/linkedin.svg";
 			document.getElementById("logo_insta").src = "./_images/icons/social_media/instagram.svg";
-
-			//Links navbar
-			document.getElementById("nav_ajuda").href = "./_html/ajuda.html";
-			document.getElementById("nav_contato").href = "./_html/contato.html";
-			document.getElementById("nav_maisinfo").href = "./_html/maisinfo.html";
-			document.getElementById("nav_sobre").href = "./_html/sobre.html";
-			document.getElementById("nav_inicio").href = "./index.html";
-
 		});
+		
 
 		// Funções para casos onde botões são pressionaddos
 		$(document).on('click', '#loginbutton', function () {
