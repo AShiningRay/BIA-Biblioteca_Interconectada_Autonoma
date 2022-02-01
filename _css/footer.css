@@ -35,3 +35,16 @@
 #mainfooter{
     background-color: #f1f1f1 !important;
 }
+
+#mapsbutton:active {
+    background-color: #ef2f54 !important;
+    border-color: #ef2f54 !important;
+}
+
+.mapsframe {
+    border-style: solid;
+    border-color: red;
+    border-width: 0.2em;
+    border-radius: 5px;
+    display: none;
+}
