@@ -80,6 +80,15 @@
 	background-color: #383636 !important;
 }
 
+#logintextbox {
+	border: 0.2em solid white;
+	border-radius: 0.1em;
+}
+
+#logintextbox:focus {
+	border-color: #297a7d;
+}
+
 #closelogwindow {
 	background-color: #ef2f54 !important;
 	border-color: #ef2f54 !important;
