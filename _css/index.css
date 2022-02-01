@@ -3,6 +3,10 @@
     animation-duration: 0.5s;
 }
 
+#carouselcontainer {
+    margin-top: -1em !important;
+}
+
 /*Coluna principal, a ser desenvolvida*/
 #mainpageinfo {
     border-style: solid !important;
