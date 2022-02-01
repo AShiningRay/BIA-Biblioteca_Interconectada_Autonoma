@@ -18,17 +18,18 @@
 
 /*Configurações da Logo - PS: Alterações aqui afetam o aspecto de exibição*/
 .brand_logo_container {
-	height: 6em;
-	width: 6em;
+	height: 8em;
+	width: 8em;
 	border-radius: 50%;
+	margin-bottom: 0.6em;
 	background: #ffffff;
 	text-align: center;
 }
 
 /*Configurações da Logo - PS: Alterações aqui afetam o aspecto de exibição*/
 .brand_logo {
-	height: 6em;
-	width: 6em;
+	height: 8em;
+	width: 8em;
 	border-radius: 50%;
 	border: 0.2em solid white;
 }
