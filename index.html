@@ -97,8 +97,15 @@
 			console.log("removed blur");
 		});
 		$(document).on('click', '#mapsbutton', function () {
-			$(".mapsframe").css("display", "block");
-			console.log("displayed maps window");
+			if($(".mapsframe").css("display") == "none") {
+				$(".mapsframe").css("display", "block");
+				console.log("displayed maps window");
+			}
+			else {
+				$(".mapsframe").css("display", "none");
+				console.log("hidden maps window");
+			}
+			
 		});
 
 		// Code for the central slider
