@@ -42,3 +42,13 @@ botoes.*/
 .nav-link{
     font-weight: bold;
 }
+
+.loginbuttonimg {
+    width: 0.1em;
+    height: 0.1em;
+}
+
+#bia_logo_nav {
+    width: 2.25em;
+    height: 2.25em;
+}
