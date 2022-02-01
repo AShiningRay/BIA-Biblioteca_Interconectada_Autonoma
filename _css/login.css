@@ -38,7 +38,19 @@
 }
 .login_btn {
 	width: 100%;
+	background: white !important;
+	color: black !important;
+}
+
+.login_btn:hover {
+	width: 100%;
 	background: #297a7d !important;
+	color: white !important;
+}
+
+.login_btn:active {
+	width: 100%;
+	background: #ef2f54 !important;
 	color: white !important;
 }
 
@@ -71,4 +83,14 @@
 #closelogwindow {
 	background-color: #ef2f54 !important;
 	border-color: #ef2f54 !important;
+}
+
+#closelogwindow:hover {
+	background-color: #297a7d !important;
+	border-color: #297a7d !important;
+}
+
+#closelogwindow:active {
+	background-color: lightpink !important;
+	border-color: lightpink !important;
 }
