@@ -96,6 +96,10 @@
 			$(".mainpage").css("filter", "blur(0px)");
 			console.log("removed blur");
 		});
+		$(document).on('click', '#mapsbutton', function () {
+			$(".mapsframe").css("display", "block");
+			console.log("displayed maps window");
+		});
 
 		// Code for the central slider
 		$(".center").slick({
