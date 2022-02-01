@@ -94,3 +94,19 @@
 	background-color: lightpink !important;
 	border-color: lightpink !important;
 }
+
+#linktext {
+	color: #297a7d !important;
+}
+
+#linktext:visited {
+	color: #245a5d !important;
+}
+
+#linktext:hover {
+	color: #498fa3 !important;
+}
+
+#linktext:active {
+	color: #ef2f54 !important;
+}
