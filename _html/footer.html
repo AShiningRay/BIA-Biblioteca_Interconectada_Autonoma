@@ -1,4 +1,4 @@
-<div class = "footer">
+<div class="footer">
     <div class="container container_footer">
         <div class="row py-4 d-flex align-items-center">
             <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
@@ -9,31 +9,36 @@
                 <!-- Facebook -->
                 <a class="fb-ic">
                     <button type="button" class="btn btn-light">
-                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/facebook.svg" id="logo_facebook">
+                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/facebook.svg"
+                            id="logo_facebook">
                     </button>
                 </a>
                 <!-- Twitter -->
                 <a class="tw-ic">
                     <button type="button" class="btn btn-light">
-                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/twitter.svg" id="logo_twitter">
+                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/twitter.svg"
+                            id="logo_twitter">
                     </button>
                 </a>
                 <!-- Google +-->
                 <a class="gplus-ic">
                     <button type="button" class="btn btn-light">
-                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/google.svg" id="logo_google">
+                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/google.svg"
+                            id="logo_google">
                     </button>
                 </a>
                 <!--Linkedin -->
                 <a class="li-ic">
                     <button type="button" class="btn btn-light">
-                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/linkedin.svg" id="logo_linkedin">
+                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/linkedin.svg"
+                            id="logo_linkedin">
                     </button>
                 </a>
                 <!--Instagram-->
                 <a class="ins-ic">
                     <button type="button" class="btn btn-light">
-                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/instagram.svg" id="logo_insta">
+                        <img style="width:1.5em; height:1.5em;" src="../_images/icons/social_media/instagram.svg"
+                            id="logo_insta">
                     </button>
                 </a>
             </div>
@@ -45,7 +50,8 @@
     <div class="row" id="footer_data">
 
         <div class="col-lg-3 mx-auto">
-            <img class="footer_logo" src="../_images/UFCAT_Logo.png" alt="UFCAT - Universidade Federal de Catalão." id = "logo_ufcat">
+            <img class="footer_logo" src="../_images/UFCAT_Logo.png" alt="UFCAT - Universidade Federal de Catalão."
+                id="logo_ufcat">
         </div>
 
         <div class="col-lg-3 mx-auto">
@@ -58,7 +64,7 @@
                 <a href="https://catalao.ufg.br/" target="_blank">UFCAT</a>
             </p>
             <p>
-                <a href="./ajuda.html" id = "href_ajuda">Ajuda</a>
+                <a href="./ajuda.html" id="href_ajuda">Ajuda</a>
             </p>
         </div>
 
@@ -68,13 +74,13 @@
             <p>
                 <i class="fas fa-home mr-3"></i> Avenida Doutor Lamartine Pinto de Avelar, Nº 1120 -
                 Setor Universitário - Catalão/GO - CEP 75704-020
-                <button
-                    type="button" class="btn btn-light" id="mapsbutton">
-                    <img style="width:1.5em; height:1.5em;" src="../_images/icons/maps.svg" class="mapsbuttonimg" id="logo_maps">
+                <button type="button" class="btn btn-light" id="mapsbutton">
+                    <img style="width:1.5em; height:1.5em;" src="../_images/icons/maps.svg" class="mapsbuttonimg"
+                        id="logo_maps">
                 </button>
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15164.715062428164!2d-47.9287096!3d-18.1556771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3cd3cd06e7e65359!2sBiblioteca%20UFCat!5e0!3m2!1spt-BR!2sbr!4v1643659343359!5m2!1spt-BR!2sbr"
-                width="250" height="200" class="mapsframe" allowfullscreen="" loading="lazy"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15164.715062428164!2d-47.9287096!3d-18.1556771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3cd3cd06e7e65359!2sBiblioteca%20UFCat!5e0!3m2!1spt-BR!2sbr!4v1643659343359!5m2!1spt-BR!2sbr"
+                    width="250" height="200" class="mapsframe" allowfullscreen="" loading="lazy"></iframe>
             </p>
             <p>
                 <i class="fas fa-envelope mr-3"></i> biblioteca@ufcat.gov.br
@@ -85,5 +91,18 @@
         </div>
     </div>
 </div>
-    <div class="footer-copyright text-center py-3">© 2022 Todos os direitos reservados.
+<div class="footer-copyright text-center py-3">© 2022 Todos os direitos reservados.
 </div>
+
+<script>
+    $(document).on('click', '#mapsbutton', function () {
+        if ($(".mapsframe").css("display") == "none") {
+            $(".mapsframe").css("display", "block");
+            console.log("displayed maps window");
+        }
+        else {
+            $(".mapsframe").css("display", "none");
+            console.log("hidden maps window");
+        }
+    });
+</script>

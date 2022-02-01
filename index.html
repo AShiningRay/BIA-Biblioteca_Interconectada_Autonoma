@@ -79,13 +79,13 @@
 		// TODO: Passar estas linhas de código para um arquivo separado
 
 		// Formulario de Login
-		$("#modal_body").load("./_html/login.html", function(){
+		$("#modal_body").load("./_html/login.html", function () {
 			document.getElementById("logo_user").src = "./_images/icons/user.svg";
 			document.getElementById("logo_passkey").src = "./_images/icons/passkey.svg";
 		});
 
 		// Navbar
-		$("#mainnavbar").load("./_html/navbar.html", function(){
+		$("#mainnavbar").load("./_html/navbar.html", function () {
 			document.getElementById("bia_logo_nav").src = "./_images/logo_bia.png";
 			document.getElementById("bia_logo_login").src = "./_images/logo_bia.png";
 			document.getElementById("logo_navbar_login").src = "./_images/icons/user.svg";
@@ -97,9 +97,9 @@
 			document.getElementById("nav_sobre").href = "./_html/sobre.html";
 			document.getElementById("nav_inicio").href = "./index.html";
 		});
-		
+
 		//Footer
-		$("#mainfooter").load("./_html/footer.html", function(){
+		$("#mainfooter").load("./_html/footer.html", function () {
 			document.getElementById("logo_ufcat").src = "./_images/UFCAT_Logo.png";
 			document.getElementById("logo_maps").src = "./_images/icons/maps.svg";
 			document.getElementById("logo_facebook").src = "./_images/icons/social_media/facebook.svg";
@@ -110,7 +110,7 @@
 			document.getElementById("logo_maps").src = "./_images/icons/maps.svg";
 			document.getElementById("href_ajuda").href = "./_html/ajuda.html";
 		});
-		
+
 
 		// Funções para casos onde botões são pressionaddos
 		$(document).on('click', '#loginbutton', function () {
@@ -120,17 +120,6 @@
 		$(document).on('click', '#closelogwindow', function () {
 			$(".mainpage").css("filter", "blur(0px)");
 			console.log("removed blur");
-		});
-		$(document).on('click', '#mapsbutton', function () {
-			if($(".mapsframe").css("display") == "none") {
-				$(".mapsframe").css("display", "block");
-				console.log("displayed maps window");
-			}
-			else {
-				$(".mapsframe").css("display", "none");
-				console.log("hidden maps window");
-			}
-			
 		});
 
 		// Código para o slider dde imagens central (carrossel)
