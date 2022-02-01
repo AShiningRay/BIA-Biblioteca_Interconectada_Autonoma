@@ -4,20 +4,22 @@
 
 .btn-light:hover {
     background-color: #297a7d !important;
+    border-color: #297a7d !important;
     color: white;
 }
 
 .nav-item a:active {
-    background-color: rgb(220, 35, 15) !important;
+    background-color: #ef2f54 !important;
 }
 
 .btn-hover:hover{
     background-color: #297a7d !important;
+    border-color: #297a7d !important;
     color: white;
 }
 
 .btn-hover:active {
-    background-color: rgb(220, 35, 15) !important;
+    background-color: #ef2f54 !important;
 }
 
 .btn-lg {
@@ -41,6 +43,10 @@ botoes.*/
 
 .nav-link{
     font-weight: bold;
+}
+
+#loginbutton:active {
+    background-color: #ef2f54 !important;
 }
 
 .loginbuttonimg {
