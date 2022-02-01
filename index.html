@@ -81,13 +81,29 @@
 		$("#mainnavbar").load("./_html/navbar.html");
 		$("#mainfooter").load("./_html/footer.html");
 
+		// Carrega as imagens segundo a localização da página principal
 		$(document).ready(function () {
+			// Navbar
 			document.getElementById("bia_logo_nav").src = "./_images/logo_bia.png";
 			document.getElementById("bia_logo_login").src = "./_images/logo_bia.png";
+			document.getElementById("logo_navbar_login").src = "./_images/icons/user.svg";
+			document.getElementById("logo_search").src = "./_images/icons/search.svg";
+
+			// Formulario de Login
+			document.getElementById("logo_user").src = "./_images/icons/user.svg";
+			document.getElementById("logo_passkey").src = "./_images/icons/passkey.svg";
+
+			// Footer
 			document.getElementById("logo_ufcat").src = "./_images/UFCAT_Logo.png";
+			document.getElementById("logo_maps").src = "./_images/icons/maps.svg";
+			document.getElementById("logo_facebook").src = "./_images/icons/social_media/facebook.svg";
+			document.getElementById("logo_twitter").src = "./_images/icons/social_media/twitter.svg";
+			document.getElementById("logo_google").src = "./_images/icons/social_media/google.svg";
+			document.getElementById("logo_linkedin").src = "./_images/icons/social_media/linkedin.svg";
+			document.getElementById("logo_insta").src = "./_images/icons/social_media/instagram.svg";
 		});
 
-		// Button press skeleton functions
+		// Funções para casos onde botões são pressionaddos
 		$(document).on('click', '#loginbutton', function () {
 			$(".mainpage").css("filter", "blur(5px)");
 			console.log("blurred");
@@ -108,17 +124,17 @@
 			
 		});
 
-		// Code for the central slider
+		// Código para o slider dde imagens central (carrossel)
 		$(".center").slick({
-			//dots: true, // Not really needed as of yet
+			//dots: true, // Nao precisamos dos indicadores de imagens ainda
 			infinite: true,
 			centerMode: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			adaptiveHeight: true,
-			speed: 400,
-			autoplay: true, // Used to test the scrolling by code
-			autoplaySpeed: 500 // in msecs
+			speed: 400, // Velocidade do scroll manual em msegs
+			autoplay: true, // Usado para testar se o scrolling está funcionando
+			autoplaySpeed: 500 // Velocidade do autoscroll em msegs
 		});
 	</script>
 
