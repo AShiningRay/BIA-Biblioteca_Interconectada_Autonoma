@@ -55,3 +55,11 @@
         display: inline;
         font-weight: 600;
     }
+
+    .btn-secondary{
+        background-color: #297a7d;
+    }
+
+    .btn-secondary:hover{
+        background-color: #4fcece;
+    }
