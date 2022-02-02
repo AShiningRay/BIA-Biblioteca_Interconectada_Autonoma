@@ -30,8 +30,18 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * `Iterar o carrossel de imagens para escalar melhor em diferentes telas e aspectos`
 * `Realizar o mesmo para o restante da página`
 * `Fazer com que as imagens customizadas sempre sejam carregadas independentemente do local da página que as carrega`
-* `Implementar a troca de páginas de navegação`
+* X `Implementar a troca de páginas de navegação`
 * `...`
 * `Finalizar a página principal`
+* `Finalizar a página de pesquisa`
+* `Finalizar a página de contato`
+* `Finalizar a página de ajuda`
+* `Finalizar a página informações`
+* `Finalizar a página sobre`
+* `Criar um funcionamento básico para o login do site, sendo possível a verificação de usuário logado`
+* `Conectar o site a um sistema de banco de dados que vai ser responsável por armazenar os livros, e possívelmente os usuários`
+* `Criar o sistema de empréstimo de livros`
+* `Criar um sistema para cadastramento dos livros ou importação do banco de dados já existente`
+* `Implementação de testes unitários (Caso o tempo para desenvolvimento permita)`
 * `...`
 * `FInalizar a entrega do projeto`
