@@ -1,22 +1,18 @@
+html, body {
+    margin: 0 !important;
+    height: 100vh;
+}
+
 .mainpage {
     filter: blur(0px); /*Used to blur the background when the login window appears*/
     animation-duration: 0.5s;
+    height:100vh;
 }
 
 #carouselcontainer {
     margin-top: -1em !important;
-}
-
-/*Coluna principal, a ser desenvolvida*/
-#mainpageinfo {
-    border-style: solid !important;
-    border-radius: 5px !important;
-    border-width: 3px !important;
-    border-color: #ef2f54 !important;
-    height: 25em;
-    margin: auto;
-    column-gap: 0px;
-    display:flex !important;
+    height: calc(36vw / (1.77777777778));
+    margin-bottom: 1.5em;
 }
 
 /*Propriedades do carrossel de imagens Slick*/
@@ -44,18 +40,30 @@
 }
 
 .center.slider {
+    display: block;
     border: solid blue 2px;
-    margin-bottom: 1.5em;
+    height: 100%;/*calc(100vw / (1.77777777778));*/
+}
+
+#mainpageinfo {
+    border-style: solid !important;
+    border-radius: 5px !important;
+    border-width: 3px !important;
+    border-color: #ef2f54 !important;
+    height: calc(36vw / (1.794));
+    margin: auto;
+    column-gap: 0px;
+    display:flex !important;
 }
 
 #maincol1 {
     height: 100%;
-    width: 65% !important;
+    width: 70% !important;
     background-color: lightgray;
 }
 
 #maincol2 {
     height: 100%;
-    width: 35% !important;
+    width: 30% !important;
     background-color: lightslategray;
 }
