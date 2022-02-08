@@ -34,17 +34,29 @@
 
 			<!-- Corpo principal -->
 			<div class="container-contato">
-				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15164.715062428164!2d-47.9287096!3d-18.1556771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3cd3cd06e7e65359!2sBiblioteca%20UFCat!5e0!3m2!1spt-BR!2sbr!4v1644354498819!5m2!1spt-BR!2sbr" width="100%" height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
 				<div class="contact-form">
 					<h1 class="title">Contate-nos!</h1>
 					<h2 class="subtitle">Estamos aqui para ajudar.</h2>
 					<form action="">
-						<input type="text" name="name" placeholder="Nome" />
-						<input type="email" name="e-mail" placeholder="E-mail" />
-						<input type="tel" name="phone" placeholder="Búmero"/>
-						<textarea name="text" id="" rows="8" placeholder="Mensagem"></textarea>
+						<div class="row" id="contactinfo">
+							<div class="col-fluid info" id="contactcol">
+								<input type="text" name="name" placeholder="Seu Nome" />
+							</div>
+							<div class="col-fluid info" id="contactcol">
+								<input type="email" name="e-mail" placeholder="Seu E-mail" />
+							</div>
+							<div class="col-fluid info" id="contactcol">
+								<input type="tel" name="phone" placeholder="Seu Número de Telefone"/>
+							</div>
+						</div>
+						
+						
+						
+						<textarea name="text" id="" rows="8" placeholder="Escreva aqui sua Mensagem"></textarea>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="customControlInline">
+							<label class="custom-control-label" for="customControlInline">Enviar uma cópia para o meu E-Mail</label>
+						</div>
 						<button class="btn-send">ENVIAR</button>
 					</form>
 				</div>
@@ -52,9 +64,9 @@
 <!--Section: Contact v.2-->
 	<!-- Corpo principal -->
 
-	<footer class="mt-2 pt-2 pb-2 footer" id="mainfooter">
-	</footer>
-	</div>
+			<footer class="mt-2 pt-2 pb-2 footer" id="mainfooter">
+			</footer>
+		</div>
 	</div>
 
 	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
