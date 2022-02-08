@@ -1,14 +1,16 @@
 
 .container-contato{
   width: 80%;
-  height: 650px;
-  margin: 0% 10%;
+  margin: 4% 10%;
 }
 
 .container-contato .contact-form {
   width: 100%;
   border-radius: 7px;
   background: #fc831a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .container-contato .contact-form .title {
   text-align: center;
