@@ -3,56 +3,123 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Basic page">
-    <meta name="keywords" content="to be added">
+	<meta charset="UTF-8">
+	<meta name="description" content="Basic page">
+	<meta name="keywords" content="to be added">
 
-    <!-- Stylesheets CSS para estilizar os elementos da página -->
-    <link rel="stylesheet" type="text/css" href="../_frameworks/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="../_css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../_css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../_css/login.css">
+	<!-- Stylesheets CSS para estilizar os elementos da página -->
+	<link rel="stylesheet" type="text/css" href="../_frameworks/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../_css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../_css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="../_css/login.css">
 
-    <!-- Scripts para adição de funcionalidade ao site -->
-    <script src="../_frameworks//jquery/jquery-3.6.0.min.js"></script>
-    <script src="../_frameworks/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../_frameworks/slick/slick.js"></script>
+	<!-- Scripts para adição de funcionalidade ao site -->
+	<script src="../_frameworks//jquery/jquery-3.6.0.min.js"></script>
+	<script src="../_frameworks/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../_frameworks/slick/slick.js"></script>
 </head>
 
 <body>
-    <div class="mainpage">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" id="mainnavbar">
-            </nav>
-            <br>
-            <br>
-            <br>
-            <footer class="mt-2 pt-2 pb-2 footer" id="mainfooter">
-            </footer>
-        </div>
-    </div>
+	<div class="mainpage">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" id="mainnavbar">
+			</nav>
+			<br>
+			<br>
+			<br>
 
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    </div>
+			<!-- Corpo principal -->
+			<section class="ftco-section">
+				<div class="container">
+					<div class="row justify-content-center">
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-lg-10 col-md-12">
+							<div class="wrapper">
+								<div class="row no-gutters">
+									<div class="col-md-7 d-flex align-items-stretch">
+										<div class="contact-wrap w-100 p-md-5 p-4">
+											<h3 class="mb-4">Contate-nos!</h3>
+											<div id="form-message-warning" class="mb-4"></div>
+											<form method="POST" id="contactForm" name="contactForm">
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group">
+															<input type="text" class="form-control" name="name"
+																id="name" placeholder="Nome">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input type="email" class="form-control" name="email"
+																id="email" placeholder="E-mail">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<input type="text" class="form-control" name="subject"
+																id="subject" placeholder="Assunto">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<textarea name="message" class="form-control" id="message"
+																cols="30" rows="7" placeholder="Mensagem"></textarea>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<input type="submit" value="Enviar Mensagem"
+																class="btn btn-primary">
+															<div class="submitting"></div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="col-md-5 d-flex align-items-stretch">
+											<iframe
+												src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15164.715062428164!2d-47.9287096!3d-18.1556771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3cd3cd06e7e65359!2sBiblioteca%20UFCat!5e0!3m2!1spt-BR!2sbr!4v1644353572009!5m2!1spt-BR!2sbr"
+												width="424" height="500" style="border:0;" allowfullscreen=""
+												loading="lazy"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	</section>
+	<!-- Corpo principal -->
 
-    <script>
-        $("#staticBackdrop").load("./login.html");
-        $("#mainnavbar").load("./navbar.html");
-        $("#mainfooter").load("./footer.html");
+	<footer class="mt-2 pt-2 pb-2 footer" id="mainfooter">
+	</footer>
+	</div>
+	</div>
 
-        // Button press skeleton functions
-        $("#loginbutton").click(function () {
-            $(".mainpage").css("filter", "blur(5px)");
-            console.log("blurred");
-        });
-        $(document).on('click', '#closelogwindow', function () {
-            $(".mainpage").css("filter", "blur(0px)");
-            console.log("removed blur");
-        });
-    </script>
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	</div>
+
+	<script>
+		$("#staticBackdrop").load("./login.html");
+		$("#mainnavbar").load("./navbar.html");
+		$("#mainfooter").load("./footer.html");
+
+		// Button press skeleton functions
+		$("#loginbutton").click(function () {
+			$(".mainpage").css("filter", "blur(5px)");
+			console.log("blurred");
+		});
+		$(document).on('click', '#closelogwindow', function () {
+			$(".mainpage").css("filter", "blur(0px)");
+			console.log("removed blur");
+		});
+	</script>
 
 </body>
 
