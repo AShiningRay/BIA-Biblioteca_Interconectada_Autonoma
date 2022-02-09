@@ -69,12 +69,23 @@
   background: #A383C9;
   width: 180px;
   height: 60px;
-  color: white;
+  color: #297a7d;
   font-weight: 800;
   margin: 2% 5%;
-  align-content: center;
-  justify-content: center;
-  border: none;
+  border: 0.2em solid #297a7d;
+  border-radius: 5px;
+  background-color: white;
+  transition-duration: 0.2s;
+}
+
+.container-contato .contact-form .btn-send:hover {
+  background-color: #297a7d;
+  color: white;
+}
+
+.container-contato .contact-form .btn-send:active {
+  background-color: #ef2f54 !important;
+  border-color: #ef2f54;
 }
 
 #contactinfo {
@@ -89,5 +100,4 @@
   margin-top: 1em;
   margin-left: 5%;
   transform: translateY(0.5em);
-
 }
