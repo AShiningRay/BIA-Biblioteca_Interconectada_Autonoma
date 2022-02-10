@@ -30,10 +30,15 @@
 /*Usado para delimitar os botoes da navbar, ver o html para entender a disposicao dos
 botoes.*/
 .nav-item.left, 
-.nav-item.center,
-.nav-item.right
+.nav-item.center
 {
     border-width: 0px 2px !important;
+    border: solid #297a7d;
+}
+
+.nav-item.right
+{
+    border-width: 0px 2px 0px 0px !important;
     border: solid #297a7d;
 }
 
