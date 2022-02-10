@@ -1,17 +1,15 @@
 html, body {
     margin: 0 !important;
-    height: 100vh;
 }
 
 .mainpage {
     filter: blur(0px); /*Used to blur the background when the login window appears*/
     animation-duration: 0.5s;
-    height:100vh;
+    transition-duration: 0.5s;
 }
 
 #carouselcontainer {
     margin-top: -1em !important;
-    height: calc(36vw / (1.77777777778));
     margin-bottom: 1.5em;
 }
 
@@ -30,7 +28,6 @@ html, body {
 .slick-active {
     opacity: 0.2;
     transform: scale(0.95);
-    width: 100%;
 }
 
 .slick-current {
@@ -42,7 +39,8 @@ html, body {
 .center.slider {
     display: block;
     border: solid blue 2px;
-    height: 100%;/*calc(100vw / (1.77777777778));*/
+    height: 100%;
+    aspect-ratio: 16/5;
 }
 
 #mainpageinfo {
@@ -50,7 +48,7 @@ html, body {
     border-radius: 5px !important;
     border-width: 3px !important;
     border-color: #ef2f54 !important;
-    height: calc(36vw / (1.794));
+    aspect-ratio: 16/6;
     margin: auto;
     column-gap: 0px;
     display:flex !important;
