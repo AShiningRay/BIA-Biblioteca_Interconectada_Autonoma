@@ -9,8 +9,7 @@ html, body {
 }
 
 #carouselcontainer {
-    margin-top: -1em !important;
-    margin-bottom: 1.5em;
+    margin-bottom: 0px;
 }
 
 /*Propriedades do carrossel de imagens Slick*/
@@ -21,8 +20,8 @@ html, body {
 
 .slick-slide {
     transition: all ease-in-out .3s;
-    opacity: .1;
-    transform: scale(0.91);
+    opacity: 0;
+    transform: scale(0.8);
 }
 
 .slick-active {
@@ -37,19 +36,11 @@ html, body {
 }
 
 .center.slider {
-    display: block;
-    border: solid blue 2px;
-    height: 100%;
     aspect-ratio: 16/5;
 }
 
 #mainpageinfo {
-    border-style: solid !important;
-    border-radius: 5px !important;
-    border-width: 3px !important;
-    border-color: #ef2f54 !important;
     aspect-ratio: 16/6;
-    margin: auto;
     column-gap: 0px;
     display:flex !important;
 }
