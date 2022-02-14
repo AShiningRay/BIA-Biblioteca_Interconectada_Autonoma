@@ -48,11 +48,13 @@ html, body {
 #maincol1 {
     height: 100%;
     width: 70% !important;
+    padding: 0px;
     background-color: lightgray;
 }
 
 #maincol2 {
     height: 100%;
     width: 30% !important;
+    padding: 0px;
     background-color: lightslategray;
 }
