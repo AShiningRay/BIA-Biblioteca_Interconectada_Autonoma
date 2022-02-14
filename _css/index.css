@@ -53,8 +53,9 @@ html, body {
 }
 
 #maincol2 {
+    overflow: hidden;
     height: 100%;
     width: 30% !important;
-    padding: 0px;
+    padding: 1%;
     background-color: lightslategray;
 }
