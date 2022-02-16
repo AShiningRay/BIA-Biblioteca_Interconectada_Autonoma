@@ -12,7 +12,10 @@ $(document).ready(function() {
     });
 
     $(document).on('click', '#search_button', function () {
-        let text = $("#search_field").val();
-        console.log("Pesquisando por: ", text);
+        let text = $("#search_field").val(),
+        text2 = $("#publish_year_field").val(),
+        text3 = $("#publisher_field").val();
+        
+        console.log("Pesquisando por: ", text, "| Ano: ", text2, "| Editora: ", text3);
     });
 });
