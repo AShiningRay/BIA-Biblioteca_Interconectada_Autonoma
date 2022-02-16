@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Basic page">
+    <meta name="keywords" content="to be added">
+
+    <!-- Stylesheets CSS para estilizar os elementos da página -->
+	<link rel="stylesheet" type="text/css" href="../_frameworks/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../_css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../_css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../_css/login.css">
+    <link rel="stylesheet" type="text/css" href="../_css/cadastro_livros.css">
+
+	<!-- Scripts para adição de funcionalidade ao site -->
+	<script src="../_frameworks//jquery/jquery-3.6.0.min.js"></script>
+	<script src="../_frameworks/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../_frameworks/slick/slick.js"></script>
+</head>
+
+<body>
+    <div class="mainpage">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" id="mainnavbar">
+            </nav>
+            <br>
+            <!-- Corpo Principal -->
+            <div class="container-cadastro">
+                <div class="container-form">
+                <h1 class="title">CADASTRO DE LIVROS</h1>
+                <form>
+
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nome do livro</label>
+                    <input type="email" class="form-control" id="nome_livro" placeholder="Ex: Memórias póstumas de brás cubas">
+                    </div>
+                    <div class="mb-3">
+                    <label for="text" class="form-label">Nome do Autor</label>
+                    <input type="text" class="form-control" id="autor_livro" placeholder="Ex: Machado de Assis">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text" class="form-label">ISBN</label>
+                        <input type="text" class="form-control" id="num_isbn" placeholder="Ex: 9786589868507">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text" class="form-label">Ano de publicação</label>
+                        <input type="text" class="form-control" id="data_pub" placeholder="Ex: 1881">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text" class="form-label">Nome da Editora</label>
+                        <input type="text" class="form-control" id="nome_editora" placeholder="Ex: Editora Moderna">
+                    </div>
+                    <button type="submit" class="btn-cadastro">CADASTRAR</button>
+                </form>
+            </div>
+        </div>
+            <!-- Corpo Principal -->
+
+            <footer class="mt-2 pt-2 pb-2 footer" id="mainfooter">
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    </div>
+
+    <script>
+        $("#staticBackdrop").load("./login.html");
+        $("#mainnavbar").load("./navbar.html");
+        $("#mainfooter").load("./footer.html");
+
+        // Button press skeleton functions
+        $("#loginbutton").click(function () {
+            $(".mainpage").css("filter", "blur(5px)");
+            console.log("blurred");
+        });
+        $(document).on('click', '#closelogwindow', function () {
+            $(".mainpage").css("filter", "blur(0px)");
+            console.log("removed blur");
+        });
+    </script>
+</body>
+
+</html>
