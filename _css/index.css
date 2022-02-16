@@ -73,6 +73,7 @@ div.slick-list.draggable {
     #mainpageinfo {
         margin-left: 0px;
         aspect-ratio: 18/6;
+        font-size: 0.8em;
     }
 
     div.slick-list.draggable {
@@ -95,5 +96,28 @@ div.slick-list.draggable {
 
     .slick-dotted.slick-slider {
         margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .center.slider {
+        aspect-ratio: 18/18;
+    }
+
+    #mainpageinfo {
+        display:block !important;
+        aspect-ratio: 18/9;
+        font-size: 1.1em;
+    }
+
+    #maincol1 {
+        height: 100%;
+        width: 100% !important;
+    }
+    
+    #maincol2 {
+        height: 100%;
+        width: 100% !important;
     }
 }
