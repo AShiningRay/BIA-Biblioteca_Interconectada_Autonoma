@@ -25,11 +25,12 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Estilizar o formulário para atender ao estilo da página`
 * X`Tornar a janela do Google Maps visualizável através de um botão`
 * X`Adicionar ícones para os botões de acesso às redes sociais da universidade`
-* `Finalizar a estilização da janela do Maps, e torná-la independente de outros elementos para permitir ser movida pela página`
+* X`Finalizar a estilização da janela do Maps, e torná-la independente de outros elementos para permitir ser movida pela página`
 * X`Adicionar imagens ao carrossel para testar a disposição dos elementos e o aspecto necessário para as imagens`
 * X`Iterar o carrossel de imagens para escalar melhor em diferentes telas e aspectos`
-* `Realizar o mesmo para o restante da página`
+* X`Realizar o mesmo para o restante da página`
 * X`Fazer com que as imagens customizadas sempre sejam carregadas independentemente do local da página que as carrega`
+* `Adicionar um indicador visual para mostrar que é possível usar gestos para controlar o carrossel`
 * X `Implementar a troca de páginas de navegação`
 * `...`
 * `Finalizar a página principal`
