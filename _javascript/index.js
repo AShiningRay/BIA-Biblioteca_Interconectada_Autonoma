@@ -29,7 +29,9 @@ $(document).ready(function() {
 		document.getElementById("logo_linkedin").src = "./_images/icons/social_media/linkedin.svg";
 		document.getElementById("logo_insta").src = "./_images/icons/social_media/instagram.svg";
 		document.getElementById("logo_maps").src = "./_images/icons/maps.svg";
+		document.getElementById("logo_tele").src = "./_images/icons/call.svg";
 		document.getElementById("href_ajuda").href = "./_html/ajuda.html";
+
 	});
 
 
