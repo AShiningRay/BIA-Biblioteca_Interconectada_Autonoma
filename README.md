@@ -27,7 +27,7 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Adicionar ícones para os botões de acesso às redes sociais da universidade`
 * `Finalizar a estilização da janela do Maps, e torná-la independente de outros elementos para permitir ser movida pela página`
 * X`Adicionar imagens ao carrossel para testar a disposição dos elementos e o aspecto necessário para as imagens`
-* `Iterar o carrossel de imagens para escalar melhor em diferentes telas e aspectos`
+* X`Iterar o carrossel de imagens para escalar melhor em diferentes telas e aspectos`
 * `Realizar o mesmo para o restante da página`
 * X`Fazer com que as imagens customizadas sempre sejam carregadas independentemente do local da página que as carrega`
 * X `Implementar a troca de páginas de navegação`
