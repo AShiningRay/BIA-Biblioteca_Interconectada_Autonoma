@@ -43,7 +43,7 @@ div.slick-list.draggable {
 }
 
 .center.slider {
-    aspect-ratio: 16/5;
+    aspect-ratio: 18/6;
 }
 
 #mainpageinfo {
@@ -72,6 +72,7 @@ div.slick-list.draggable {
 {
     #mainpageinfo {
         margin-left: 0px;
+        aspect-ratio: 18/6;
     }
 
     div.slick-list.draggable {
