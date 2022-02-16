@@ -1,3 +1,9 @@
+.modal-header {
+	display: block;
+	width: 95%;
+	text-align: center !important;
+}
+
 /* Altera o fundo do card principal*/
 .user_card {
 	height: 400px;
