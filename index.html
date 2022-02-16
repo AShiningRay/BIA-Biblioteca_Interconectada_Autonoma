@@ -111,18 +111,18 @@
 			console.log("removed blur");
 		});
 
-		// Código para o slider dde imagens central (carrossel)
+		// Código para o slider de imagens central (carrossel)
 		$(".center").slick({
-			dots: true, // Nao precisamos dos indicadores de imagens ainda
-			arrows: true, // Setas de navegação são desnecessarias
+			dots: true,
+			arrows: true,
 			infinite: true,
 			centerMode: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			adaptiveHeight: true,
 			speed: 400, // Velocidade do scroll manual em msegs
-			autoplay: false, // Usado para testar se o scrolling está funcionando
-			autoplaySpeed: 500 // Velocidade do autoscroll em msegs
+			autoplay: true, // Usado para testar se o scrolling está funcionando
+			autoplaySpeed: 5000 // Velocidade do autoscroll em msegs
 		});
 	</script>
 
