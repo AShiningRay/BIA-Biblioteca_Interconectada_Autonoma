@@ -2,168 +2,152 @@
 
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Basic page">
-    <meta name="keywords" content="to be added">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Basic page">
+        <meta name="keywords" content="to be added">
 
-    <!-- Stylesheets CSS para estilizar os elementos da página -->
-    <link rel="stylesheet" type="text/css" href="../_frameworks/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="../_css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../_css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../_css/login.css">
+        <!-- Stylesheets CSS para estilizar os elementos da página -->
+        <link rel="stylesheet" type="text/css" href="../_frameworks/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="../_frameworks/slick/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="../_css/footer.css">
+        <link rel="stylesheet" type="text/css" href="../_css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../_css/login.css">
 
-    <!-- Scripts para adição de funcionalidade ao site -->
-    <script src="../_frameworks//jquery/jquery-3.6.0.min.js"></script>
-    <script src="../_frameworks/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../_frameworks/slick/slick.js"></script>
-</head>
+        <!-- Scripts para adição de funcionalidade ao site -->
+        <script src="../_frameworks//jquery/jquery-3.6.0.min.js"></script>
+        <script src="../_frameworks/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../_frameworks/slick/slick.js"></script>
+        <script src="../_javascript/pesquisa.js"></script>
+    </head>
 
-<body>
-    <div class="mainpage">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" id="mainnavbar">
-            </nav>
-            <br>
-
-            <!-- Corpo Principal -->
+    <body>
+        <div class="mainpage">
             <div class="container">
-                <div class="row">
-                    <!-- BEGIN SEARCH RESULT -->
-                    <div class="col-md-12">
-                        <div class="grid search">
-                            <div class="grid-body">
-                                <div class="row">
-                                    <!-- BEGIN FILTERS -->
-                                    <div class="col-md-3">
-                                        <h2 class="grid-title"><i class="fa fa-filter"></i> Filtros</h2>
-                                        <hr>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" id="mainnavbar">
+                </nav>
+                <br>
 
-                                        <!-- BEGIN FILTER BY CATEGORY -->
-                                        <h4>Por categoria:</h4>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" class="icheck"> Computação</label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" class="icheck"> Literatura</label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" class="icheck"> Biologia</label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" class="icheck"> Sociologia</label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" class="icheck"> Filosofia</label>
-                                        </div>
-                                        <!-- END FILTER BY CATEGORY -->
+                <!-- Corpo Principal -->
+                <div class="container">
+                    <div class="row">
+                        <!-- BEGIN SEARCH RESULT -->
+                        <div class="col-md-12">
+                            <div class="grid search">
+                                <div class="grid-body">
+                                    <div class="row">
+                                        <!-- BEGIN FILTERS -->
+                                        <div class="col-md-3">
+                                            <h2 class="grid-title"><i class="fa fa-filter"></i> Filtros</h2>
+                                            <hr>
 
-                                        <div class="padding"></div>
-
-                                        <!-- BEGIN FILTER BY DATE -->
-                                        <h4>Filtros avançados:</h4>
-                                        Ano de publicação
-                                        <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
-                                            data-date-format="dd-mm-yyyy" data-link-field="dtp_input1">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
-                                        </div>
-                                        <input type="hidden" id="dtp_input1" value="">
-
-                                        Editora
-                                        <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
-                                            data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
-                                        </div>
-                                        <input type="hidden" id="dtp_input2" value="">
-                                        <!-- END FILTER BY DATE -->
-
-
-                                        <!-- END FILTER BY PRICE -->
-                                    </div>
-                                    <!-- END FILTERS -->
-                                    <!-- BEGIN RESULT -->
-                                    <div class="col-md-9">
-                                        <h2><i class="fa fa-file-o"></i> Pesquisa</h2>
-                                        <hr>
-                                        <!-- BEGIN SEARCH INPUT -->
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder = "Digite um nome ou autor...">
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-secondary" type="button">
-                                                    <img style="width:2em; height:2em;" src="../_images/icons/search.svg" id="logo_search">
-                                                </button>
-                                            </span>
-                                        </div>
-                                        <!-- END SEARCH INPUT -->
-
-                                        <div class="row">
-                                            <!-- BEGIN ORDER RESULT -->
-                                            <div class="col-sm-6">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-default dropdown-toggle"
-                                                        data-toggle="dropdown">
-                                                        Ordenar por: <span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" role="menu">
-                                                        <li><a href="#">Nome</a></li>
-                                                        <li><a href="#">Data</a></li>
-                                                        <li><a href="#">Visualizações</a></li>
-                                                    </ul>
-                                                </div>
+                                            <!-- BEGIN FILTER BY CATEGORY -->
+                                            <h4>Por categoria:</h4>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" class="icheck"> Computação</label>
                                             </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" class="icheck"> Literatura</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" class="icheck"> Biologia</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" class="icheck"> Sociologia</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" class="icheck"> Filosofia</label>
+                                            </div>
+                                            <!-- END FILTER BY CATEGORY -->
 
-                                        <!-- BEGIN TABLE RESULT -->
-                                        <div class="table-responsive">
-                                            <table class="table table-hover">
-                                                <tbody>
-                                                  <!-- Resultados devem ser exibidos aqui-->
-                                                </tbody>
-                                            </table>
+                                            <div class="padding"></div>
+
+                                            <!-- BEGIN FILTER BY DATE -->
+                                            <h4>Filtros avançados:</h4>
+                                            Ano de publicação
+                                            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
+                                                data-date-format="dd-mm-yyyy" data-link-field="dtp_input1">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+                                            </div>
+                                            <input type="hidden" id="dtp_input1" value="">
+
+                                            Editora
+                                            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
+                                                data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+                                            </div>
+                                            <input type="hidden" id="dtp_input2" value="">
+                                            <!-- END FILTER BY DATE -->
+
+
+                                            <!-- END FILTER BY PRICE -->
                                         </div>
-                                        <!-- END TABLE RESULT -->
+                                        <!-- END FILTERS -->
+                                        <!-- BEGIN RESULT -->
+                                        <div class="col-md-9">
+                                            <h2><i class="fa fa-file-o"></i> Pesquisa</h2>
+                                            <hr>
+                                            <!-- BEGIN SEARCH INPUT -->
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder = "Digite um nome ou autor...">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-secondary" type="button">
+                                                        <img style="width:2em; height:2em;" src="../_images/icons/search.svg" id="logo_search">
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- END SEARCH INPUT -->
+
+                                            <div class="row">
+                                                <!-- BEGIN ORDER RESULT -->
+                                                <div class="col-sm-6">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown">
+                                                            Ordenar por: <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="#">Nome</a></li>
+                                                            <li><a href="#">Data</a></li>
+                                                            <li><a href="#">Visualizações</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            <!-- BEGIN TABLE RESULT -->
+                                            <div class="table-responsive">
+                                                <table class="table table-hover">
+                                                    <tbody>
+                                                    <!-- Resultados devem ser exibidos aqui-->
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- END TABLE RESULT -->
+                                        </div>
+                                        <!-- END RESULT -->
                                     </div>
-                                    <!-- END RESULT -->
                                 </div>
                             </div>
                         </div>
+                        <!-- END SEARCH RESULT -->
                     </div>
-                    <!-- END SEARCH RESULT -->
                 </div>
+
+                <!-- Corpo Principal -->
+                <br>
+                <footer class="mt-2 pt-2 pb-2 footer" id="mainfooter">
+                </footer>
             </div>
-
-            <!-- Corpo Principal -->
-            <br>
-            <footer class="mt-2 pt-2 pb-2 footer" id="mainfooter">
-            </footer>
         </div>
-    </div>
 
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        </div>
 
-    </div>
-
-    <script>
-        $("#staticBackdrop").load("./login.html");
-        $("#mainnavbar").load("./navbar.html");
-        $("#mainfooter").load("./footer.html");
-
-        // Button press skeleton functions
-        $("#loginbutton").click(function () {
-            $(".mainpage").css("filter", "blur(5px)");
-            console.log("blurred");
-        });
-        $(document).on('click', '#closelogwindow', function () {
-            $(".mainpage").css("filter", "blur(0px)");
-            console.log("removed blur");
-        });
-    </script>
-
-</body>
+    </body>
 
 </html>
