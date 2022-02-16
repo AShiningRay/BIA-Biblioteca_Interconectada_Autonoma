@@ -50,6 +50,14 @@ botoes.*/
     font-weight: bold;
 }
 
+#loginbutton {
+    margin-right: 1em;
+}
+
+#searchbutton {
+    padding: 1em;
+}
+
 #loginbutton:active {
     background-color: #ef2f54 !important;
 }
@@ -83,7 +91,8 @@ botoes.*/
         border: solid#297a7d;
         border-radius: 0px;
         border-width: 0px 2px !important;
-        padding-left: 0px;
+        padding: 0.5em 0em;
+        margin: 0px;
     }
 
     #loginbutton img,
