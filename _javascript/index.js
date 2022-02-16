@@ -36,11 +36,9 @@ $(document).ready(function() {
 	// Funções para casos onde botões são pressionaddos
 	$(document).on('click', '#loginbutton', function () {
 		$(".mainpage").css("filter", "blur(5px)");
-		console.log("blurred");
 	});
 	$(document).on('click', '#closelogwindow', function () {
 		$(".mainpage").css("filter", "blur(0px)");
-		console.log("removed blur");
 	});
 
 	// Código para o slider de imagens central (carrossel)
