@@ -16,8 +16,7 @@ $(document).ready(function() {
 		document.getElementById("nav_contato").href = "./_html/contato.html";
 		document.getElementById("nav_sobre").href = "./_html/sobre.html";
 		document.getElementById("nav_inicio").href = "./index.html";
-		//document.getElementById("botao_pesquisa").onclick = "window.location.href='./_html/pesquisa.html'";
-		document.getElementById("botao_pesquisa").setAttribute( "onClick", "javascript: window.location.href='./_html/pesquisa.html';" );
+		document.getElementById("searchbutton").setAttribute("onclick", "javascript: document.location.href='./_html/pesquisa.html', true;");
 	});
 
 	//Footer
