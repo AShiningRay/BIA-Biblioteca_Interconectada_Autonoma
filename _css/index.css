@@ -10,6 +10,7 @@ html, body {
 
 #carouselcontainer {
     margin-bottom: 0px;
+    padding: 0px;
 }
 
 /*Propriedades do carrossel de imagens Slick*/
@@ -22,6 +23,7 @@ html, body {
     transition: all ease-in-out .3s;
     opacity: 0;
     transform: scale(0.8);
+    width: 100%;
 }
 
 .slick-active {
@@ -58,4 +60,32 @@ html, body {
     width: 30% !important;
     padding: 1%;
     background-color: lightslategray;
+}
+
+@media (max-width: 992px) 
+{
+    #mainpageinfo {
+        margin-left: 0px;
+    }
+
+    div.slick-list.draggable {
+        padding: 0px !important;
+        margin: auto;
+    }
+
+    #carouselcontainer {
+        padding: 0px !important;
+    }
+
+    button.slick-arrow {
+        display: none !important;
+    }
+
+    ul.slick-dots {
+        display: none !important;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+    }
 }
