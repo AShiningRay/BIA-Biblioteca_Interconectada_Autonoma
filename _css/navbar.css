@@ -63,3 +63,48 @@ botoes.*/
     width: 2.25em;
     height: 2.25em;
 }
+
+@media (max-width: 992px) 
+{
+    .navbar-brand img {
+        display: none !important;
+    }
+
+    #loginbutton,
+    #searchbutton {
+        display: block;
+        width: 100%;
+        background-color: #fc831a;
+        border-color:#fc831a;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+        color: white;
+        border: solid#297a7d;
+        border-radius: 0px;
+        border-width: 0px 2px !important;
+        padding-left: 0px;
+    }
+
+    #loginbutton img,
+    #searchbutton img {
+        display: none !important;
+    }
+
+    #loginbutton:focus {
+        box-shadow: 0px;
+    }
+
+    .nav-item,
+    .nav-item.left, 
+    .nav-item.right,
+    .nav-item.center
+    {
+        border-width: 0px 2px !important;
+        border: solid #297a7d;
+    }
+
+    .collapse.navbar-collapse ul {
+        margin-bottom: 2em;
+    }
+}
