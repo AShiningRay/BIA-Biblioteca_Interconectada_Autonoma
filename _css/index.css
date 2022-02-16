@@ -14,6 +14,11 @@ html, body {
 }
 
 /*Propriedades do carrossel de imagens Slick*/
+div.slick-list.draggable {
+    margin: auto;
+    height: 100% !important;
+}
+
 .slick-prev:before,
 .slick-next:before {
     color: #fc831a !important;
@@ -45,6 +50,7 @@ html, body {
     aspect-ratio: 16/6;
     column-gap: 0px;
     display:flex !important;
+    height: 100%;
 }
 
 #maincol1 {
@@ -70,6 +76,7 @@ html, body {
 
     div.slick-list.draggable {
         padding: 0px !important;
+        height: 100% !important;
         margin: auto;
     }
 
