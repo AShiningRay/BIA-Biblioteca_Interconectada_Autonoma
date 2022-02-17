@@ -78,7 +78,7 @@
 .form-control.input_user,
 .form-control.input_pass {
 	box-shadow: none !important;
-	padding: 0% !important; /* Faz as barras de texto terem a mesma altura dos icones*/
+	padding: 2% !important; /* Faz as barras de texto terem a mesma altura dos icones*/
 }
 
 /*Altera a cor da checkbox do remember-me*/
@@ -125,3 +125,4 @@
 #linktext:active {
 	color: #ef2f54 !important;
 }
+
