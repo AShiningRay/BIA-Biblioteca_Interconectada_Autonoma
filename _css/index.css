@@ -19,6 +19,15 @@ div.slick-list.draggable {
     height: 100% !important;
 }
 
+.slick-dots li button:before {
+    color: #297a7d;
+    opacity: 0.6;
+  }
+
+.slick-dots li.slick-active button:before {
+    color:#fc831a !important;
+}
+
 .slick-prev:before,
 .slick-next:before {
     color: #fc831a !important;
@@ -33,7 +42,7 @@ div.slick-list.draggable {
 
 .slick-active {
     opacity: 1;
-    transform: scale(1.5);
+    transform: scale(1.75);
 }
 
 .slick-current {
