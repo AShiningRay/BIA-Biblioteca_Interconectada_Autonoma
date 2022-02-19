@@ -30,10 +30,11 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Iterar o carrossel de imagens para escalar melhor em diferentes telas e aspectos`
 * X`Realizar o mesmo para o restante da página`
 * X`Fazer com que as imagens customizadas sempre sejam carregadas independentemente do local da página que as carrega`
-* `Adicionar um indicador visual para mostrar que é possível usar gestos para controlar o carrossel`
-* X `Implementar a troca de páginas de navegação`
+* X`Adicionar um indicador visual para mostrar que é possível usar gestos para controlar o carrossel`
+* X`Implementar a troca de páginas de navegação`
+* X`Estilizar o indicador visual e adicionar algumas animações nela`
+* X`Finalizar a página principal`
 * `...`
-* `Finalizar a página principal`
 * `Finalizar a página de pesquisa`
 * `Finalizar a página de contato`
 * `Finalizar a página de ajuda`
