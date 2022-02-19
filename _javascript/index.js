@@ -3,10 +3,6 @@ $(document).ready(function() {
 	$("#staticBackdrop").load("./_html/login.html", function () {
 		document.getElementById("logo_user").src = "./_images/icons/user.svg";
 		document.getElementById("logo_passkey").src = "./_images/icons/passkey.svg";
-		
-		var script = document.createElement('script');
-		script.setAttribute( 'src', './_javascript/login.js');
-		document.head.appendChild(script);
 	});
 
 	// Navbar
@@ -34,10 +30,6 @@ $(document).ready(function() {
 		document.getElementById("logo_maps").src = "./_images/icons/maps.svg";
 		document.getElementById("logo_tele").src = "./_images/icons/call.svg";
 		document.getElementById("href_ajuda").href = "./_html/ajuda.html";
-
-		var script = document.createElement('script');
-		script.setAttribute( 'src', './_javascript/footer.js');
-		document.head.appendChild(script);
 	});
 
 
