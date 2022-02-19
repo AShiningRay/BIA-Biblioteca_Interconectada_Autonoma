@@ -27,7 +27,7 @@ div.slick-list.draggable {
     height: 70%;
     width: 100%;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
     opacity: 0.0;
     pointer-events: none;
     overflow: hidden;
@@ -80,9 +80,24 @@ div.slick-list.draggable {
     color:#fc831a !important;
 }
 
+.slick-prev{
+    left: 2%;
+    z-index: 1;
+}
+
+.slick-next{
+    right: 2%;
+    z-index: 1;
+}
+
+.slick-prev:before { content: "<"; }
+.slick-next:before { content: ">"; }
+
 .slick-prev:before,
 .slick-next:before {
     color: #fc831a !important;
+    font-weight: bolder;
+    font-size: 50pt;
 }
 
 .slick-slide {
@@ -127,7 +142,7 @@ div.slick-list.draggable {
     height: 100%;
     width: 30% !important;
     padding: 1%;
-    background-color: lightslategray;
+    background-color: #297a7d;
 }
 
 @media (max-width: 992px) 
