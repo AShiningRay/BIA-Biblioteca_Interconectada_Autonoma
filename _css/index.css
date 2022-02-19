@@ -98,9 +98,23 @@ div.slick-list.draggable {
     color: #fc831a !important;
     font-weight: bolder;
     font-size: 50pt;
+    transform:scale(25pt);
     text-shadow: 0px 0px 2px black;
-    opacity: 0.45;
+    opacity: 0.4;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: showarrows;
+    animation-timing-function: cubic-bezier(1.5,0,0,0.5);
 }
+
+@keyframes showarrows {
+    0%   {opacity: 1;}
+    20%  {opacity: 0.1;}
+    40%  {opacity: 1;}
+    60%  {opacity: 0.1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0.1;}
+  }
 
 .slick-slide {
     transition: all ease-in-out .3s;
