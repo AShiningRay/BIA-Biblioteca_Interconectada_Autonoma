@@ -145,6 +145,7 @@ div.slick-list.draggable {
     width: 30% !important;
     padding: 1%;
     background-color: #297a7d;
+    color: white;
 }
 
 @media (max-width: 992px) 
