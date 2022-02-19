@@ -10,8 +10,14 @@ html, body {
 
 #carouselcontainer {
     margin-bottom: 0px;
-    padding: 0px;
+    padding: 0px !important;
     position: relative;
+}
+
+div.slick-list.draggable {
+    padding: 0px !important;
+    height: 100% !important;
+    margin: auto;
 }
 
 .gesture_frame {
@@ -104,6 +110,7 @@ div.slick-list.draggable {
 #mainpageinfo {
     aspect-ratio: 16/6;
     column-gap: 0px;
+    margin-left: 0px;
     display:flex !important;
     height: 100%;
 }
