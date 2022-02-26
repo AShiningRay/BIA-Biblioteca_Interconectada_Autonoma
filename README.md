@@ -34,7 +34,7 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Implementar a troca de páginas de navegação`
 * X`Estilizar o indicador visual e adicionar algumas animações nela`
 * X`Finalizar a página principal`
-* `Criar uma logo única para o sistema BIA`
+* X`Criar uma logo única para o sistema BIA`
 * `Determinar um layout para a pagina de pesquisa`
 * `Estilizar a pagina de pesquisa`
 * `Adicionar funcionalidade à página de pesquisa`
