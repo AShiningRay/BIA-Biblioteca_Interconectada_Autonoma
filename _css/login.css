@@ -37,7 +37,7 @@
 	height: 8em;
 	width: 8em;
 	border-radius: 50%;
-	border: 0.2em solid white;
+	border: 0.2em solid #297a7d;
 }
 .form_container {
 	margin-top: 0.1em;
@@ -78,21 +78,20 @@
 .form-control.input_user,
 .form-control.input_pass {
 	box-shadow: none !important;
-	padding: 2% !important; /* Faz as barras de texto terem a mesma altura dos icones*/
+	border: 0.2em solid white;
+	border-radius: 0.1em;
+	padding: 0;
+}
+
+/*Realce de seleção nos campos de usuário e senha*/
+.form-control.input_user:focus,
+.form-control.input_pass:focus {
+	border-color: #297a7d;
 }
 
 /*Altera a cor da checkbox do remember-me*/
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
 	background-color: #383636 !important;
-}
-
-#logintextbox {
-	border: 0.2em solid white;
-	border-radius: 0.1em;
-}
-
-#logintextbox:focus {
-	border-color: #297a7d;
 }
 
 #closelogwindow {
