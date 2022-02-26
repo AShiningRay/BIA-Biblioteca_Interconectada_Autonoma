@@ -7,8 +7,8 @@ $(document).ready(function() {
 
 	// Navbar
 	$("#mainnavbar").load("./_html/navbar.html", function () {
-		document.getElementById("bia_logo_nav").src = "./_images/logo_bia.png";
-		document.getElementById("bia_logo_login").src = "./_images/logo_bia.png";
+		document.getElementById("bia_logo_nav").src = "./_images/BIA_Logo.svg";
+		document.getElementById("bia_logo_login").src = "./_images/BIA_Logo.svg";
 		document.getElementById("logo_navbar_login").src = "./_images/icons/user.svg";
 		document.getElementById("logo_search").src = "./_images/icons/search.svg";
 		//Links navbar
