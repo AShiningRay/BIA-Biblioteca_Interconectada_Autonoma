@@ -1,3 +1,10 @@
+.navbar-brand{
+    background-color: white;
+    padding: 0;
+    border: solid white;
+    border-radius: 5px;
+}
+
 .nav-item a:hover {
     background-color: #297a7d !important;
 }
