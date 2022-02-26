@@ -35,11 +35,17 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Estilizar o indicador visual e adicionar algumas animações nela`
 * X`Finalizar a página principal`
 * `Criar uma logo única para o sistema BIA`
-* `...`
+* `Determinar um layout para a pagina de pesquisa`
+* `Estilizar a pagina de pesquisa`
+* `Adicionar funcionalidade à página de pesquisa`
 * `Finalizar a página de pesquisa`
+* X`Estilizar a página de contato`
+* X`Corrigir o problema do formulário de login na página de contato`
+* `Adicionar funcionalidade à página de contato`
 * `Finalizar a página de contato`
+* `...`
 * `Finalizar a página de ajuda`
-* `Finalizar a página informações`
+* `...`
 * `Finalizar a página sobre`
 * `Criar um funcionamento básico para o login do site, sendo possível a verificação de usuário logado`
 * `Conectar o site a um sistema de banco de dados que vai ser responsável por armazenar os livros, e possívelmente os usuários`
