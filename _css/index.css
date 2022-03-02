@@ -69,10 +69,6 @@ div.slick-list.draggable {
 /*Fim do código da animação de gestos*/
 
 /*Propriedades do carrossel de imagens Slick*/
-div.slick-list.draggable {
-    margin: auto;
-    height: 100% !important;
-}
 
 .center.slider.slick-initialized.slick-slider.slick-dotted {
     margin-bottom: 1.75%;
@@ -181,6 +177,10 @@ ul.slick-dots {
         font-size: 0.8em;
     }
 
+    .center.slider.slick-initialized.slick-slider.slick-dotted {
+        margin-bottom: 0;
+    }
+
     .gesture_frame{
         display:block;
     }
@@ -212,6 +212,11 @@ ul.slick-dots {
 {
     .center.slider {
         aspect-ratio: 18/18;
+        margin-bottom: 0;
+    }
+
+    .center.slider.slick-initialized.slick-slider.slick-dotted {
+        margin-bottom: 0;
     }
 
     #mainpageinfo {
