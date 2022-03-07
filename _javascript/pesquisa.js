@@ -24,8 +24,10 @@ $(document).on('click', '#advsearchbtn', function () {
     if ($("#searchfilters").css("display") == "none") {
         $("#searchfilters").css("display", "block");
         $("#advsearchbtn").text("Pesquisa Simples");
+        $("#search_frame").css("width", "75%");
     } else {
         $("#searchfilters").css("display", "none");
         $("#advsearchbtn").text("Pesquisa Avançada");
+        $("#search_frame").css("width", "100%");
     }
 });
