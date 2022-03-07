@@ -46,7 +46,7 @@
                             <div class="grid search">
                                 <div class="grid-body">
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-3" id="searchfilters">
                                             <h2 class="grid-title"><i class="fa fa-filter"></i> Filtros</h2>
                                             <hr>
 
@@ -100,11 +100,14 @@
                                                 </span>
                                             </div>
 
-                                            <div class="row">
+                                            <div class="row" id="searchoptions">
                                                 <div class="col-sm-6">
                                                     <div class="btn-group">
+                                                        <button type="button" class="btn btn-light" id="advsearchbtn">
+                                                            Pesquisa Avançada
+                                                        </button>
                                                         <button type="button" class="btn btn-default dropdown-toggle"
-                                                            data-toggle="dropdown">
+                                                            data-toggle="dropdown" id="searchdropdown">
                                                             Ordenar por: <span class="caret"></span>
                                                         </button>
                                                         <ul class="dropdown-menu" role="menu">
