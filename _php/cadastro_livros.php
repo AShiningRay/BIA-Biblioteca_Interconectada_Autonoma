@@ -4,7 +4,7 @@ include ("./bd.php");
 $conn = new Connection();
 
 // Check connection
-if (!$conn) {
+if (!$conn->connection) {
     die("Connection failed: " . mysqli_connect_error());
 }
 echo 'Connected successfully';
