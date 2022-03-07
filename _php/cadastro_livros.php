@@ -9,11 +9,17 @@ if (!$conn) {
 }
 echo 'Connected successfully';
 
-$txtName = $_POST['nome_livro'];
+$Name = $_POST['nome_livro'];
+$Autor = $_POST['autor_livro'];
+$Isbn = $_POST['num_isbn'];
+$Ano_public = $_POST['data_pub'];
+$Editora = $_POST['nome_editora'];
+$Referencias = $_POST['referencias'];
+$Localizacao = $_POST['localizacao'];
 
-echo "Var: ". $txtName;
 
-$sql = "INSERT INTO `pesquisa` (`nome`) VALUES ('$txtName')";
+$sql = "INSERT INTO `cadastro_livros` (`nome`, `autor`, `isbn`, `ano_public`, `editora`, `referencias`, `localizacao`) 
+        VALUES ('$Name', '$Autor', '$Isbn','$Ano_public','$Editora ','$Referencias','$Localizacao')";
 
 
 mysqli_query($conn->connection, $sql);
