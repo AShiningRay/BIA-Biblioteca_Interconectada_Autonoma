@@ -1,5 +1,4 @@
 <?php
-
 class Connection
 {
     public $connection;
@@ -8,5 +7,4 @@ class Connection
         $this->connection = mysqli_connect("localhost","root", "123", "test");
     }
 }
-
 ?>

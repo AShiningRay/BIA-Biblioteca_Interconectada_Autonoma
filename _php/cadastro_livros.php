@@ -1,10 +1,6 @@
 <?php
-//$hostName = "localhost";
-//$userName = "root";
-//$password = "123";
-// Create connection
-//$conn = mysqli_connect($hostName, $userName, $password, "test");
-include ("bd.php");
+
+include ("./bd.php");
 $conn = new Connection();
 
 // Check connection
