@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Mar-2022 às 22:12
+-- Tempo de geração: 07-Mar-2022 às 22:15
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 7.4.27
 
@@ -37,17 +37,6 @@ CREATE TABLE `cadastro_livros` (
   `localizacao` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Extraindo dados da tabela `cadastro_livros`
---
-
-INSERT INTO `cadastro_livros` (`nome`, `autor`, `isbn`, `ano_public`, `editora`, `referencias`, `localizacao`) VALUES
-('memorias de bras cus ', '', '', '', ' ', '', ''),
-('memorias de bras cus ', 'memorias de bras cus ', 'memorias de bras cus ', 'memorias de bras cus ', 'memorias de bras cus  ', 'memorias de bras cus ', 'memorias de bras cus '),
-('memorias de bras cuas', 'machado de machado', '56448648546', '1881', 'moderna ', 'assis machado', 'fileira 3 '),
-('asdsadsaqdsa', '', '', '', ' ', '', ''),
-('dsada', 'dsadsad', 'sadasdas', 'dasd', 'asdasd ', '', '');
-
 -- --------------------------------------------------------
 
 --
@@ -57,16 +46,6 @@ INSERT INTO `cadastro_livros` (`nome`, `autor`, `isbn`, `ano_public`, `editora`,
 CREATE TABLE `pesquisa` (
   `nome` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `pesquisa`
---
-
-INSERT INTO `pesquisa` (`nome`) VALUES
-('memorias de bras cus'),
-('memorias de bras coca colas de 2l'),
-('memorias de bras coca colas de 3l'),
-('http://localhost/BIA-Git/BIA-Biblioteca_Interconec');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
