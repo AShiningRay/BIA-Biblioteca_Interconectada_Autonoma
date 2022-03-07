@@ -24,8 +24,7 @@ $sql = "INSERT INTO `cadastro_livros` (`nome`, `autor`, `isbn`, `ano_public`, `e
 
 mysqli_query($conn->connection, $sql);
 
-//mysqli_close($conn->connection);
-
+mysqli_close($conn->connection);
 
 ?>
 
