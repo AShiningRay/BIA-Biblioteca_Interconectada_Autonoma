@@ -7,7 +7,9 @@ $conn = new Connection();
 if (!$conn->connection) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo 'Connected successfully';
+else{
+    echo 'Connection successful';
+}
 
 $Name = $_POST['nome_livro'];
 $Autor = $_POST['autor_livro'];
