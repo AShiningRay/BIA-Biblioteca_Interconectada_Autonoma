@@ -1,9 +1,12 @@
 <?php
-$hostName = "localhost";
-$userName = "root";
-$password = "123";
+//$hostName = "localhost";
+//$userName = "root";
+//$password = "123";
 // Create connection
-$conn = mysqli_connect($hostName, $userName, $password, "test");
+//$conn = mysqli_connect($hostName, $userName, $password, "test");
+include ("bd.php");
+$conn = new Connection();
+
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -16,7 +19,11 @@ echo "Var: ". $txtName;
 
 $sql = "INSERT INTO `pesquisa` (`nome`) VALUES ('$txtName')";
 
-mysqli_query($conn, $sql);
 
-mysqli_close($conn);
+mysqli_query($conn->connection, $sql);
+
+//mysqli_close($conn->connection);
+
+
 ?>
+
