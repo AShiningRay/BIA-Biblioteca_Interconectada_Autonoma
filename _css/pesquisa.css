@@ -8,14 +8,14 @@
         position: relative;
         width: 100%;
         background: #fc831a;
-        color: #666666;
+        color: #444444;
         border-radius: 2px;
         margin-bottom: 2%;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     }
     
     .grid-body {
-        padding: 15px 20px 15px 20px;
+        padding: 1.5% 2% 1.5% 2%;
         font-size: 0.9em;
         line-height: 1.9em;
     }
@@ -40,16 +40,28 @@
     
     .search table tr td.rate {
         color: #f39c12;
-        line-height: 50px;
+        line-height: 2%;
     }
     
     .search table tr td.price {
         font-size: 1.5em;
-        line-height: 50px;
+        line-height: 2%;
     }
     
     .search #price1,
     .search #price2 {
         display: inline;
         font-weight: 600;
+    }
+
+    #searchfilters {
+        display: none;
+    }
+
+    #advsearchbtn {
+        margin-top: 1%;
+    }
+
+    #searchdropdown {
+        left: 100%;
     }

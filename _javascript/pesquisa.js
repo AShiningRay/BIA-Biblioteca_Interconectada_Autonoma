@@ -19,3 +19,13 @@ $(document).ready(function() {
         console.log("Pesquisando por: ", text, "| Ano: ", text2, "| Editora: ", text3);
     });
 });
+
+$(document).on('click', '#advsearchbtn', function () {
+    if ($("#searchfilters").css("display") == "none") {
+        $("#searchfilters").css("display", "block");
+        $("#advsearchbtn").text("Pesquisa Simples");
+    } else {
+        $("#searchfilters").css("display", "none");
+        $("#advsearchbtn").text("Pesquisa Avançada");
+    }
+});
