@@ -1,29 +1,27 @@
-    body{margin-top:20px;
-    background:#eee;
+    body{
+        width: 100%;
     }
-    
-    .btn {
-        margin-bottom: 5px;
-    }
-    
+
+
     .grid {
+        margin-top: 2%;
         position: relative;
         width: 100%;
-        background: #fff;
+        background: #fc831a;
         color: #666666;
         border-radius: 2px;
-        margin-bottom: 25px;
+        margin-bottom: 2%;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     }
     
-    .grid .grid-body {
+    .grid-body {
         padding: 15px 20px 15px 20px;
         font-size: 0.9em;
         line-height: 1.9em;
     }
     
     .search table tr td.rate {
-        color: #f39c12;
+        color: black;
         line-height: 50px;
     }
     
@@ -54,12 +52,4 @@
     .search #price2 {
         display: inline;
         font-weight: 600;
-    }
-
-    .btn-secondary{
-        background-color: #297a7d;
-    }
-
-    .btn-secondary:hover{
-        background-color: #4fcece;
     }
