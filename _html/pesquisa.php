@@ -147,7 +147,7 @@
                                                             echo "
                                                             <div id='searchresultframe'>
                                                             <div id='bookimageframe'>
-                                                                <img src='../_images/BIA_Logo.svg' id='bookimg'>
+                                                                <img src='../_images/livros/" . $rowData['site_imagem'] . "' id='bookimg'>
                                                             </div>
                                                             <div id='bookinfoframe'>
                                                                 <h4 id='booktitle'>Título: " . $rowData['nome'] . "</h4>
@@ -155,13 +155,13 @@
                                                                 <div id='bookinternalinfo'>
 
                                                                     <h5 id='bookauthor'>Autor: " . $rowData['autor'] . "</h5>
-                                                                    <h5 id='bookedition'>Edição:1</h5>
+                                                                    <h5 id='bookedition'>ISBN: " . $rowData['isbn'] . "</h5>
 
                                                                 </div>
                                                                 <div id='bookinternalinfo'>
 
                                                                     <h5 id='bookeditor'>Editora: ".$rowData['editora']."</h5>
-                                                                    <h5 id='bookvolume'>Volume:2</h5>
+                                                                    <h5 id='bookvolume'>Referências: " . $rowData['referencias'] . "</h5>
 
                                                                 </div>
                                                                 <div id='bookinternalinfo'>
@@ -173,7 +173,7 @@
                                                                 <h4 id='booklocation'>Localização: ". $rowData['localizacao']."</h4>
                                                             </div>
                                                             <div id='bookdataframe'>
-                                                                <p id='bookavailable'>Disponíveis: 4</p>
+                                                                <p id='bookavailable'>Disponíveis: " . $rowData['disponiveis'] . "</p>
 
                                                                 <button class='btn btn-light btn-hover bookbutton' type='button' id = 'reservebutton'>Reservar</button>
                                                                 <button class='btn btn-light btn-hover bookbutton' type='button' id = 'returnbutton'>Devolver</button>
