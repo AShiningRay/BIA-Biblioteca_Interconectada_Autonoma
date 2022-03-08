@@ -72,9 +72,24 @@
 
     #searchdropdown {
         margin-left: 50%;
-        margin-top: 2.5%;
+        margin-top: 1%;
     }
 
     #ordertype {
         margin-top: 1%;
+        border-radius: 3px;
+        border-color: transparent;
+        padding: 1%;
+        background-color: white;
+        width: 60%;
+    }
+
+    #ordertype:hover {
+        color: white;
+        background-color: #297a7d;
+        border-radius: 3px;
+    }
+
+    #ordertype:focus {
+        outline: none;
     }
