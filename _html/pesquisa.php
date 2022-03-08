@@ -92,7 +92,7 @@
                                             <h2><i class="fa fa-file-o"></i> Pesquisa</h2>
                                             <hr>
                                             <form method="post" class="input-group">
-                                                <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite um nome ou autor...">
+                                                <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite o nome do livro ou autor...">
                                                 <span class="input-group-btn">
                                                     <button class="btn btn-secondary" type="submit" id="search_button"name="search_button" >
                                                         <img style="width:2em; height:2em;" src="../_images/icons/search.svg" id="logo_search">
@@ -133,7 +133,10 @@
                                                     
                                                     function busca($search_text){
                                                         $conn = new Connection();
-                                                        $sql = "SELECT * from cadastro_livros where nome like '%$search_text%'";
+                                                        $sql = "SELECT * from cadastro_livros 
+                                                        where nome like '%$search_text%'
+                                                        or autor like '%$search_text%'
+                                                        ";
                                                 
                                                 
                                                      $resultado = mysqli_query($conn->connection, $sql);
@@ -176,7 +179,6 @@
                                                                 <button class='btn btn-light btn-hover bookbutton' type='button' id = 'returnbutton'>Devolver</button>
                                                                 <button class='btn btn-light btn-hover bookbutton' type='button' id = 'renewbutton'>Renovar</button>
                                                             </div>";
-
                                                       
                                                      }
 
