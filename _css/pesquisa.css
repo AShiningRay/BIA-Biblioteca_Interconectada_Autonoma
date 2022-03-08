@@ -93,3 +93,63 @@
     #ordertype:focus {
         outline: none;
     }
+
+    /*Conteúdo e frame dos resultados da busca*/
+    #searchresultframe {
+        display: flex;
+        margin-top: 2%;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0.5% 0%;
+    }
+
+    #searchresultframe img {
+        width: 95%;
+        margin: 2.5%;
+        border: solid;
+        border-radius: 5px;
+        border-color: #f39c12;
+    }
+
+    #bookimageframe {
+        width: 25%;
+    }
+
+    #bookinfoframe {
+        width: 75%;
+        border-left: 2px solid #f39c12;
+        border-right: 2px solid #f39c12;
+        border-radius: 4px;
+    }
+
+    #bookinternalinfo {
+        display: flex;
+    }
+
+    #bookinfoframe h4 {
+        width: 100%;
+        margin: 0% 1%;
+    }
+
+    #bookinfoframe h5 {
+        width: 100%;
+        margin: 1% 1%;
+    }
+
+    #bookdataframe {
+        width:25%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #bookdataframe p {
+        margin: 0;
+        font-size: 1.1em;
+    }
+
+    .btn.btn-light.btn-hover.bookbutton {
+        border: 2px solid #f39c12 !important;
+        border-radius: 5px;
+        width: 80%;
+        margin: 2% 0%;
+    }
