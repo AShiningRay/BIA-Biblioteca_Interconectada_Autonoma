@@ -101,20 +101,21 @@
                                             </div>
 
                                             <div class="row" id="searchoptions">
-                                                <div class="col-sm-6">
-                                                    <div class="btn-group">
+                                                <div class="col-lg">
+                                                    <div class="btn-group" id="searchbuttons">
                                                         <button type="button" class="btn btn-light" id="advsearchbtn">
                                                             Pesquisa Avançada
                                                         </button>
-                                                        <button type="button" class="btn btn-default dropdown-toggle"
-                                                            data-toggle="dropdown" id="searchdropdown">
-                                                            Ordenar por: <span class="caret"></span>
-                                                        </button>
-                                                        <ul class="dropdown-menu" role="menu">
-                                                            <li><a href="#">Nome</a></li>
-                                                            <li><a href="#">Data</a></li>
-                                                            <li><a href="#">Visualizações</a></li>
-                                                        </ul>
+                                                        <div id="searchdropdown">
+                                                            <label for="orderTypes" > Ordenar por:</label>
+                                                            <select name="orderTypes" id="ordertype">
+                                                                <option value=””>Nome Crescente</option>
+                                                                <option value=””>Nome Decrescente</option>
+                                                                <option value=””>Data Crescente</option>
+                                                                <option value=””>Data Decrescente</option>
+                                                                <option value=””>Popularidade</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
 
