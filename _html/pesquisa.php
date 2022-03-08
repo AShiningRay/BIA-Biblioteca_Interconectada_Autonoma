@@ -91,14 +91,14 @@
                                         <div class="col-md-9" id="search_frame">
                                             <h2><i class="fa fa-file-o"></i> Pesquisa</h2>
                                             <hr>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" id="search_field" placeholder = "Digite um nome ou autor...">
+                                            <form method="post" class="input-group">
+                                                <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite um nome ou autor...">
                                                 <span class="input-group-btn">
-                                                    <button class="btn btn-secondary" type="button" id="search_button">
+                                                    <button class="btn btn-secondary" type="submit" id="search_button"name="search_button" >
                                                         <img style="width:2em; height:2em;" src="../_images/icons/search.svg" id="logo_search">
                                                     </button>
+                                                </form>
                                                 </span>
-                                            </div>
 
                                             <div class="row" id="searchoptions">
                                                 <div class="col-lg">
@@ -122,42 +122,69 @@
                                             <div class="table-responsive">
                                                 <table class="table table-hover">
                                                     <tbody>
-                                                        <div id="searchresultframe">
-                                                            <div id="bookimageframe">
-                                                                <img src="../_images/BIA_Logo.svg" id="bookimg">
+                                                    <!-- Resultados devem ser exibidos aqui-->
+                                                    <?php 
+                                                    
+                                                    include("../_php/bd.php");
+
+                                                        if(array_key_exists('search_button', $_POST)) {
+                                                           busca($_POST['search_field']);
+                                                        }
+                                                    
+                                                    function busca($search_text){
+                                                        $conn = new Connection();
+                                                        $sql = "SELECT * from cadastro_livros where nome like '%$search_text%'";
+                                                
+                                                
+                                                     $resultado = mysqli_query($conn->connection, $sql);
+
+                                                     if ($resultado->num_rows > 0){
+
+                                                        while($rowData = mysqli_fetch_array($resultado)){
+                                                            echo "
+                                                            <div id='searchresultframe'>
+                                                            <div id='bookimageframe'>
+                                                                <img src='../_images/BIA_Logo.svg' id='bookimg'>
                                                             </div>
-                                                            <div id="bookinfoframe">
-                                                                <h4 id="booktitle">Título: Random</h4>
+                                                            <div id='bookinfoframe'>
+                                                                <h4 id='booktitle'>Título:" . $rowData['nome'] . "</h4>
 
-                                                                <div id="bookinternalinfo">
+                                                                <div id='bookinternalinfo'>
 
-                                                                    <h5 id="bookauthor">Autor: A</h5>
-                                                                    <h5 id="bookedition">Edição:1</h5>
-
-                                                                </div>
-                                                                <div id="bookinternalinfo">
-
-                                                                    <h5 id="bookeditor">Editora:B</h5>
-                                                                    <h5 id="bookvolume">Volume:2</h5>
+                                                                    <h5 id='bookauthor'>Autor:" . $rowData['autor'] . "</h5>
+                                                                    <h5 id='bookedition'>Edição:1</h5>
 
                                                                 </div>
-                                                                <div id="bookinternalinfo">
+                                                                <div id='bookinternalinfo'>
 
-                                                                    <h5 id="bookyear">Ano:3</h5>
+                                                                    <h5 id='bookeditor'>Editora:".$rowData['editora']."</h5>
+                                                                    <h5 id='bookvolume'>Volume:2</h5>
+
+                                                                </div>
+                                                                <div id='bookinternalinfo'>
+
+                                                                    <h5 id='bookyear'>Ano:". $rowData['ano_public']."</h5>
 
                                                                 </div>
                                                                 
-                                                                <h4 id="booklocation">Localização: Lorem Ipsum</h4>
+                                                                <h4 id='booklocation'>Localização:". $rowData['localizacao']."</h4>
                                                             </div>
-                                                            <div id="bookdataframe">
-                                                                <p id="bookavailable">Disponíveis: 4</p>
+                                                            <div id='bookdataframe'>
+                                                                <p id='bookavailable'>Disponíveis: 4</p>
 
-                                                                <button class="btn btn-light btn-hover bookbutton" type="button" id = "reservebutton">Reservar</button>
-                                                                <button class="btn btn-light btn-hover bookbutton" type="button" id = "returnbutton">Devolver</button>
-                                                                <button class="btn btn-light btn-hover bookbutton" type="button" id = "renewbutton">Renovar</button>
-                                                            </div>
-                                                            
-                                                        </div>
+                                                                <button class='btn btn-light btn-hover bookbutton' type='button' id = 'reservebutton'>Reservar</button>
+                                                                <button class='btn btn-light btn-hover bookbutton' type='button' id = 'returnbutton'>Devolver</button>
+                                                                <button class='btn btn-light btn-hover bookbutton' type='button' id = 'renewbutton'>Renovar</button>
+                                                            </div>";
+
+                                                      
+                                                     }
+
+                                                     mysqli_close($conn->connection);
+                                                    }
+                                                    }
+                                                    
+                                                    ?>
                                                     <!-- Resultados devem ser exibidos aqui-->
                                                     </tbody>
                                                 </table>
