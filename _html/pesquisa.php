@@ -178,6 +178,7 @@
                                                                 <button class='btn btn-light btn-hover bookbutton' type='button' id = 'reservebutton'>Reservar</button>
                                                                 <button class='btn btn-light btn-hover bookbutton' type='button' id = 'returnbutton'>Devolver</button>
                                                                 <button class='btn btn-light btn-hover bookbutton' type='button' id = 'renewbutton'>Renovar</button>
+                                                            </div>
                                                             </div>";
                                                       
                                                      }
@@ -187,6 +188,7 @@
                                                     }
                                                     
                                                     ?>
+                                                    
                                                     <!-- Resultados devem ser exibidos aqui-->
                                                     </tbody>
                                                 </table>
