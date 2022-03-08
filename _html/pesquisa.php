@@ -150,27 +150,27 @@
                                                                 <img src='../_images/BIA_Logo.svg' id='bookimg'>
                                                             </div>
                                                             <div id='bookinfoframe'>
-                                                                <h4 id='booktitle'>Título:" . $rowData['nome'] . "</h4>
+                                                                <h4 id='booktitle'>Título: " . $rowData['nome'] . "</h4>
 
                                                                 <div id='bookinternalinfo'>
 
-                                                                    <h5 id='bookauthor'>Autor:" . $rowData['autor'] . "</h5>
+                                                                    <h5 id='bookauthor'>Autor: " . $rowData['autor'] . "</h5>
                                                                     <h5 id='bookedition'>Edição:1</h5>
 
                                                                 </div>
                                                                 <div id='bookinternalinfo'>
 
-                                                                    <h5 id='bookeditor'>Editora:".$rowData['editora']."</h5>
+                                                                    <h5 id='bookeditor'>Editora: ".$rowData['editora']."</h5>
                                                                     <h5 id='bookvolume'>Volume:2</h5>
 
                                                                 </div>
                                                                 <div id='bookinternalinfo'>
 
-                                                                    <h5 id='bookyear'>Ano:". $rowData['ano_public']."</h5>
+                                                                    <h5 id='bookyear'>Ano: ". $rowData['ano_public']."</h5>
 
                                                                 </div>
                                                                 
-                                                                <h4 id='booklocation'>Localização:". $rowData['localizacao']."</h4>
+                                                                <h4 id='booklocation'>Localização: ". $rowData['localizacao']."</h4>
                                                             </div>
                                                             <div id='bookdataframe'>
                                                                 <p id='bookavailable'>Disponíveis: 4</p>
