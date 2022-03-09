@@ -59,10 +59,12 @@ botoes.*/
 
 #loginbutton {
     margin-right: 1em;
+    box-shadow: none;
 }
 
 #searchbutton {
     padding: 1em;
+    box-shadow: none;
 }
 
 #loginbutton:active {
