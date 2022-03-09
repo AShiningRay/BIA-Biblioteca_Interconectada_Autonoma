@@ -127,7 +127,7 @@
                                                     
                                                     include("../_php/bd.php");
 
-                                                        if(array_key_exists('search_button', $_POST)) {
+                                                    	if(array_key_exists('search_button', $_POST)) {
                                                            busca($_POST['search_field']);
                                                         }
                                                     
@@ -139,13 +139,13 @@
                                                         ";
                                                 
                                                 
-                                                     $resultado = mysqli_query($conn->connection, $sql);
-
+                                                     	$resultado = mysqli_query($conn->connection, $sql);
+							                            $num = 0;
                                                      if ($resultado->num_rows > 0){
 
-                                                        while($rowData = mysqli_fetch_array($resultado)){
+                                                     while($rowData = mysqli_fetch_array($resultado)){
                                                             echo "
-                                                            <div id='searchresultframe'>
+                                                            <div class='searchresultframe' id='resultframe" . $num . "' style='animation-delay:" . 0.35*($num+1) . "s'>
                                                             <div id='bookimageframe'>
                                                                 <img src='../_images/livros/" . $rowData['site_imagem'] . "' id='bookimg'>
                                                             </div>
@@ -180,7 +180,7 @@
                                                                 <button class='btn btn-light btn-hover bookbutton' type='button' id = 'renewbutton'>Renovar</button>
                                                             </div>
                                                             </div>";
-                                                      
+								$num = $num + 1;
                                                      }
 
                                                      mysqli_close($conn->connection);
