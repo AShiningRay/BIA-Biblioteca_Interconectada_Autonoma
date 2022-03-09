@@ -97,6 +97,7 @@
 #closelogwindow {
 	background-color: #ef2f54 !important;
 	border-color: #ef2f54 !important;
+	box-shadow: none !important;
 }
 
 #closelogwindow:hover {
