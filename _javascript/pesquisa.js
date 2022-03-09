@@ -39,9 +39,22 @@ function checkSearch() {
     let numbooks = document.getElementsByName("searchresult");
     if(numbooks.length > 0){ // Se há ao menos 1 livro, exiba os resultados
         $(".table-responsive").css("display", "block");
+        $(".notfounddescriptor").css("display", "block");
+        $(".notfounddescriptor").css("border", "2px solid #297a7d");
+        $(".notfounddescriptor").css("width", "100%");
+        $(".notfounddescriptor").css("margin-left", "0%");
+        $(".notfounddescriptor").css("padding", "0%");
+        $(".notfounddescriptor").css("font-size", "1.25em");
+        $(".notfounddescriptor").text("Quantidade de resultados encontrados: " + numbooks.length.toString() );
     }
     else {
         $(".table-responsive").css("display", "none");
         $(".notfounddescriptor").css("display", "block");
+        $(".notfounddescriptor").css("border", "8px double #297a7d");
+        $(".notfounddescriptor").css("width", "90%");
+        $(".notfounddescriptor").css("margin-left", "5%");
+        $(".notfounddescriptor").css("padding", "2%");
+        $(".notfounddescriptor").css("font-size", "1.1em");
+        $(".notfounddescriptor").text("Nenhum livro que atende a esses critérios de busca foi encontrado...");
     }
 };

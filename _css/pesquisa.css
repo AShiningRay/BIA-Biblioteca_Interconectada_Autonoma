@@ -101,7 +101,6 @@
         overflow-y: scroll;
         border: 2px solid #297a7d;
         border-radius: 5px;
-        margin-top: 2%;
     }
 
     .table-responsive::-webkit-scrollbar {
@@ -126,7 +125,7 @@
         border-radius: 5px;
         text-align: center;
         padding: 2%;
-        margin-top: 1%;
+        margin-top: 2%;
         width: 90%;
         margin-left: 5%;
     }
