@@ -63,16 +63,22 @@ function checkOrderType() {
 
     if(orderType === 'TitleA_Z'){
         sortbyName_Descending('Title');
+
     } else if(orderType === 'TitleZ_A') {
         sortbyName_Ascending('Title');
+
     } else if(orderType === 'AuthorA_Z') {
         sortbyName_Descending('Author');
+
     } else if(orderType === 'AuthorZ_A') {
         sortbyName_Descending('Author');
+
     } else if(orderType === 'Date0_9') {
         sortbyDate_Ascending();
+
     } else if(orderType === 'Date9_0') {
-        sortbyDate_Descending(0);
+        sortbyDate_Descending();
+
     } else if(orderType === 'Available') {
         sortbyAvailability();
     } else {
