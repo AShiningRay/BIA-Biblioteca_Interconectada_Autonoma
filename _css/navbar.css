@@ -69,6 +69,12 @@ botoes.*/
 
 #loginbutton:active {
     background-color: #ef2f54 !important;
+    border-color: #ef2f54 !important;
+}
+
+#searchbutton:active {
+    background-color: #ef2f54 !important;
+    border-color: #ef2f54 !important;
 }
 
 .loginbuttonimg {
