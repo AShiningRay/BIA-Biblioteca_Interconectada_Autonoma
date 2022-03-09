@@ -37,11 +37,12 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Criar uma logo única para o sistema BIA`
 * X`Determinar um layout para a pagina de pesquisa`
 * X`Estilizar a pagina de pesquisa`
-* X`Adicionar pequenas melhorias de usabilidade na pagina de pesquisa`
-* X`Integrar o funcionamento da pagina de pesquisa com um Banco de Dados inicial`
-* X`Adicionar a possibilidade de buscar livros pelo banco de dados`
-* `Tornar essa pesquisa mais profunda e detalhada atraves de categorias e filtros`
+* X`Adicionar pequenas melhorias de usabilidade na página de pesquisa`
+* X`Integrar o funcionamento da página de pesquisa com um Banco de Dados inicial`
+* X`Adicionar a possibilidade de buscar livros com base no banco de dados`
+* `Tornar essa pesquisa mais profunda e detalhada através de categorias e filtros`
 * `Criar um conjunto de livros de teste básico para o BD, contendo links para imagens e outros`
+* `Finalizar o visual da página de pesquisa`
 * `Finalizar as funcionalidades da página de pesquisa`
 * `Finalizar a página de pesquisa`
 * X`Estilizar a página de contato`
