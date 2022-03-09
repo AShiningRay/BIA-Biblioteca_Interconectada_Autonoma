@@ -147,43 +147,53 @@
                                                      if ($resultado->num_rows > 0){
 
                                                      while($rowData = mysqli_fetch_array($resultado)){
-                                                            echo "
-                                                            <div class='searchresultframe' name = 'searchresult' id='resultframe" . $num . "' style='animation-delay:" . 0.35*($num+1) . "s'>
-                                                            <div id='bookimageframe'>
-                                                                <img src='../_images/livros/" . $rowData['site_imagem'] . "' id='bookimg'>
-                                                            </div>
-                                                            <div id='bookinfoframe'>
-                                                                <h4 id='booktitle'>Título: " . $rowData['nome'] . "</h4>
-
-                                                                <div id='bookinternalinfo'>
-
-                                                                    <h5 id='bookauthor'>Autor: " . $rowData['autor'] . "</h5>
-                                                                    <h5 id='bookedition'>ISBN: " . $rowData['isbn'] . "</h5>
-
-                                                                </div>
-                                                                <div id='bookinternalinfo'>
-
-                                                                    <h5 id='bookeditor'>Editora: ".$rowData['editora']."</h5>
-                                                                    <h5 id='bookvolume'>Referências: " . $rowData['referencias'] . "</h5>
-
-                                                                </div>
-                                                                <div id='bookinternalinfo'>
-
-                                                                    <h5 id='bookyear'>Ano: ". $rowData['ano_public']."</h5>
-
-                                                                </div>
-                                                                
-                                                                <h4 id='booklocation'>Localização: ". $rowData['localizacao']."</h4>
-                                                            </div>
-                                                            <div id='bookdataframe'>
-                                                                <p id='bookavailable'>Disponíveis: " . $rowData['disponivel'] . "</p>
-
-                                                                <button class='btn btn-light btn-hover bookbutton' type='button' id = 'reservebutton'>Reservar</button>
-                                                                <button class='btn btn-light btn-hover bookbutton' type='button' id = 'returnbutton'>Devolver</button>
-                                                                <button class='btn btn-light btn-hover bookbutton' type='button' id = 'renewbutton'>Renovar</button>
-                                                            </div>
+                                                        echo "
+                                                        <div class='searchresultframe' name = 'searchresult' id='resultframe" . $num . " style='animation-delay:" . 0.35*($num+1) . "s'>";
+                                                        
+                                                        //Verifica se a imagem do livro existe. Caso não exista usa a imagem genéria do logo.
+                                                        
+                                                        if (file_exists("../_images/livros/".$rowData['site_imagem']) &&  $rowData['site_imagem'] != '') {
+                                                            echo "<div id='bookimageframe'><img src='../_images/livros/" . 
+                                                            $rowData['site_imagem'] . 
+                                                            "' id='bookimg'></div>";
+                                                        } else {
+                                                            echo "<div id='bookimageframe'>
+                                                            <img src='../_images/BIA_Logo.svg' id='bookimg'>
                                                             </div>";
-								$num = $num + 1;
+                                                        }
+                                                        echo "
+                                                        <div id='bookinfoframe'>
+                                                            <h4 id='booktitle'>Título: " . $rowData['nome'] . "</h4>
+
+                                                            <div id='bookinternalinfo'>
+
+                                                                <h5 id='bookauthor'>Autor: " . $rowData['autor'] . "</h5>
+                                                                <h5 id='bookedition'>ISBN: " . $rowData['isbn'] . "</h5>
+
+                                                            </div>
+                                                            <div id='bookinternalinfo'>
+
+                                                                <h5 id='bookeditor'>Editora: ".$rowData['editora']."</h5>
+                                                                <h5 id='bookvolume'>Referências: " . $rowData['referencias'] . "</h5>
+
+                                                            </div>
+                                                            <div id='bookinternalinfo'>
+
+                                                                <h5 id='bookyear'>Ano: ". $rowData['ano_public']."</h5>
+
+                                                            </div>
+                                                            
+                                                            <h4 id='booklocation'>Localização: ". $rowData['localizacao']."</h4>
+                                                        </div>
+                                                        <div id='bookdataframe'>
+                                                            <p id='bookavailable'>Disponíveis: " . $rowData['disponivel'] . "</p>
+
+                                                            <button class='btn btn-light btn-hover bookbutton' type='button' id = 'reservebutton'>Reservar</button>
+                                                            <button class='btn btn-light btn-hover bookbutton' type='button' id = 'returnbutton'>Devolver</button>
+                                                            <button class='btn btn-light btn-hover bookbutton' type='button' id = 'renewbutton'>Renovar</button>
+                                                        </div>
+                                                        </div>";
+                                                    $num = $num + 1;
                                                      }
 
                                                      mysqli_close($conn->connection);
