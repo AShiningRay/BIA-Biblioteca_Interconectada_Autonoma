@@ -109,11 +109,14 @@
                                                         <div id="searchdropdown">
                                                             <label for="orderTypes" > Ordenar por:</label>
                                                             <select name="orderTypes" id="ordertype">
-                                                                <option value=””>Nome Crescente</option>
-                                                                <option value=””>Nome Decrescente</option>
-                                                                <option value=””>Data Crescente</option>
-                                                                <option value=””>Data Decrescente</option>
-                                                                <option value=””>Popularidade</option>
+                                                            <option value='None'> - </option>
+                                                                <option value='TitleA_Z'> Título  [A - Z]</option>
+                                                                <option value='TitleZ_A'> Título  [Z - A]</option>
+                                                                <option value='AuthorA_Z'>Autor   [A - Z]</option>
+                                                                <option value='AuthorZ_A'>Autor   [Z - A]</option>
+                                                                <option value='Date0_9'>  Datas   [0 - 9]</option>
+                                                                <option value='Date9_0'>  Datas   [9 - 0]</option>
+                                                                <option value='Available'>Disponíveis</option>
                                                             </select>
                                                         </div>
                                                     </div>
