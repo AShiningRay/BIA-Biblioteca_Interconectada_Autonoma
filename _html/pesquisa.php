@@ -119,6 +119,9 @@
                                                     </div>
                                                 </div>
 
+                                            <div class="notfounddescriptor">
+                                                <h5>Nenhum livro que atende a esses critérios de busca foi encontrado...</h5>
+                                            </div>
                                             <div class="table-responsive">
                                                 <table class="table table-hover">
                                                     <tbody>

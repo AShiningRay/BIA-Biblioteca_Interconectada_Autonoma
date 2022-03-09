@@ -42,5 +42,6 @@ function checkSearch() {
     }
     else {
         $(".table-responsive").css("display", "none");
+        $(".notfounddescriptor").css("display", "block");
     }
 };

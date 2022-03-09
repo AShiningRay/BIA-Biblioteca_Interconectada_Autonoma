@@ -120,6 +120,17 @@
     }
 
     /*Conteúdo e frame dos resultados da busca*/
+    .notfounddescriptor {
+        display: none;
+        border: 8px double #297a7d;
+        border-radius: 5px;
+        text-align: center;
+        padding: 2%;
+        margin-top: 1%;
+        width: 90%;
+        margin-left: 5%;
+    }
+
     @keyframes resultsanim {
         0%   {opacity: 0; transform: scale(0);}
         25%  {opacity: 0.25;}
