@@ -12,11 +12,7 @@ $(document).ready(function() {
     });
 
     $(document).on('click', '#search_button', function () {
-        let text = $("#search_field").val(),
-        text2 = $("#publish_year_field").val(),
-        text3 = $("#publisher_field").val();
-        
-        console.log("Pesquisando por: ", text, "| Ano: ", text2, "| Editora: ", text3);
+        console.log(); // A ser alterado com um codigo que otimize a funcao abaixo
     });
 
     setInterval(checkSearch, 500); // Roda a checagem de livros a cada meio segundo, 
