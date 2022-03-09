@@ -94,10 +94,33 @@
         outline: none;
     }
 
+    .table-responsive {
+        max-height: 50vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        border: 2px solid #297a7d;
+        border-radius: 5px;
+        margin-top: 2%;
+    }
+
+    .table-responsive::-webkit-scrollbar {
+        width: 15px;               
+    }
+      
+    .table-responsive::-webkit-scrollbar-track {
+        background: #f39c12;
+        border-radius: 10px;
+    }
+    
+    .table-responsive::-webkit-scrollbar-thumb {
+        background-color: #297a7d;    
+        border-radius: 25px;     
+        border: 3px solid #f39c12;
+    }
+
     /*Conteúdo e frame dos resultados da busca*/
     @keyframes resultsanim {
-        0%   {opacity: 0; transform: scale(0); display:none}
-        15%  {opacity: 0; transform: scale(0); display:flex}
+        0%   {opacity: 0; transform: scale(0);}
         25%  {opacity: 0.25;}
         50%  {opacity: 0.5;}
         75%  {opacity: 0.75;}
