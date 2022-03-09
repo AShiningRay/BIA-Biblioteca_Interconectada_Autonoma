@@ -18,6 +18,9 @@ $(document).ready(function() {
         
         console.log("Pesquisando por: ", text, "| Ano: ", text2, "| Editora: ", text3);
     });
+
+    setInterval(checkSearch, 500); // Roda a checagem de livros a cada meio segundo, 
+                                   // deve ser otimizado no futuro.
 });
 
 $(document).on('click', '#advsearchbtn', function () {
@@ -31,3 +34,13 @@ $(document).on('click', '#advsearchbtn', function () {
         $("#search_frame").css("width", "100%");
     }
 });
+
+function checkSearch() {
+    let numbooks = document.getElementsByName("searchresult");
+    if(numbooks.length > 0){ // Se há ao menos 1 livro, exiba os resultados
+        $(".table-responsive").css("display", "block");
+    }
+    else {
+        $(".table-responsive").css("display", "none");
+    }
+};

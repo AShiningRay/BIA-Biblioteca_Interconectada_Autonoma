@@ -145,7 +145,7 @@
 
                                                      while($rowData = mysqli_fetch_array($resultado)){
                                                             echo "
-                                                            <div class='searchresultframe' id='resultframe" . $num . "' style='animation-delay:" . 0.35*($num+1) . "s'>
+                                                            <div class='searchresultframe' name = 'searchresult' id='resultframe" . $num . "' style='animation-delay:" . 0.35*($num+1) . "s'>
                                                             <div id='bookimageframe'>
                                                                 <img src='../_images/livros/" . $rowData['site_imagem'] . "' id='bookimg'>
                                                             </div>
