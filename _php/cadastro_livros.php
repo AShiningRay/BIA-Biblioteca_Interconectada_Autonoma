@@ -28,6 +28,6 @@ $sql = "INSERT INTO `cadastro_livros` (`nome`, `autor`, `isbn`, `ano_public`, `e
 mysqli_query($conn->connection, $sql);
 
 mysqli_close($conn->connection);
-
+header("Location:../_html/cadastro_livros.html");
 ?>
 

@@ -150,8 +150,8 @@
                                                         echo "
                                                         <div class='searchresultframe' name = 'searchresult' id='resultframe" . $num . " style='animation-delay:" . 0.35*($num+1) . "s'>";
                                                         
-                                                        //Verifica se a imagem do livro existe. Caso não exista usa a imagem genéria do logo.
-                                                        
+                                                        //Verifica se a imagem do livro existe. Caso não exista usa a imagem genérica do logo.
+
                                                         if (file_exists("../_images/livros/".$rowData['site_imagem']) &&  $rowData['site_imagem'] != '') {
                                                             echo "<div id='bookimageframe'><img src='../_images/livros/" . 
                                                             $rowData['site_imagem'] . 
@@ -193,9 +193,8 @@
                                                             <button class='btn btn-light btn-hover bookbutton' type='button' id = 'renewbutton'>Renovar</button>
                                                         </div>
                                                         </div>";
-                                                    $num = $num + 1;
-                                                     }
-
+                                                        $num = $num + 1;
+                                                    }
                                                      mysqli_close($conn->connection);
                                                     }
                                                     }
