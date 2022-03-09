@@ -57,6 +57,12 @@
     #search_frame {
         width: 100%;
     }
+
+    #search_button {
+        border: 3px solid #297a7d;
+        border-radius: 5px;
+        box-shadow: none;
+    }
     
     #searchfilters {
         display: none;
@@ -68,6 +74,37 @@
 
     #advsearchbtn {
         margin-top: 1%;
+        box-shadow: none;
+    }
+
+    #search_field {
+        border: 3px solid white;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+
+    #search_field:focus {
+        border: 3px solid #297a7d;
+    }
+
+    #publish_year_field {
+        border: 3px solid white;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+
+    #publish_year_field:focus {
+        border: 3px solid #297a7d;
+    }
+
+    #publisher_field {
+        border: 3px solid white;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+
+    #publisher_field:focus {
+        border: 3px solid #297a7d;
     }
 
     #searchdropdown {
@@ -204,4 +241,5 @@
         width: 80%;
         margin: 2% 0%;
         background-color: white;
+        box-shadow: none;
     }

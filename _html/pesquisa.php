@@ -94,7 +94,7 @@
                                             <form method="post" class="input-group">
                                                 <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite o nome do livro ou autor...">
                                                 <span class="input-group-btn">
-                                                    <button class="btn btn-secondary" type="submit" id="search_button"name="search_button" >
+                                                    <button class="btn btn-light btn-hover" type="submit" id="search_button"name="search_button" >
                                                         <img style="width:2em; height:2em;" src="../_images/icons/search.svg" id="logo_search">
                                                     </button>
                                                 </form>
