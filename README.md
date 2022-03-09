@@ -35,9 +35,14 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Estilizar o indicador visual e adicionar algumas animações nela`
 * X`Finalizar a página principal`
 * X`Criar uma logo única para o sistema BIA`
-* `Determinar um layout para a pagina de pesquisa`
-* `Estilizar a pagina de pesquisa`
-* `Adicionar funcionalidade à página de pesquisa`
+* X`Determinar um layout para a pagina de pesquisa`
+* X`Estilizar a pagina de pesquisa`
+* X`Adicionar pequenas melhorias de usabilidade na pagina de pesquisa`
+* X`Integrar o funcionamento da pagina de pesquisa com um Banco de Dados inicial`
+* X`Adicionar a possibilidade de buscar livros pelo banco de dados`
+* `Tornar essa pesquisa mais profunda e detalhada atraves de categorias e filtros`
+* `Criar um conjunto de livros de teste básico para o BD, contendo links para imagens e outros`
+* `Finalizar as funcionalidades da página de pesquisa`
 * `Finalizar a página de pesquisa`
 * X`Estilizar a página de contato`
 * X`Corrigir o problema do formulário de login na página de contato`
@@ -51,7 +56,8 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * `Conectar o site a um sistema de banco de dados que vai ser responsável por armazenar os livros, e possívelmente os usuários`
 * `Criar o sistema de empréstimo de livros`
 * `Expandir as funcionalidades desse sistema conforme os avanços forem feitos`
-* `Criar um sistema para cadastro dos livros ou importação do banco de dados já existente`
+* X`Criar um sistema para cadastro dos livros ou importação do banco de dados já existente`
+* X`Padronizar o banco de dados para cadastro e busca de livros`
 * `Desenvolver um conjunto de páginas administrativas para os funcionários do sistema de biblioteca`
 * `Criar um sistema de cadastro e remoção de usuários para o staff administrativo da biblioteca`
 * `Implementação de testes unitários (Caso o tempo para desenvolvimento permita)`
