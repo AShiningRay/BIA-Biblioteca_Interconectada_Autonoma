@@ -30,6 +30,15 @@
     background-color: #f1f1f1 !important;
 }
 
+#mapsbutton {
+    box-shadow: none;
+    border: 2px solid #fc831a;
+}
+
+#socialmediabutton {
+    box-shadow: none;
+}
+
 #mapsbutton:active {
     background-color: #ef2f54 !important;
     border-color: #ef2f54 !important;
