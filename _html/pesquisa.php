@@ -137,6 +137,10 @@
                                                     	if(array_key_exists('search_button', $_POST)) {
                                                            busca($_POST['search_field'], $_POST["orderTypes"]);
                                                         }
+
+                                                       // if(isset($_POST["orderTypes"])){
+                                                          //  echo $_POST["orderTypes"];
+                                                       // }
                                                     
                                                     function busca($search_text, $order_type){
                                                         $conn = new Connection();

@@ -57,3 +57,60 @@ function checkSearch() {
     }
 };
 
+function checkOrderType() {
+    let orderType = this.value;
+    console.log(orderType);
+
+    if(orderType === 'TitleA_Z'){
+        sortbyName_Descending('Title');
+
+    } else if(orderType === 'TitleZ_A') {
+        sortbyName_Ascending('Title');
+
+    } else if(orderType === 'AuthorA_Z') {
+        sortbyName_Descending('Author');
+
+    } else if(orderType === 'AuthorZ_A') {
+        sortbyName_Descending('Author');
+
+    } else if(orderType === 'Date0_9') {
+        sortbyDate_Ascending();
+
+    } else if(orderType === 'Date9_0') {
+        sortbyDate_Descending();
+
+    } else if(orderType === 'Available') {
+        sortbyAvailability();
+    } else {
+        console.log('Not Ordering');
+    }
+};
+
+function sortbyName_Ascending(field_type) {
+    if(field_type === 'Title') {
+        console.log('Ordering by title - ascending');
+    } else if(field_type === 'Author') {
+        console.log('Ordering by author - ascending');
+    }
+};
+
+function sortbyName_Descending(field_type) {
+    if(field_type === 'Title') {
+        console.log('Ordering by title - descending');
+    } else if(field_type === 'Author') {
+        console.log('Ordering by author - descending');
+    }
+};
+
+function sortbyDate_Ascending() {
+    console.log('Ordering by date - ascending');
+}
+
+function sortbyDate_Descending() {
+    console.log('Ordering by date - descending');
+}
+
+function sortbyAvailability() {
+    console.log('Ordering by availability');
+}
+
