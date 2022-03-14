@@ -97,18 +97,20 @@
                                                     <button class="btn btn-light btn-hover" type="submit" id="search_button"name="search_button" >
                                                         <img style="width:2em; height:2em;" src="../_images/icons/search.svg" id="logo_search">
                                                     </button>
-                                                             <!-- Select movido para dentro do form (Necessário para captura de seleção)-->
-                                                    <label for="orderTypes" > Ordenar por:</label>
-                                                         <select name="orderTypes" id="orderTypes">
-                                                            <option value='None'> - </option>
-                                                                <option value='TitleA_Z'> Título  [A - Z]</option>
-                                                                <option value='TitleZ_A'> Título  [Z - A]</option>
-                                                                <option value='AuthorA_Z'>Autor   [A - Z]</option>
-                                                                <option value='AuthorZ_A'>Autor   [Z - A]</option>
-                                                                <option value='Date0_9'>  Datas   [0 - 9]</option>
-                                                                <option value='Date9_0'>  Datas   [9 - 0]</option>
-                                                                <option value='Available'>Disponíveis</option>
-                                                        </select>
+
+
+                                                            <label for="orderTypes" > Ordenar por:</label>
+                                                                <select name="orderTypes" id="orderTypes">
+                                                                <option value='None'> - </option>
+                                                                    <option value='TitleA_Z'> Título  [A - Z]</option>
+                                                                    <option value='TitleZ_A'> Título  [Z - A]</option>
+                                                                    <option value='AuthorA_Z'>Autor   [A - Z]</option>
+                                                                    <option value='AuthorZ_A'>Autor   [Z - A]</option>
+                                                                    <option value='Date0_9'>  Datas   [0 - 9]</option>
+                                                                    <option value='Date9_0'>  Datas   [9 - 0]</option>
+                                                                    <option value='Available'>Disponíveis</option>
+                                                                </select>
+
                                                 </form>
                                                 </span>
 
@@ -132,15 +134,13 @@
                                                     
                                                     include("../_php/bd.php");
 
-                                                        //Ativa afunção de busca depois do botão search pressionado.
                                                     	if(array_key_exists('search_button', $_POST)) {
                                                            busca($_POST['search_field'], $_POST["orderTypes"]);
                                                         }
                                                     
                                                     function busca($search_text, $order_type){
                                                         $conn = new Connection();
-                                                        
-                                                        //Seleção de filtros.
+
                                                         if ($order_type == "None"){
                                                             $sql = "SELECT * from cadastro_livros 
                                                             where nome like '%$search_text%'
