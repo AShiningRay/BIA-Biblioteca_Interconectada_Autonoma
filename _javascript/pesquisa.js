@@ -57,16 +57,3 @@ function checkSearch() {
     }
 };
 
-// Função necessária caso seja encontrado
-// um jeito de refazer a pesquisa sem o pressionamento do botão de search novamente
-// Essa função apaga as divs de resultado sem recarregar a página.
-
-//$("#ordertype").on('change', function() {
- //   if ($(this).val() == 'TitleA_Z' || $(this).val() == 'TitleZ_A' || $(this).val() == 'AuthorA_Z'  || $(this).val() == 'AuthorZ_A'  || $(this).val() == 'Date0_9' || $(this).val() == 'Date9_0' || $(this).val() == 'Available'){
-//        var conceptName = $('#ordertype :selected').text();
-//        var conveniancecount = $("div[class*='searchresultframe']").length;
-//        for (var i = 0; i < conveniancecount; i++){
-//            $('#resultframe'+i).remove();
-//        }
- //   } 
-//});
