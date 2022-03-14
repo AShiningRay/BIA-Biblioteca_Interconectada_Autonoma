@@ -92,25 +92,11 @@
                                             <h2><i class="fa fa-file-o"></i> Pesquisa</h2>
                                             <hr>
                                             <form method="post" class="input-group">
-                                                <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite o nome do livro ou autor..." value = "<?php if (isset($_POST['search_field'])) echo $_POST['search_field']; ?>">
+                                                <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite o nome do livro ou autor...">
                                                 <span class="input-group-btn">
                                                     <button class="btn btn-light btn-hover" type="submit" id="search_button"name="search_button" >
                                                         <img style="width:2em; height:2em;" src="../_images/icons/search.svg" id="logo_search">
                                                     </button>
-
-
-                                                            <label for="orderTypes" > Ordenar por:</label>
-                                                                <select name="orderTypes" id="orderTypes">
-                                                                <option value='None'> - </option>
-                                                                    <option value='TitleA_Z'> Título  [A - Z]</option>
-                                                                    <option value='TitleZ_A'> Título  [Z - A]</option>
-                                                                    <option value='AuthorA_Z'>Autor   [A - Z]</option>
-                                                                    <option value='AuthorZ_A'>Autor   [Z - A]</option>
-                                                                    <option value='Date0_9'>  Datas   [0 - 9]</option>
-                                                                    <option value='Date9_0'>  Datas   [9 - 0]</option>
-                                                                    <option value='Available'>Disponíveis</option>
-                                                                </select>
-
                                                 </form>
                                                 </span>
 
@@ -120,6 +106,19 @@
                                                         <button type="button" class="btn btn-light" id="advsearchbtn">
                                                             Pesquisa Avançada
                                                         </button>
+                                                        <div id="searchdropdown">
+                                                            <label for="orderTypes" > Ordenar por:</label>
+                                                            <select name="orderTypes" id="ordertype">
+                                                            <option value='None'> - </option>
+                                                                <option value='TitleA_Z'> Título  [A - Z]</option>
+                                                                <option value='TitleZ_A'> Título  [Z - A]</option>
+                                                                <option value='AuthorA_Z'>Autor   [A - Z]</option>
+                                                                <option value='AuthorZ_A'>Autor   [Z - A]</option>
+                                                                <option value='Date0_9'>  Datas   [0 - 9]</option>
+                                                                <option value='Date9_0'>  Datas   [9 - 0]</option>
+                                                                <option value='Available'>Disponíveis</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -135,71 +134,15 @@
                                                     include("../_php/bd.php");
 
                                                     	if(array_key_exists('search_button', $_POST)) {
-                                                           busca($_POST['search_field'], $_POST["orderTypes"]);
+                                                           busca($_POST['search_field']);
                                                         }
-
-                                                       // if(isset($_POST["orderTypes"])){
-                                                          //  echo $_POST["orderTypes"];
-                                                       // }
                                                     
-                                                    function busca($search_text, $order_type){
+                                                    function busca($search_text){
                                                         $conn = new Connection();
-
-                                                        if ($order_type == "None"){
-                                                            $sql = "SELECT * from cadastro_livros 
-                                                            where nome like '%$search_text%'
-                                                            or autor like '%$search_text%'
-                                                            ";
-                                                        }
-
-                                                        if ($order_type == "TitleA_Z"){
-                                                            $sql = "SELECT * from cadastro_livros 
-                                                            where nome like '%$search_text%'
-                                                            or autor like '%$search_text%'
-                                                            ORDER BY nome ASC";
-                                                        }
-
-                                                        if ($order_type == "TitleZ_A"){
-                                                            $sql = "SELECT * from cadastro_livros 
-                                                            where nome like '%$search_text%'
-                                                            or autor like '%$search_text%'
-                                                            ORDER BY nome DESC";
-                                                        }
-
-                                                        if ($order_type == "AuthorA_Z"){
-                                                            $sql = "SELECT * from cadastro_livros 
-                                                            where nome like '%$search_text%'
-                                                            or autor like '%$search_text%'
-                                                            ORDER BY autor ASC";
-                                                        }
-
-                                                        if ($order_type == "AuthorZ_A"){
-                                                            $sql = "SELECT * from cadastro_livros 
-                                                            where nome like '%$search_text%'
-                                                            or autor like '%$search_text%'
-                                                            ORDER BY autor DESC";
-                                                        }
-
-                                                        if ($order_type == "Date0_9"){
-                                                            $sql = "SELECT * from cadastro_livros 
-                                                            where nome like '%$search_text%'
-                                                            or autor like '%$search_text%'
-                                                            ORDER BY ano_public ASC";
-                                                        }
-
-                                                        if ($order_type == "Date9_0"){
-                                                            $sql = "SELECT * from cadastro_livros 
-                                                            where nome like '%$search_text%'
-                                                            or autor like '%$search_text%'
-                                                            ORDER BY ano_public DESC";
-                                                        }
-
-                                                        if ($order_type == "Available"){
-                                                            $sql = "SELECT * from cadastro_livros 
-                                                            where nome like '%$search_text%'
-                                                            or autor like '%$search_text%'
-                                                            ORDER BY disponivel DESC";
-                                                        }
+                                                        $sql = "SELECT * from cadastro_livros 
+                                                        where nome like '%$search_text%'
+                                                        or autor like '%$search_text%'
+                                                        ";
                                                 
                                                 
                                                      	$resultado = mysqli_query($conn->connection, $sql);
@@ -208,7 +151,7 @@
 
                                                      while($rowData = mysqli_fetch_array($resultado)){
                                                         echo "
-                                                        <div class='searchresultframe' name = 'searchresult' id='resultframe".$num."' style='animation-delay:" . 0.35*($num+1) . "s'>";
+                                                        <div class='searchresultframe' name = 'searchresult' id='resultframe" . $num . " style='animation-delay:" . 0.35*($num+1) . "s'>";
                                                         
                                                         //Verifica se a imagem do livro existe. Caso não exista usa a imagem genérica do logo.
 
@@ -260,18 +203,7 @@
                                                     }
                                                     
                                                     ?>
-                                                         <script>
-                                                            $("#ordertype").on('change', function() {
-                                                                if ($(this).val() == 'TitleA_Z' || $(this).val() == 'TitleZ_A' || $(this).val() == 'AuthorA_Z'  || $(this).val() == 'AuthorZ_A'  || $(this).val() == 'Date0_9' || $(this).val() == 'Date9_0' || $(this).val() == 'Available'){
-                                                                    var conceptName = $('#ordertype :selected').text();
-                                                                    var conveniancecount = $("div[class*='searchresultframe']").length;
-                                                                    for (var i = 0; i < conveniancecount; i++){
-                                                                        $('#resultframe'+i).remove();
-                                                                    }
-                                                                } 
-                                                            });
-
-                                                            </script>
+                                                    
                                                     <!-- Resultados devem ser exibidos aqui-->
                                                     </tbody>
                                                 </table>

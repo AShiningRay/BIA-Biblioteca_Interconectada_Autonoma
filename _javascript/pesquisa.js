@@ -113,4 +113,3 @@ function sortbyDate_Descending() {
 function sortbyAvailability() {
     console.log('Ordering by availability');
 }
-
