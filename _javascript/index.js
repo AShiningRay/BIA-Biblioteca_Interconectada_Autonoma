@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	//Footer
 	$("#mainfooter").load("./_html/footer.html", function () {
-		document.getElementById("logo_ufcat").src = "./_images/UFCAT_Logo.png";
+		document.getElementById("logo_ufcat").src = "./_images/UFCAT_Logo.webp";
 		document.getElementById("logo_maps").src = "./_images/icons/maps.svg";
 		document.getElementById("logo_facebook").src = "./_images/icons/social_media/facebook.svg";
 		document.getElementById("logo_twitter").src = "./_images/icons/social_media/twitter.svg";
