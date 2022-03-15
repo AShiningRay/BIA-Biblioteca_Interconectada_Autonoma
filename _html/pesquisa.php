@@ -114,8 +114,8 @@
                                                                 <option value='TitleZ_A'> Título  [Z - A]</option>
                                                                 <option value='AuthorA_Z'>Autor   [A - Z]</option>
                                                                 <option value='AuthorZ_A'>Autor   [Z - A]</option>
-                                                                <option value='Date0_9'>  Datas   [0 - 9]</option>
-                                                                <option value='Date9_0'>  Datas   [9 - 0]</option>
+                                                                <option value='Date0_9'>  Ano   [0 - 9]</option>
+                                                                <option value='Date9_0'>  Ano   [9 - 0]</option>
                                                                 <option value='Available'>Disponíveis</option>
                                                             </select>
                                                         </div>
@@ -125,7 +125,7 @@
                                             <div class="notfounddescriptor">
                                                 <h5>Nenhum livro que atende a esses critérios de busca foi encontrado...</h5>
                                             </div>
-                                            <div class="table-responsive">
+                                            <div class="table-responsive" id="resultstable">
                                                 <table class="table table-hover">
                                                     <tbody>
                                                     <!-- Resultados devem ser exibidos aqui-->
