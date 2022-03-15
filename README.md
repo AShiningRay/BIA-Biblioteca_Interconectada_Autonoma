@@ -40,6 +40,7 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Adicionar pequenas melhorias de usabilidade na página de pesquisa`
 * X`Integrar o funcionamento da página de pesquisa com um Banco de Dados inicial`
 * X`Adicionar a possibilidade de buscar livros com base no banco de dados`
+* X`Implementar as formas de ordenação dos resultados na página de pesquisa`
 * `Tornar essa pesquisa mais profunda e detalhada através de categorias e filtros`
 * `Criar um conjunto de livros de teste básico para o BD, contendo links para imagens e outros`
 * `Finalizar o visual da página de pesquisa`
