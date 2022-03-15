@@ -59,57 +59,102 @@ function checkSearch() {
 
 function checkOrderType() {
     let orderType = this.value;
-    console.log(orderType);
 
-    if(orderType === 'TitleA_Z'){
-        sortbyName_Descending('Title');
+    if(orderType === 'TitleA_Z')
+        sortElements('Title', 'Asc');
+        
+     else if(orderType === 'TitleZ_A') 
+        sortElements('Title', 'Dec');
 
-    } else if(orderType === 'TitleZ_A') {
-        sortbyName_Ascending('Title');
+     else if(orderType === 'AuthorA_Z') 
+        sortElements('Author', 'Asc');
 
-    } else if(orderType === 'AuthorA_Z') {
-        sortbyName_Descending('Author');
+     else if(orderType === 'AuthorZ_A') 
+        sortElements('Author', 'Dec');
 
-    } else if(orderType === 'AuthorZ_A') {
-        sortbyName_Descending('Author');
+     else if(orderType === 'Date0_9') 
+        sortElements('Date', 'Asc');
 
-    } else if(orderType === 'Date0_9') {
-        sortbyDate_Ascending();
+     else if(orderType === 'Date9_0') 
+        sortElements('Date', 'Dec');
 
-    } else if(orderType === 'Date9_0') {
-        sortbyDate_Descending();
+     else if(orderType === 'Available') 
+        sortElements('Available', 'Dec');
 
-    } else if(orderType === 'Available') {
-        sortbyAvailability();
-    } else {
+     else 
         console.log('Not Ordering');
-    }
 };
 
-function sortbyName_Ascending(field_type) {
+function sortElements(field_type, sort_type) {
+    // Pega um snapshot dos resultados da busca e os salva
+    let elementsArray = Array.from(document.querySelectorAll('[name="searchresult"]')), sorted_elements;
+
+    // Remove os itens do documento para posteriormente inseri-los ordenados
+    document.querySelectorAll('[name="searchresult"]').forEach(function(element){
+        element.remove()
+    });
+
+    // seleciona o campo usado para ordenar
     if(field_type === 'Title') {
-        console.log('Ordering by title - ascending');
+        // Ordena os elementos com base no resultado obtido na comparação dos campos de título (mesmos valores do strcmp)
+        sorted_elements = elementsArray.sort(function(elem1, elem2) {
+            if(elem1.children[1].children[0].innerHTML > elem2.children[1].children[0].innerHTML)
+                return 1;
+            else if(elem1.children[1].children[0].innerHTML < elem2.children[1].children[0].innerHTML)
+                return -1;
+            else return 0;
+        });
+
     } else if(field_type === 'Author') {
-        console.log('Ordering by author - ascending');
+        // Ordena os elementos verificando os campos de autor
+        sorted_elements = elementsArray.sort(function(elem1, elem2) {
+            if(elem1.children[1].children[1].children[0].innerHTML > elem2.children[1].children[1].children[0].innerHTML)
+                return 1;
+            else if(elem1.children[1].children[1].children[0].innerHTML < elem2.children[1].children[1].children[0].innerHTML)
+                return -1;
+            else return 0;
+        });
+
+    } else if(field_type === 'Date') {
+        // Ordena os elementos verificando os campos de data
+        sorted_elements = elementsArray.sort(function(elem1, elem2) {
+            if(elem1.children[1].children[3].children[0].innerHTML > elem2.children[1].children[3].children[0].innerHTML)
+                return 1;
+            else if(elem1.children[1].children[3].children[0].innerHTML < elem2.children[1].children[3].children[0].innerHTML)
+                return -1;
+            else return 0;
+        });
+
+    } else if(field_type === 'Available') {
+        // Ordena os elementos verificando os campos de disponibilidade
+        sorted_elements = elementsArray.sort(function(elem1, elem2) {
+            if(elem1.children[2].children[0].innerHTML > elem2.children[2].children[0].innerHTML)
+                return 1;
+            else if(elem1.children[2].children[0].innerHTML < elem2.children[2].children[0].innerHTML)
+                return -1;
+            else return 0;
+        });
+    };
+
+    // Adiciona os elementos ordenados de volta ao documento, verificando se é ordem crescente ou decrescente.
+    if(sort_type === 'Asc') {
+        addElements(sorted_elements, 'Asc');
+    }
+    else {
+        addElements(sorted_elements, 'Dec');
     }
 };
 
-function sortbyName_Descending(field_type) {
-    if(field_type === 'Title') {
-        console.log('Ordering by title - descending');
-    } else if(field_type === 'Author') {
-        console.log('Ordering by author - descending');
+function addElements(sorted_elements, order) {
+    // Seleciona o elemento responsavel por conter os resultados da busca
+    let table = document.getElementById('resultstable');
+    // Adiciona os resultados ordenados segundo a ordem recebida
+    if(order === 'Asc') {
+        for(let i = 0; i < sorted_elements.length; i++) 
+            table.appendChild(sorted_elements[i]);
     }
-};
-
-function sortbyDate_Ascending() {
-    console.log('Ordering by date - ascending');
-}
-
-function sortbyDate_Descending() {
-    console.log('Ordering by date - descending');
-}
-
-function sortbyAvailability() {
-    console.log('Ordering by availability');
+    else {
+        for(let i = sorted_elements.length-1; i >= 0; i--) 
+            table.appendChild(sorted_elements[i]);
+    }
 }
