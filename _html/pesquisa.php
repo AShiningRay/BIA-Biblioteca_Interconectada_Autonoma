@@ -49,35 +49,35 @@
                                         <div class="col-md-3" id="searchfilters">
                                             <h2 class="grid-title"><i class="fa fa-filter"></i> Filtros</h2>
                                             <hr>
-
+                                            <form method="post">
                                             <h4>Por categoria:</h4>
                                             <div class = "categories_frame"> 
                                             <div class="checkbox">
-                                                <label><input type="checkbox" class="icheck"> Computação</label>
+                                                <label><input type="checkbox" class="icheck" value="Computação" name ="check_computacao"> Computação</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Literatura</label>
+                                                    <label><input type="checkbox" class="icheck" value="Literatura" name ="check_literatura"> Literatura</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Biologia</label>
+                                                    <label><input type="checkbox" class="icheck" value="Biologia" name ="check_biologia"> Biologia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Sociologia</label>
+                                                    <label><input type="checkbox" class="icheck" value="Sociologia" name ="check_sociologia"> Sociologia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Matemática</label>
+                                                    <label><input type="checkbox" class="icheck" value="Matemática" name ="check_matematica"> Matemática</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Engenharia</label>
+                                                    <label><input type="checkbox" class="icheck" value="Engenharia" name ="check_engenharia"> Engenharia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Física</label>
+                                                    <label><input type="checkbox" class="icheck" value="Física" name ="check_fisica"> Física</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Artes</label>
+                                                    <label><input type="checkbox" class="icheck" value="Artes" name ="check_artes"> Artes</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Notícias</label>
+                                                    <label><input type="checkbox" class="icheck" value="Notícias" name ="check_noticias"> Notícias</label>
                                                 </div>
                                             </div>
 
@@ -88,7 +88,7 @@
                                             Autor
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input1">
-                                                <input type="text" class="form-control" id="author_field">
+                                                <input type="text" class="form-control" id="author_field" name = "author_field" value = "">
                                                 <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
@@ -96,7 +96,7 @@
                                             Ano de publicação
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
-                                                <input type="number" class="form-control" id="publish_year_field">
+                                                <input type="number" class="form-control" id="publish_year_field" name = "publish_year_field" value = "">
                                                 <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
                                             </div>
                                             <input type="hidden" id="dtp_input1" value="">
@@ -104,7 +104,7 @@
                                             Editora
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input3">
-                                                <input type="text" class="form-control" id="publisher_field">
+                                                <input type="text" class="form-control" id="publisher_field" name="publisher_field" value = "">
                                                 <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
@@ -112,7 +112,7 @@
                                             Edição
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input4">
-                                                <input type="text" class="form-control" id="edition_field">
+                                                <input type="text" class="form-control" id="edition_field" name="edition_field" value = "">
                                                 <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
@@ -120,7 +120,7 @@
                                             ISBN
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input5">
-                                                <input type="number" class="form-control" id="isbn_field">
+                                                <input type="number" class="form-control" id="isbn_field" name="isbn_field" value = "">
                                                 <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
@@ -128,7 +128,7 @@
                                             Volume
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input6">
-                                                <input type="number" class="form-control" id="volume_field">
+                                                <input type="number" class="form-control" id="volume_field" name="volume_field" value = "">
                                                 <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
@@ -137,12 +137,13 @@
                                         <div class="col-md-9" id="search_frame">
                                             <h2><i class="fa fa-file-o"></i> Pesquisa</h2>
                                             <hr>
-                                            <form method="post" class="input-group">
-                                                <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite o nome do livro que deseja buscar...">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite o nome do livro que deseja buscar..." value = "<?php if (isset($_POST['search_field'])) echo $_POST['search_field']; ?>">
                                                 <span class="input-group-btn">
                                                     <button class="btn btn-light btn-hover" type="submit" id="search_button"name="search_button" >
                                                         <img style="width:2em; height:2em;" src="../_images/icons/search.svg" id="logo_search">
                                                     </button>
+                                                    </div>
                                                 </form>
                                                 </span>
 
@@ -184,12 +185,79 @@
                                                         }
                                                     
                                                     function busca($search_text){
+                                                        if ($_POST['author_field'] != ""){
+                                                            $author = $_POST['author_field'];
+                                                            $sql = "SELECT * from cadastro_livros 
+                                                            where nome like '%$search_text%'
+                                                            and autor like '%$author%'
+                                                            ";
+                                                        }
+
+                                                        else {
+                                                            $sql = "SELECT * from cadastro_livros 
+                                                            where nome like '%$search_text%'
+                                                            or autor like '%$search_text%'
+                                                            ";
+                                                        }
+
+                                                        if ($_POST['publish_year_field'] != ""){
+                                                            $publish_year = $_POST['publish_year_field'];
+                                                            $sql .= "and ano_public = '$publish_year'";
+                                                        }
+                                                        if ($_POST['publisher_field'] != ""){
+                                                            $publisher_field = $_POST['publisher_field'];
+                                                            $sql .= "and editora = '$publisher_field'";
+                                                        }
+                                                        if ($_POST['edition_field'] != ""){
+                                                            $edition_field = $_POST['edition_field'];
+                                                            $sql .= "and livro_edicao = '$edition_field'";
+                                                        }
+                                                        if ($_POST['isbn_field'] != ""){
+                                                            $isbn_field = $_POST['isbn_field'];
+                                                            $sql .= "and isbn = '$isbn_field'";
+                                                        }
+                                                        if ($_POST['volume_field'] != ""){
+                                                            $volume_field = $_POST['volume_field'];
+                                                            $sql .= "and livro_volume = '$volume_field'";
+                                                        }
+                                                        if (isset($_POST['check_computacao'])){
+                                                            $check_computacao = $_POST['check_computacao'];
+                                                            $sql .= "and livro_categoria = '$check_computacao'";
+                                                        }
+                                                        if (isset($_POST['check_literatura'])){
+                                                            $check_literatura = $_POST['check_literatura'];
+                                                            $sql .= "and livro_categoria = '$check_literatura'";
+                                                        }
+                                                        if (isset($_POST['check_biologia'])){
+                                                            $check_biologia = $_POST['check_biologia'];
+                                                            $sql .= "and livro_categoria = '$check_biologia'";
+                                                        }
+                                                        if (isset($_POST['check_sociologia'])){
+                                                            $check_sociologia = $_POST['check_sociologia'];
+                                                            $sql .= "and livro_categoria = '$check_sociologia'";
+                                                        }
+                                                        if (isset($_POST['check_matematica'])){
+                                                            $check_matematica = $_POST['check_matematica'];
+                                                            $sql .= "and livro_categoria = '$check_matematica'";
+                                                        }
+                                                        if (isset($_POST['check_engenharia'])){
+                                                            $check_engenharia = $_POST['check_engenharia'];
+                                                            $sql .= "and livro_categoria = '$check_engenharia'";
+                                                        }
+                                                        if (isset($_POST['check_fisica'])){
+                                                            $check_fisica = $_POST['check_fisica'];
+                                                            $sql .= "and livro_categoria = '$check_fisica'";
+                                                        }
+                                                        if (isset($_POST['check_artes'])){
+                                                            $check_artes = $_POST['check_artes'];
+                                                            $sql .= "and livro_categoria = '$check_artes'";
+                                                        }
+                                                        if (isset($_POST['check_noticias'])){
+                                                            $check_noticias = $_POST['check_noticias'];
+                                                            $sql .= "and livro_categoria = '$check_noticias'";
+                                                        }
+
                                                         $conn = new Connection();
-                                                        $sql = "SELECT * from cadastro_livros 
-                                                        where nome like '%$search_text%'
-                                                        or autor like '%$search_text%'
-                                                        ";
-                                                
                                                 
                                                      	$resultado = mysqli_query($conn->connection, $sql);
 							                            $num = 0;
