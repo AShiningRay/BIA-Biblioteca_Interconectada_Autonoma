@@ -6,7 +6,7 @@ class Connection
     {                   
         //                                   server    user    senha    BD      
         //                                     ↓         ↓       ↓      ↓
-        $this->connection = mysqli_connect("localhost","root", "123", "test");
+        $this->connection = mysqli_connect("localhost","root", "123", "biblioteca");
     }
 }
 ?>

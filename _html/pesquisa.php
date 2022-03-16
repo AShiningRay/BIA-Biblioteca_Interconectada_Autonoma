@@ -189,7 +189,7 @@
                                                             <h4 id='booklocation'>Localização: ". $rowData['localizacao']."</h4>
                                                         </div>
                                                         <div id='bookdataframe'>
-                                                            <p id='bookavailable'>Disponíveis: " . $rowData['disponivel'] . "</p>
+                                                            <p id='bookavailable'>Disponíveis: " . $rowData['qtd_disponivel'] . "</p>
 
                                                             <button class='btn btn-light btn-hover bookbutton' type='button' id = 'reservebutton'>Reservar</button>
                                                             <button class='btn btn-light btn-hover bookbutton' type='button' id = 'returnbutton'>Devolver</button>
