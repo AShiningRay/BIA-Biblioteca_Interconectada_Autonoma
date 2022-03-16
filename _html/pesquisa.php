@@ -171,19 +171,32 @@
                                                             <div id='bookinternalinfo'>
 
                                                                 <h5 id='bookauthor'>Autor: " . $rowData['autor'] . "</h5>
-                                                                <h5 id='bookedition'>ISBN: " . $rowData['isbn'] . "</h5>
 
                                                             </div>
                                                             <div id='bookinternalinfo'>
 
+                                                                <h5 id='bookedition'>ISBN: " . $rowData['isbn'] . "</h5>
                                                                 <h5 id='bookeditor'>Editora: ".$rowData['editora']."</h5>
-                                                                <h5 id='bookvolume'>Referências: " . $rowData['referencias'] . "</h5>
 
                                                             </div>
                                                             <div id='bookinternalinfo'>
 
                                                                 <h5 id='bookyear'>Ano: ". $rowData['ano_public']."</h5>
+                                                                <h5 id='bookvolume'>Volume: ". $rowData['livro_volume']."</h5>
 
+                                                            </div>
+
+                                                            <div id='bookinternalinfo'>
+
+                                                                <h5 id='bookcategory'>Categoria: ". $rowData['livro_categoria']."</h5>
+                                                                <h5 id='bookedition'>Edição: ". $rowData['livro_edicao']."</h5>
+                                                                
+                                                            </div>
+
+                                                            <div id='bookinternalinfo'>
+
+                                                            <h5 id='bookreferences'>Referências: " . $rowData['referencias'] . "</h5>
+                                                                
                                                             </div>
                                                             
                                                             <h4 id='booklocation'>Localização: ". $rowData['localizacao']."</h4>
