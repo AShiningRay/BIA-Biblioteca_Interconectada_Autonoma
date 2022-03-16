@@ -65,13 +65,19 @@
                                                     <label><input type="checkbox" class="icheck"> Sociologia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Filosofia</label>
+                                                    <label><input type="checkbox" class="icheck"> Matemática</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Filosofia</label>
+                                                    <label><input type="checkbox" class="icheck"> Engenharia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck"> Filosofia</label>
+                                                    <label><input type="checkbox" class="icheck"> Física</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" class="icheck"> Artes</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" class="icheck"> Notícias</label>
                                                 </div>
                                             </div>
 
