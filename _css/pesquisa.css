@@ -67,6 +67,13 @@
     #search_button:active {
         border-color: #ef2f54 !important;
     }
+
+    .categories_frame {
+        max-height: 15vh;
+        overflow-y: scroll;
+        border: 2px solid #297a7d;
+        border-radius: 5px;
+    }
     
     #searchfilters {
         display: none;
@@ -91,23 +98,23 @@
         border: 3px solid #297a7d;
     }
 
-    #publish_year_field {
+    #publish_year_field,
+    #publisher_field,
+    #author_field,
+    #edition_field,
+    #isbn_field,
+    #volume_field {
         border: 3px solid white;
         border-radius: 5px;
         box-shadow: none;
     }
 
-    #publish_year_field:focus {
-        border: 3px solid #297a7d;
-    }
-
-    #publisher_field {
-        border: 3px solid white;
-        border-radius: 5px;
-        box-shadow: none;
-    }
-
-    #publisher_field:focus {
+    #publish_year_field:focus,
+    #publisher_field:focus,
+    #author_field:focus,
+    #edition_field:focus,
+    #isbn_field:focus,
+    #volume_field:focus {
         border: 3px solid #297a7d;
     }
 
@@ -144,16 +151,19 @@
         border-radius: 5px;
     }
 
-    .table-responsive::-webkit-scrollbar {
+    .table-responsive::-webkit-scrollbar,
+    .categories_frame::-webkit-scrollbar {
         width: 15px;               
     }
       
-    .table-responsive::-webkit-scrollbar-track {
+    .table-responsive::-webkit-scrollbar-track,
+    .categories_frame::-webkit-scrollbar-track {
         background: #f39c12;
         border-radius: 10px;
     }
     
-    .table-responsive::-webkit-scrollbar-thumb {
+    .table-responsive::-webkit-scrollbar-thumb,
+    .categories_frame::-webkit-scrollbar-thumb {
         background-color: #297a7d;    
         border-radius: 25px;     
         border: 3px solid #f39c12;

@@ -51,48 +51,88 @@
                                             <hr>
 
                                             <h4>Por categoria:</h4>
+                                            <div class = "categories_frame"> 
                                             <div class="checkbox">
                                                 <label><input type="checkbox" class="icheck"> Computação</label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label><input type="checkbox" class="icheck"> Literatura</label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label><input type="checkbox" class="icheck"> Biologia</label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label><input type="checkbox" class="icheck"> Sociologia</label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label><input type="checkbox" class="icheck"> Filosofia</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" class="icheck"> Literatura</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" class="icheck"> Biologia</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" class="icheck"> Sociologia</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" class="icheck"> Filosofia</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" class="icheck"> Filosofia</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" class="icheck"> Filosofia</label>
+                                                </div>
                                             </div>
 
                                             <div class="padding"></div>
 
                                             <h4>Filtros avançados:</h4>
-                                            Ano de publicação
+                                            
+                                            Autor
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input1">
-                                                <input type="text" class="form-control" id="publish_year_field">
+                                                <input type="text" class="form-control" id="author_field">
+                                                <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+                                            </div>
+                                            <input type="hidden" id="dtp_input2" value="">
+
+                                            Ano de publicação
+                                            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
+                                                data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
+                                                <input type="number" class="form-control" id="publish_year_field">
                                                 <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
                                             </div>
                                             <input type="hidden" id="dtp_input1" value="">
 
                                             Editora
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
-                                                data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
+                                                data-date-format="dd-mm-yyyy" data-link-field="dtp_input3">
                                                 <input type="text" class="form-control" id="publisher_field">
                                                 <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
 
+                                            Edição
+                                            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
+                                                data-date-format="dd-mm-yyyy" data-link-field="dtp_input4">
+                                                <input type="text" class="form-control" id="edition_field">
+                                                <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+                                            </div>
+                                            <input type="hidden" id="dtp_input2" value="">
+
+                                            ISBN
+                                            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
+                                                data-date-format="dd-mm-yyyy" data-link-field="dtp_input5">
+                                                <input type="number" class="form-control" id="isbn_field">
+                                                <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+                                            </div>
+                                            <input type="hidden" id="dtp_input2" value="">
+
+                                            Volume
+                                            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
+                                                data-date-format="dd-mm-yyyy" data-link-field="dtp_input6">
+                                                <input type="number" class="form-control" id="volume_field">
+                                                <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+                                            </div>
+                                            <input type="hidden" id="dtp_input2" value="">
 
                                         </div>
                                         <div class="col-md-9" id="search_frame">
                                             <h2><i class="fa fa-file-o"></i> Pesquisa</h2>
                                             <hr>
                                             <form method="post" class="input-group">
-                                                <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite o nome do livro ou autor...">
+                                                <input type="text" class="form-control" id="search_field" name = "search_field" placeholder = "Digite o nome do livro que deseja buscar...">
                                                 <span class="input-group-btn">
                                                     <button class="btn btn-light btn-hover" type="submit" id="search_button"name="search_button" >
                                                         <img style="width:2em; height:2em;" src="../_images/icons/search.svg" id="logo_search">
