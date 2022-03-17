@@ -195,9 +195,7 @@
 
                                                         else {
                                                             $sql = "SELECT * from cadastro_livros 
-                                                            where nome like '%$search_text%'
-                                                            or autor like '%$search_text%'
-                                                            ";
+                                                            where nome or autor like '%$search_text%'";
                                                         }
 
                                                         if ($_POST['publish_year_field'] != ""){
