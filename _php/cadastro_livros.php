@@ -11,18 +11,19 @@ else{
     echo 'Connection successful';
 }
 
-$Name = $_POST['nome_livro'];
-$Autor = $_POST['autor_livro'];
-$Isbn = $_POST['num_isbn'];
-$Ano_public = $_POST['data_pub'];
-$Editora = $_POST['nome_editora'];
-$Referencias = $_POST['referencias'];
-$Localizacao = $_POST['localizacao'];
-$Disponíveis = $_POST['num_disponivel'];
-$Categoria = $_POST['categoria'];
-$Edicao = $_POST['edicao'];
-$Volume = $_POST['volume'];
-$SiteImagem = $_POST['site_imagem'];
+//Capta o conteúdo do post e remove espaços vazios do início e final das strings.
+$Name = trim($_POST['nome_livro']);
+$Autor = trim($_POST['autor_livro']);
+$Isbn = trim($_POST['num_isbn']);
+$Ano_public = trim($_POST['data_pub']);
+$Editora = trim($_POST['nome_editora']);
+$Referencias = trim($_POST['referencias']);
+$Localizacao = trim($_POST['localizacao']);
+$Disponíveis = trim($_POST['num_disponivel']);
+$Categoria = trim($_POST['categoria']);
+$Edicao = trim($_POST['edicao']);
+$Volume = trim($_POST['volume']);
+$SiteImagem = trim($_POST['site_imagem']);
 
 $sql = "INSERT INTO `cadastro_livros` (`nome`, `autor`, `isbn`, `ano_public`, `editora`, `referencias`, `localizacao`,`livro_categoria`, `livro_edicao`,`livro_volume`, `qtd_disponivel`, `site_imagem`) 
         VALUES ('$Name', '$Autor', '$Isbn','$Ano_public','$Editora ','$Referencias','$Localizacao','$Categoria','$Edicao','$Volume','$Disponíveis', '$SiteImagem')";
