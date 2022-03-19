@@ -53,31 +53,31 @@
                                             <h4>Por categoria:</h4>
                                             <div class = "categories_frame"> 
                                             <div class="checkbox">
-                                                <label><input type="checkbox" class="icheck" value="Computação" name ="check_computacao"> Computação</label>
+                                                <label><input type="checkbox" class="icheck" value="Computação" name ="check_category"> Computação</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Literatura" name ="check_literatura"> Literatura</label>
+                                                    <label><input type="checkbox" class="icheck" value="Literatura" name ="check_category"> Literatura</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Biologia" name ="check_biologia"> Biologia</label>
+                                                    <label><input type="checkbox" class="icheck" value="Biologia" name ="check_category"> Biologia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Sociologia" name ="check_sociologia"> Sociologia</label>
+                                                    <label><input type="checkbox" class="icheck" value="Sociologia" name ="check_category"> Sociologia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Matemática" name ="check_matematica"> Matemática</label>
+                                                    <label><input type="checkbox" class="icheck" value="Matemática" name ="check_category"> Matemática</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Engenharia" name ="check_engenharia"> Engenharia</label>
+                                                    <label><input type="checkbox" class="icheck" value="Engenharia" name ="check_category"> Engenharia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Física" name ="check_fisica"> Física</label>
+                                                    <label><input type="checkbox" class="icheck" value="Física" name ="check_category"> Física</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Artes" name ="check_artes"> Artes</label>
+                                                    <label><input type="checkbox" class="icheck" value="Artes" name ="check_category"> Artes</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Notícias" name ="check_noticias"> Notícias</label>
+                                                    <label><input type="checkbox" class="icheck" value="Notícias" name ="check_category"> Notícias</label>
                                                 </div>
                                             </div>
 
@@ -218,41 +218,9 @@
                                                             $volume_field = $_POST['volume_field'];
                                                             $sql .= "and livro_volume = '$volume_field'";
                                                         }
-                                                        if (isset($_POST['check_computacao'])){
-                                                            $check_computacao = $_POST['check_computacao'];
-                                                            $sql .= "and livro_categoria = '$check_computacao'";
-                                                        }
-                                                        if (isset($_POST['check_literatura'])){
-                                                            $check_literatura = $_POST['check_literatura'];
-                                                            $sql .= "and livro_categoria = '$check_literatura'";
-                                                        }
-                                                        if (isset($_POST['check_biologia'])){
-                                                            $check_biologia = $_POST['check_biologia'];
-                                                            $sql .= "and livro_categoria = '$check_biologia'";
-                                                        }
-                                                        if (isset($_POST['check_sociologia'])){
-                                                            $check_sociologia = $_POST['check_sociologia'];
-                                                            $sql .= "and livro_categoria = '$check_sociologia'";
-                                                        }
-                                                        if (isset($_POST['check_matematica'])){
-                                                            $check_matematica = $_POST['check_matematica'];
-                                                            $sql .= "and livro_categoria = '$check_matematica'";
-                                                        }
-                                                        if (isset($_POST['check_engenharia'])){
-                                                            $check_engenharia = $_POST['check_engenharia'];
-                                                            $sql .= "and livro_categoria = '$check_engenharia'";
-                                                        }
-                                                        if (isset($_POST['check_fisica'])){
-                                                            $check_fisica = $_POST['check_fisica'];
-                                                            $sql .= "and livro_categoria = '$check_fisica'";
-                                                        }
-                                                        if (isset($_POST['check_artes'])){
-                                                            $check_artes = $_POST['check_artes'];
-                                                            $sql .= "and livro_categoria = '$check_artes'";
-                                                        }
-                                                        if (isset($_POST['check_noticias'])){
-                                                            $check_noticias = $_POST['check_noticias'];
-                                                            $sql .= "and livro_categoria = '$check_noticias'";
+                                                        if (isset($_POST['check_category'])){
+                                                            $check_category = $_POST['check_category'];
+                                                            $sql .= "and livro_categoria = '$check_category'";
                                                         }
 
                                                         $conn = new Connection();
