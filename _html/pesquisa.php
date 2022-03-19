@@ -185,6 +185,8 @@
                                                         }
                                                     
                                                     function busca($search_text){
+                                                        $search_text = trim($search_text); //Remove espaços vazios do início e final da string.
+
                                                         if ($_POST['author_field'] != ""){
                                                             $author = $_POST['author_field'];
                                                             $author = trim($author); //Remove espaços vazios do início e final da string.
