@@ -201,23 +201,28 @@
                                                         }
 
                                                         if ($_POST['publish_year_field'] != ""){
-                                                            $publish_year = $_POST['publish_year_field'];
+                                                            //Não é necessário remover os espaços devido a formatação do campo
+                                                            $publish_year = $_POST['publish_year_field']; 
                                                             $sql .= "and ano_public = '$publish_year'";
                                                         }
                                                         if ($_POST['publisher_field'] != ""){
-                                                            $publisher_field = trim($_POST['publisher_field']);
+                                                            //Capta o conteúdo do post e remove espaços vazios do início e final da string.
+                                                            $publisher_field = trim($_POST['publisher_field']); 
                                                             $sql .= "and editora = '$publisher_field'";
                                                         }
                                                         if ($_POST['edition_field'] != ""){
-                                                            $edition_field = trim($_POST['edition_field']);
+                                                            //Capta o conteúdo do post e remove espaços vazios do início e final da string.
+                                                            $edition_field = trim($_POST['edition_field']); 
                                                             $sql .= "and livro_edicao = '$edition_field'";
                                                         }
                                                         if ($_POST['isbn_field'] != ""){
-                                                            $isbn_field = trim($_POST['isbn_field']);
+                                                            //Capta o conteúdo do post e remove espaços vazios do início e final da string.
+                                                            $isbn_field = trim($_POST['isbn_field']); 
                                                             $sql .= "and isbn = '$isbn_field'";
                                                         }
                                                         if ($_POST['volume_field'] != ""){
-                                                            $volume_field = trim($_POST['volume_field']);
+                                                            //Capta o conteúdo do post e remove espaços vazios do início e final da string.
+                                                            $volume_field = trim($_POST['volume_field']); 
                                                             $sql .= "and livro_volume = '$volume_field'";
                                                         }
                                                         if (isset($_POST['check_category'])){
