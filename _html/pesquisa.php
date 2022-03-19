@@ -188,8 +188,7 @@
                                                         $search_text = trim($search_text); //Remove espaços vazios do início e final da string.
 
                                                         if ($_POST['author_field'] != ""){
-                                                            $author = $_POST['author_field'];
-                                                            $author = trim($author); //Remove espaços vazios do início e final da string.
+                                                            $author = trim($_POST['author_field']);
                                                             $sql = "SELECT * from cadastro_livros 
                                                             where nome like '%$search_text%'
                                                             and autor like '%$author%'
@@ -206,19 +205,19 @@
                                                             $sql .= "and ano_public = '$publish_year'";
                                                         }
                                                         if ($_POST['publisher_field'] != ""){
-                                                            $publisher_field = $_POST['publisher_field'];
+                                                            $publisher_field = trim($_POST['publisher_field']);
                                                             $sql .= "and editora = '$publisher_field'";
                                                         }
                                                         if ($_POST['edition_field'] != ""){
-                                                            $edition_field = $_POST['edition_field'];
+                                                            $edition_field = trim($_POST['edition_field']);
                                                             $sql .= "and livro_edicao = '$edition_field'";
                                                         }
                                                         if ($_POST['isbn_field'] != ""){
-                                                            $isbn_field = $_POST['isbn_field'];
+                                                            $isbn_field = trim($_POST['isbn_field']);
                                                             $sql .= "and isbn = '$isbn_field'";
                                                         }
                                                         if ($_POST['volume_field'] != ""){
-                                                            $volume_field = $_POST['volume_field'];
+                                                            $volume_field = trim($_POST['volume_field']);
                                                             $sql .= "and livro_volume = '$volume_field'";
                                                         }
                                                         if (isset($_POST['check_category'])){
