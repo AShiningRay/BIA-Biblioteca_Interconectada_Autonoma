@@ -52,32 +52,32 @@
                                             <form method="post">
                                             <h4>Por categoria:</h4>
                                             <div class = "categories_frame"> 
-                                            <div class="checkbox">
-                                                <label><input type="checkbox" class="icheck" value="Computação" name ="check_category"> Computação</label>
+                                                <div class="checkbox">
+                                                    <label class="ichecklabel"><input type="radio" class="icheck" value="Computação" name ="check_category"> Computação</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Literatura" name ="check_category"> Literatura</label>
+                                                    <label class="ichecklabel"><input type="radio" class="icheck" value="Literatura" name ="check_category"> Literatura</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Biologia" name ="check_category"> Biologia</label>
+                                                    <label class="ichecklabel"><input type="radio" class="icheck" value="Biologia" name ="check_category"> Biologia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Sociologia" name ="check_category"> Sociologia</label>
+                                                    <label class="ichecklabel"><input type="radio" class="icheck" value="Sociologia" name ="check_category"> Sociologia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Matemática" name ="check_category"> Matemática</label>
+                                                    <label class="ichecklabel"><input type="radio" class="icheck" value="Matemática" name ="check_category"> Matemática</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Engenharia" name ="check_category"> Engenharia</label>
+                                                    <label class="ichecklabel"><input type="radio" class="icheck" value="Engenharia" name ="check_category"> Engenharia</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Física" name ="check_category"> Física</label>
+                                                    <label class="ichecklabel"><input type="radio" class="icheck" value="Física" name ="check_category"> Física</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Artes" name ="check_category"> Artes</label>
+                                                    <label class="ichecklabel"><input type="radio" class="icheck" value="Artes" name ="check_category"> Artes</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                    <label><input type="checkbox" class="icheck" value="Notícias" name ="check_category"> Notícias</label>
+                                                    <label class="ichecklabel"><input type="radio" class="icheck" value="Notícias" name ="check_category"> Notícias</label>
                                                 </div>
                                             </div>
 

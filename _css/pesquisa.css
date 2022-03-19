@@ -98,6 +98,35 @@
         border: 3px solid #297a7d;
     }
 
+    /*ichecklabel tambem possui background color para
+    permitir que os botoes de categoria tenham um bg-color
+    especial quando selecionados, remover estes códigos quebra a 
+    funcionalidade das diferentes cores durante o hover ou não-seleção ja que o js
+    não está programado para fornecer essas funcionalidades aos ichecklabels*/
+    .checkbox {
+        border-radius: 4px;
+    }
+
+    .checkbox:hover {
+        background-color: #297a7d;
+    }
+
+    .checkbox:active {
+        background-color: #ef2f54;
+    }
+
+    /*Remove o indicador de radio button*/
+    .icheck {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    .ichecklabel {
+        width: 100%;
+        text-align: center;
+        border-radius: 4px;
+    }
+
     #publish_year_field,
     #publisher_field,
     #author_field,

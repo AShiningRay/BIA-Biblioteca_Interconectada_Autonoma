@@ -15,6 +15,12 @@ $(document).ready(function() {
         console.log(); // A ser alterado com um codigo que otimize a funcao abaixo
     });
 
+    $(".ichecklabel").on("click", function() { // Altera a cor do fundo da categoria selecionada
+        $('.ichecklabel').not(this).css("background-color", "inherit");    
+        $(this).css("background-color", "#ef2f54");
+        console.log("checked");
+      });
+
     setInterval(checkSearch, 500); // Roda a checagem de livros a cada meio segundo, 
                                    // deve ser otimizado no futuro.
 
