@@ -187,6 +187,7 @@
                                                     function busca($search_text){
                                                         if ($_POST['author_field'] != ""){
                                                             $author = $_POST['author_field'];
+                                                            $author = trim($author); //Remove espaços vazios do início e final da string.
                                                             $sql = "SELECT * from cadastro_livros 
                                                             where nome like '%$search_text%'
                                                             and autor like '%$author%'
