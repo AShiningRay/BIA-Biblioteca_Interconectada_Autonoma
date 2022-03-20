@@ -41,21 +41,21 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Integrar o funcionamento da página de pesquisa com um Banco de Dados inicial`
 * X`Adicionar a possibilidade de buscar livros com base no banco de dados`
 * X`Implementar as formas de ordenação dos resultados na página de pesquisa`
-* `Tornar essa pesquisa mais profunda e detalhada através de categorias e filtros`
-* `Criar um conjunto de livros de teste básico para o BD, contendo links para imagens e outros`
-* `Finalizar o visual da página de pesquisa`
-* `Finalizar as funcionalidades da página de pesquisa`
-* `Finalizar a página de pesquisa`
+* X `Tornar essa pesquisa mais profunda e detalhada através de categorias e filtros`
+* X `Criar um conjunto de livros de teste básico para o BD, contendo links para imagens e outros`
+* X `Finalizar o visual da página de pesquisa`
+* X `Finalizar as funcionalidades da página de pesquisa`
+* X `Finalizar a página de pesquisa`
 * X`Estilizar a página de contato`
 * X`Corrigir o problema do formulário de login na página de contato`
 * `Adicionar funcionalidade à página de contato`
-* `Finalizar a página de contato`
+* X `Finalizar a página de contato`
 * `...`
-* `Finalizar a página de ajuda`
+* X `Finalizar a página de ajuda`
 * `...`
-* `Finalizar a página sobre`
+* X `Finalizar a página sobre`
 * `Criar um funcionamento básico para o login do site, sendo possível a verificação de usuário logado`
-* `Conectar o site a um sistema de banco de dados que vai ser responsável por armazenar os livros, e possívelmente os usuários`
+* X `Conectar o site a um sistema de banco de dados que vai ser responsável por armazenar os livros, e possívelmente os usuários`
 * `Criar o sistema de empréstimo de livros`
 * `Expandir as funcionalidades desse sistema conforme os avanços forem feitos`
 * X`Criar um sistema para cadastro dos livros ou importação do banco de dados já existente`
