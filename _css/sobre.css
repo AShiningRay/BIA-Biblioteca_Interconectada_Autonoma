@@ -24,6 +24,11 @@
 	margin-left: 2%;
 }
 
+.aboutcontent .content div p {
+	width: 96%;
+	margin-left: 2%;
+}
+
 #content1,
 #content3 {
 	background-color: #5badaf;
