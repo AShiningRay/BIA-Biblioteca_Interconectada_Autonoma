@@ -23,12 +23,14 @@
     <link rel="stylesheet" type="text/css" href="../_css/footer.css">
     <link rel="stylesheet" type="text/css" href="../_css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../_css/login.css">
+    <link rel="stylesheet" type="text/css" href="../_css/ajuda.css">
 
 	<!-- Scripts para adição de funcionalidade ao site -->
 	<script src="../_frameworks//jquery/jquery-3.6.0.min.js"></script>
 	<script src="../_frameworks/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../_frameworks/slick/slick.js"></script>
     <script src="../_javascript/footer.js"></script>
+    <script src="../_javascript/ajuda.js"></script>
 </head>
 
 <body>
@@ -36,9 +38,118 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainnavbar">
             </nav>
-            <br>
-            <br>
-            <br>
+            <div class = "helpframe">
+                <h3>Painel de ajuda</h3>
+                <p>Para obter ajuda sobre um determinado aspecto da página, selecione o tópico abaixo</p>
+                <div class="helpobjects">
+                    <div class = "helpbuttons">
+                        <button class="btn btn-light btn-hover" type="submit" id="generalnavbutton" >
+                            Navegação geral
+                        </button>
+                        
+                        <button class="btn btn-light btn-hover" type="submit" id="startpagebutton" >
+                            Página inicial
+                        </button>
+    
+                        <button class="btn btn-light btn-hover" type="submit" id="booksearchbutton" >
+                            Buscador de livros
+                        </button>
+    
+                        <button class="btn btn-light btn-hover" type="submit" id="dologinbutton" >
+                            Realizar Login
+                        </button>
+                    </div>        
+    
+                    <div class="helpcontent">
+                        <div class="generalnav">
+                            <div class="content" id="content1">
+                                <img src="../_images/ajuda/footer_socialicons.png">
+                                <div>
+                                    <h4>Ícones de redes sociais do footer</h4>
+                                    <p>Cada ícone visível na barra é um botão que lhe redireciona para o perfil e postagens recentes da instituição na rede social escolhida.</p>
+                                </div>
+                            </div>
+    
+                            <div class="content" id="content2">
+                                <div>
+                                    <h4>Links úteis no footer</h4>
+                                    <p>Estes links contém páginas que são relacionadas a este sistema de biblioteca e podem facilitar sua navegação entre todos os serviços oferecidos pela instituição.</p>
+                                </div>
+                                <img src="../_images/ajuda/links_uteis.png">
+                            </div>
+    
+                            <div class="content" id="content3">
+                                <img src="../_images/ajuda/maps_icon.png">
+                                <div>
+                                    <h4>Ícone do Google Maps no footer</h4>
+                                    <p>Ao clicar/tocar nesse botão, um quadro contendo a localização geográfica da biblioteca universitária é exibido. Também é possível abrir o Maps completo a partir de um
+                                        pequeno link dentro deste mesmo quadro caso mais informações sejam necessárias.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="startpage">
+                            <div class="content" id="content1">
+                                <img src="../_images/ajuda/img_carousel.png">
+                                <div>
+                                    <h4>Navegando pelo carrossel de imagens</h4>
+                                    <p>O carrossel pode ser navegado de três formas: Deslizando o dedo, ou mouse sobre as imagens para trocar o slide, através das setas nas bordas do carrosel, ou por meio dos
+                                       indicadores de slide na parte inferior do carrossel. Estes dois últimos métodos só estão disponíveis caso você esteja usando um desktop.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booksearch">
+                            <div class="content" id="content1">
+                                <img src="../_images/ajuda/simple_search.png">
+                                <div>
+                                    <h4>Realizando uma busca simples</h4>
+                                    <p>Para realizar uma busca simples, basta inserir o livro que deseja buscar (também suporta busca por autor caso não esteja usando a busca avançada) e pressionar
+                                        o botão com o ícone de lupa. Para ordenar os resultados, basta selecionar qualquer dos itens no dropdown "ordenar por".</p>
+                                </div>
+                            </div>
+    
+                            <div class="content" id="content2">
+                                <div>
+                                    <h4>Utilizando a busca avançada</h4>
+                                    <p>Para realizar uma busca avançada, basta pressionar o botão de mesmo nome que um menu lateral contendo as categorias de livros e campos de busca extras irá 
+                                        aparecer, permitindo que você busque por algo mais específico.</p>
+                                </div>
+                                <img src="../_images/ajuda/adv_search.png">
+                            </div>
+    
+                            <div class="content" id="content3">
+                                <img src="../_images/ajuda/book_opts.png">
+                                <div>
+                                    <h4>Reservando, devolvendo, ou renovando livros</h4>
+                                    <p>Para realizar qualquer uma das funções acima, basta pressionar os botões relacionados presentes em cada resultado obtido após a busca.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dologin">
+                            <div class="content" id="content1">
+                                <img src="../_images/ajuda/logging_in.png">
+                                <div>
+                                    <h4>Realizando o login</h4>
+                                    <p>O formulário de login é bem similar ao padrão visto pela internet, bastando inserir seu nome de usuário e senha para logar ao pressionar o botão de login. 
+                                        É possível pular essa etapa nos próximos acessos ao marcar a opção "Lembrar-me".</p>
+                                </div>
+                            </div>
+    
+                            <div class="content" id="content2">
+                                <div>
+                                    <h4>Recuperando a senha, ou cadastrando.</h4>
+                                    <p>O formulário conta com links para ambos os casos, se precisar de algum desses serviços presentes em qualquer momento.</p>
+                                </div>
+                                <img src="../_images/ajuda/form_extras.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div> 
+            </div>
 
             <footer class="bg-primary text-center text-lg-start" id="mainfooter">
             </footer>
