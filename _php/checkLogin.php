@@ -25,7 +25,7 @@ else {
     $rowData = mysqli_fetch_array($resultado);
 
     // Se a sessão não existir, inicia uma
-    if (!isset($_SESSION)) session_start();
+    session_start();
 
     // Salva os dados encontrados na sessão
     $_SESSION['UsuarioID'] = $rowData['id'];

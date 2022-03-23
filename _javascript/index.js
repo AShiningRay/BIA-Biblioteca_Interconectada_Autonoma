@@ -53,4 +53,10 @@ $(document).ready(function() {
 		autoplay: true, // Usado para testar se o scrolling está funcionando
 		autoplaySpeed: 5000 // Velocidade do autoscroll em msegs
 	});
+
+	$.ajaxSetup({cache: false})
+	$.get('./_php/chechSession.php', function (data) {
+	session = data;
+	$("#username_show").text(session);
+	});
 });

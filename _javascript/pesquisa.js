@@ -25,6 +25,12 @@ $(document).ready(function() {
                                    // deve ser otimizado no futuro.
 
     document.getElementById('ordertype').onchange = checkOrderType;
+
+    $.ajaxSetup({cache: false})
+    $.get('../_php/chechSession.php', function (data) {
+    session = data;
+    $("#username_show").text(session);
+    });
 });
 
 $(document).on('click', '#advsearchbtn', function () {

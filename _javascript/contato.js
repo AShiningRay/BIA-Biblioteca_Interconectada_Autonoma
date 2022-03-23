@@ -11,5 +11,11 @@ $(document).ready(function() {
 			$(document).on('click', '#closelogwindow', function () {
 				$(".mainpage").css("filter", "blur(0px)");
 				console.log("removed blur");
-	});
+			});
+			$.ajaxSetup({cache: false})
+			$.get('../_php/chechSession.php', function (data) {
+			session = data;
+			$("#username_show").text(session);
+			});
+	
 });

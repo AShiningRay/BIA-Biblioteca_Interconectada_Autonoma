@@ -26,4 +26,10 @@ $(document).ready(function() {
         $('.booksearch').css('display', 'none');
         $('.dologin').css('display', 'block');
     });
+
+    $.ajaxSetup({cache: false})
+    $.get('../_php/chechSession.php', function (data) {
+    session = data;
+    $("#username_show").text(session);
+    });
 });
