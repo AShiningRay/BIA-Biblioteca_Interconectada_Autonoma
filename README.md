@@ -50,11 +50,9 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Corrigir o problema do formulário de login na página de contato`
 * `Adicionar funcionalidade à página de contato`
 * X `Finalizar a página de contato`
-* `...`
 * X `Finalizar a página de ajuda`
-* `...`
 * X `Finalizar a página sobre`
-* `Criar um funcionamento básico para o login do site, sendo possível a verificação de usuário logado`
+* X`Criar um funcionamento básico para o login do site, sendo possível a verificação de usuário logado`
 * X `Conectar o site a um sistema de banco de dados que vai ser responsável por armazenar os livros, e possívelmente os usuários`
 * `Criar o sistema de empréstimo de livros`
 * `Expandir as funcionalidades desse sistema conforme os avanços forem feitos`
@@ -62,6 +60,10 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Padronizar o banco de dados para cadastro e busca de livros`
 * `Desenvolver um conjunto de páginas administrativas para os funcionários do sistema de biblioteca`
 * `Criar um sistema de cadastro e remoção de usuários para o staff administrativo da biblioteca`
+* `desenvolver um formulário para login dos funcionários administrativos`
+* `Otimizar as paginas levando em conta o feedback do Lighthouse`
+* `Adicionar funcionalidade PWA ao sistema`
+* `Unificar melhor a interface mobile com a desktop`
 * `Implementação de testes unitários (Caso o tempo para desenvolvimento permita)`
 * `...`
 * `Finalizar a entrega do projeto`
