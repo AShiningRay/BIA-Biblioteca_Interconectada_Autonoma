@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Mar-2022 às 17:47
+-- Tempo de geração: 23-Mar-2022 às 21:37
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 7.4.27
 
@@ -59,6 +59,26 @@ INSERT INTO `cadastro_livros` (`nome`, `autor`, `isbn`, `ano_public`, `editora`,
 ('Sociedade do Cansaço', 'Byung-Chul Han', '9780804797504', '2010', 'Editora Vozes ', 'Han, Byung-Chul. Sociedade do cansaço . Editora Vo', 'Fileira 53 - Seção 12', 'Filosofia', '1º Edição', 'Volume 1', '12', 'SociedadeDoCansaco.png'),
 ('História da Filosofia Ocidental', 'Bertrand Russell', '9780041000450', '1945', 'Editora Moderna ', 'Russel, Bertrand. História da Filosofia Ocidental.', 'Fileira 8 - Seção 23', 'Filosofia', '3º Edição', 'Volume 4', '52', 'HistoriaFilosofiaOcidental.png'),
 ('Uma Breve História do Tempo', 'Stephen Hawking', '9780593015186', '1988', 'Editora Intrínseca ', 'Hawking, Stephen. Uma Breve História do Tempo. Edi', 'Fileira 22 - Seção 44', 'Física', '7º Edição', 'Volume 1', '23', 'UmaBreveHistoriaDoTempo.png');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `users`
+--
+
+CREATE TABLE `users` (
+  `id` varchar(50) DEFAULT NULL,
+  `username` varchar(50) DEFAULT NULL,
+  `pass` varchar(500) DEFAULT NULL,
+  `name` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `pass`, `name`) VALUES
+('1', 'Batheus', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'Batheus');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
