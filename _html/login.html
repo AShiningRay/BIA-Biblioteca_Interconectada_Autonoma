@@ -15,13 +15,13 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center form_container" id="loginform">
-                        <form>
+                        <form action="../_php/checkLogin.php" method="post">
                             <div class="input-group mb-3">
                                 <div class="input-group-append">
                                     <span class="input-group-text"><img style="width:1.5em; height: 1.5em;"
                                             src="../_images/icons/user.svg" id="logo_user"></span>
                                 </div>
-                                <input type="text" name="" class="form-control input_user" id="username" value=""
+                                <input type="text" name="username" class="form-control input_user" id="username" value=""
                                     placeholder="Usuário">
                             </div>
                             <div class="input-group mb-2">
@@ -29,7 +29,7 @@
                                     <span class="input-group-text"><img style="width:1.5em; height: 1.5em;"
                                             src="../_images/icons/passkey.svg" id="logo_passkey"></span>
                                 </div>
-                                <input type="password" name="" class="form-control input_pass" id="password"
+                                <input type="password" name="password" class="form-control input_pass" id="password"
                                     value="" placeholder="Senha">
                             </div>
                             <div class="form-group">
@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3 login_container">
-                                <button type="button" name="button" class="btn login_btn">Login</button>
+                                <button type="submit" name="button" class="btn login_btn">Login</button>
                             </div>
                         </form>
                     </div>
