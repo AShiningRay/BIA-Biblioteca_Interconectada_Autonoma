@@ -10,7 +10,7 @@ $conn = new Connection();
 
 //Query para verificação de usuário e senha.
 $user = $_POST['username'];
-$password = $_POST['password'];
+$password = hash('sha256', $_POST['password']);
 
 $sql = "SELECT * FROM users where username = '$user' and pass = '$password'";
 
