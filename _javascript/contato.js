@@ -13,8 +13,7 @@ $(document).ready(function() {
 				console.log("removed blur");
 			});
 			$.ajaxSetup({cache: false})
-			$.get('../_php/chechSession.php', function (data) {
-			session = data;
+			$.get('../_php/chechSession.php', function (session) {
 			if (session != "Usuário Não logado"){
 				$("#loginbutton").hide();
 			  }

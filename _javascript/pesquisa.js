@@ -27,8 +27,7 @@ $(document).ready(function() {
     document.getElementById('ordertype').onchange = checkOrderType;
 
     $.ajaxSetup({cache: false})
-    $.get('../_php/chechSession.php', function (data) {
-        session = data;
+    $.get('../_php/chechSession.php', function (session) {
         if (session != "Usuário Não logado"){
             $("#loginbutton").hide();
           }
