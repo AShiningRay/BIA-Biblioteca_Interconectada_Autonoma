@@ -2,13 +2,8 @@ $(document).ready(function() {
 
 	if ('serviceWorker' in navigator) {
 		window.addEventListener('load', function() {
-		navigator.serviceWorker.register('/pwa_serviceworker.js').then(function(registration) {
-			// Registration was successful
-			console.log('ServiceWorker registration successful with scope:', registration.scope);
-			}, function(err) {
-			// registration failed :(
-			console.log('ServiceWorker registration failed: ', err);
-			});
+			//Registra o serviceworker para suporte a PWA
+			navigator.serviceWorker.register('/pwa_serviceworker.js')
 		});
 	};
 
