@@ -245,6 +245,7 @@
     #bookimageframe {
         width: 25%;
         justify-content: center;
+        height: 100%;
     }
 
     #bookimg {
