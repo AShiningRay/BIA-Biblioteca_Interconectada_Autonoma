@@ -59,6 +59,18 @@
 	margin-left: 1%;
 }
 
+.helpcontent .content div h4 {
+	border-bottom: 2px solid #297a7d;
+	width: 98%;
+	margin-left: 1%;
+	font-weight: bold;
+}
+
+.helpcontent .content div p {
+	width: 98%;
+	margin-left: 1%;
+}
+
 #content1 {
 	animation-delay: 0.5s;
 }
@@ -81,4 +93,72 @@
 .booksearch,
 .dologin {
 	display: none;
+}
+
+@media (max-width: 992px) 
+{
+	.helpobjects {
+		display: block;
+	}
+
+	.helpbuttons{
+		width: 80%;
+		margin-left: 10%;
+		border-right: none;
+		border-bottom: 2px solid #297a7d;
+	}
+
+	.helpcontent {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.helpcontent .content div h4 {
+		font-size: 0.9em;
+	}
+
+	.helpcontent .content div p {
+		font-size: 0.9em;
+	}
+
+	.helpcontent .content img {
+		height: 100%;
+		width: 35%;
+		background-color: #297a7d;
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: 768px) 
+{
+	.helpobjects {
+		display: block;
+	}
+
+	.helpbuttons{
+		width: 80%;
+		margin-left: 10%;
+		border-right: none;
+		border-bottom: 2px solid #297a7d;
+	}
+
+	.helpcontent {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.helpcontent .content div h4 {
+		font-size: 0.8em;
+	}
+
+	.helpcontent .content div p {
+		font-size: 0.8em;
+	}
+
+	.helpcontent .content img {
+		height: 100%;
+		width: 35%;
+		background-color: #297a7d;
+		border-radius: 10px;
+	}
 }
