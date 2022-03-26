@@ -66,7 +66,7 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * `Otimizar as paginas levando em conta o feedback do Lighthouse`
 * X`Adicionar funcionalidade PWA ao sistema`
 * `Implementar funcionalidades avançadas ao PWA se possível (como uma cópia local do BD de livros para permitir buscas offline).`
-* `Unificar melhor a interface mobile com a desktop por todo o site`
+* X`Unificar melhor a interface mobile com a desktop por todo o site`
 * `Implementação de testes unitários (Caso o tempo para desenvolvimento permita)`
 * `...`
 * `Finalizar a entrega do projeto`
