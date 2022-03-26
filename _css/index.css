@@ -178,7 +178,7 @@ ul.slick-dots {
     }
 
     .center.slider.slick-initialized.slick-slider.slick-dotted {
-        margin-bottom: 0;
+        margin-bottom: 2%;
     }
 
     .gesture_frame{
@@ -212,11 +212,10 @@ ul.slick-dots {
 {
     .center.slider {
         aspect-ratio: 18/18;
-        margin-bottom: 0;
     }
 
     .center.slider.slick-initialized.slick-slider.slick-dotted {
-        margin-bottom: 0;
+        margin-bottom: 2%;
     }
 
     #mainpageinfo {
