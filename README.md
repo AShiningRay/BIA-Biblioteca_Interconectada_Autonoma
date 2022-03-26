@@ -41,29 +41,32 @@ Este projeto é parte da avaliação da matéria de Fábrica de Software, podend
 * X`Integrar o funcionamento da página de pesquisa com um Banco de Dados inicial`
 * X`Adicionar a possibilidade de buscar livros com base no banco de dados`
 * X`Implementar as formas de ordenação dos resultados na página de pesquisa`
-* X `Tornar essa pesquisa mais profunda e detalhada através de categorias e filtros`
-* X `Criar um conjunto de livros de teste básico para o BD, contendo links para imagens e outros`
-* X `Finalizar o visual da página de pesquisa`
-* X `Finalizar as funcionalidades da página de pesquisa`
-* X `Finalizar a página de pesquisa`
+* X`Tornar essa pesquisa mais profunda e detalhada através de categorias e filtros`
+* X`Criar um conjunto de livros de teste básico para o BD, contendo links para imagens e outros`
+* X`Finalizar o visual da página de pesquisa`
+* X`Finalizar as funcionalidades da página de pesquisa`
+* X`Finalizar a página de pesquisa`
 * X`Estilizar a página de contato`
 * X`Corrigir o problema do formulário de login na página de contato`
+* X`Adicionar funcionalidade ao formulário de login`
+* `Implementar recursos exclusivos para usuários logados`
 * `Adicionar funcionalidade à página de contato`
-* X `Finalizar a página de contato`
-* X `Finalizar a página de ajuda`
-* X `Finalizar a página sobre`
+* X`Finalizar a página de contato`
+* X`Finalizar a página de ajuda`
+* X`Finalizar a página sobre`
 * X`Criar um funcionamento básico para o login do site, sendo possível a verificação de usuário logado`
-* X `Conectar o site a um sistema de banco de dados que vai ser responsável por armazenar os livros, e possívelmente os usuários`
-* `Criar o sistema de empréstimo de livros`
+* X`Conectar o site a um sistema de banco de dados que vai ser responsável por armazenar os livros, e possívelmente os usuários`
+* `Desenvolver o sistema de empréstimo de livros`
 * `Expandir as funcionalidades desse sistema conforme os avanços forem feitos`
 * X`Criar um sistema para cadastro dos livros ou importação do banco de dados já existente`
 * X`Padronizar o banco de dados para cadastro e busca de livros`
 * `Desenvolver um conjunto de páginas administrativas para os funcionários do sistema de biblioteca`
 * `Criar um sistema de cadastro e remoção de usuários para o staff administrativo da biblioteca`
-* `desenvolver um formulário para login dos funcionários administrativos`
+* `Desenvolver um formulário para login dos funcionários administrativos`
 * `Otimizar as paginas levando em conta o feedback do Lighthouse`
-* `Adicionar funcionalidade PWA ao sistema`
-* `Unificar melhor a interface mobile com a desktop`
+* X`Adicionar funcionalidade PWA ao sistema`
+* `Implementar funcionalidades avançadas ao PWA se possível (como uma cópia local do BD de livros para permitir buscas offline).`
+* `Unificar melhor a interface mobile com a desktop por todo o site`
 * `Implementação de testes unitários (Caso o tempo para desenvolvimento permita)`
 * `...`
 * `Finalizar a entrega do projeto`
