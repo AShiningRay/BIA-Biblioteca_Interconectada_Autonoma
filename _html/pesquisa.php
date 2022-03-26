@@ -85,7 +85,7 @@
 
                                             <h4>Filtros avançados:</h4>
                                             
-                                            Autor
+                                            <p>Autor</p>
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input1">
                                                 <input type="text" class="form-control" id="author_field" name = "author_field" value = "">
@@ -93,7 +93,7 @@
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
 
-                                            Ano de publicação
+                                            <p>Ano de publicação</p>
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
                                                 <input type="number" class="form-control" id="publish_year_field" name = "publish_year_field" value = "">
@@ -101,7 +101,7 @@
                                             </div>
                                             <input type="hidden" id="dtp_input1" value="">
 
-                                            Editora
+                                            <p>Editora</p>
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input3">
                                                 <input type="text" class="form-control" id="publisher_field" name="publisher_field" value = "">
@@ -109,7 +109,7 @@
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
 
-                                            Edição
+                                            <p>Edição</p>
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input4">
                                                 <input type="text" class="form-control" id="edition_field" name="edition_field" value = "">
@@ -117,7 +117,7 @@
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
 
-                                            ISBN
+                                            <p>ISBN</p>
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input5">
                                                 <input type="number" class="form-control" id="isbn_field" name="isbn_field" value = "">
@@ -125,7 +125,7 @@
                                             </div>
                                             <input type="hidden" id="dtp_input2" value="">
 
-                                            Volume
+                                            <p>Volume</p>
                                             <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z"
                                                 data-date-format="dd-mm-yyyy" data-link-field="dtp_input6">
                                                 <input type="number" class="form-control" id="volume_field" name="volume_field" value = "">

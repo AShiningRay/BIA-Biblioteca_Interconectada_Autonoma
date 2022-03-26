@@ -33,19 +33,34 @@ $(document).ready(function() {
           }
         $("#username_show").text(session);
     });
+
 });
 
 $(document).on('click', '#advsearchbtn', function () {
     if ($('#searchfilters').css('display') == 'none') {
         $('#searchfilters').css('display', 'block');
         $('#advsearchbtn').text('Pesquisa Simples');
-        $('#search_frame').css('width', '75%');
+        if(!checkwidth()) // Ver abaixo
+            $('#search_frame').css('width', '75%');
     } else {
         $('#searchfilters').css('display', 'none');
         $('#advsearchbtn').text('Pesquisa Avançada');
         $('#search_frame').css('width', '100%');
     }
 });
+
+/* Usado pra verificar se a tela tem características 
+ de um telefone para evitar a escala incorreta dos 
+ elementos resultantes da pesquisa, já que a interface
+ desktop permite prover mais informações */
+function checkwidth() {
+    let scrwidth = 'screen and (max-width:768px)';
+
+    if(window.matchMedia(scrwidth).matches)
+            return true
+    else
+            return false
+};
 
 function checkSearch() {
     let numbooks = document.getElementsByName('searchresult');
