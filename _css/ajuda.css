@@ -8,14 +8,21 @@
 	
 }
 
+.helpframe h3 {
+	text-align: center;
+}
+
 .helpobjects {
 	display: flex;
 }
 
 .helpbuttons {
 	width: 25%;
-	border-right: 2px solid #297a7d;
+	border: 2px solid #297a7d;
+	border-radius: 5px;
 	display: block;
+	margin-left: 1%;
+	padding: 1% 1%;
 }
 
 .helpbuttons button {
@@ -25,7 +32,7 @@
 }
 
 .helpcontent {
-	width: 73%;
+	width: 72%;
 	margin-left: 1%;
 	background-color: #297a7d;
 	border-radius: 5px;
@@ -104,7 +111,6 @@
 	.helpbuttons{
 		width: 80%;
 		margin-left: 10%;
-		border-right: none;
 		border-bottom: 2px solid #297a7d;
 	}
 
