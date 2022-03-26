@@ -38,3 +38,32 @@
 #content2 {
 	background-color: #ffa64d;
 }
+
+@media (max-width: 1200px) 
+{
+	.aboutcontent .content div p {
+		font-size: 0.95em;
+	}
+}
+
+@media (max-width: 992px) 
+{
+	.aboutcontent .content div h2 {
+		font-size: 1.2em;
+	}
+
+	.aboutcontent .content div p {
+		font-size: 0.80em;
+	}
+}
+
+@media (max-width: 768px) 
+{
+	.aboutcontent .content div h2 {
+		font-size: 0.85em;
+	}
+	
+	.aboutcontent .content div p {
+		font-size: 0.75em;
+	}
+}
