@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23-Mar-2022 às 21:37
+-- Tempo de geração: 27-Mar-2022 às 19:31
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 7.4.27
 
@@ -63,6 +63,19 @@ INSERT INTO `cadastro_livros` (`nome`, `autor`, `isbn`, `ano_public`, `editora`,
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `mensagens_contato`
+--
+
+CREATE TABLE `mensagens_contato` (
+  `name` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `telefone` varchar(50) DEFAULT NULL,
+  `mensagem` varchar(500) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `users`
 --
 
@@ -78,7 +91,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `pass`, `name`) VALUES
-('1', 'Batheus', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'Batheus');
+('1', 'Batheus', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'teste');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
